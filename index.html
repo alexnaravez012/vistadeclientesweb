@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./data/style.css">
+    <link rel="stylesheet" href="./fontawesome-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit-icons.min.js"></script>
+    <title>Denlíne@</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="uk-flex uk-flex-middle uk-flex-around navbar-customers">
+        <div class="cursor-pointer uk-flex uk-flex-middle padding-horizontal-20">
+            <img class="logo-store-customers" style="margin-right: 5px;" src="./data/logo2.png " alt=" ">
+            <i class="fas fa-caret-down"></i>
+        </div>
+        <div>
+            <h6 class="uk-text-muted uk-margin-remove">LaFerra/Mesas/Mesa1/Añadir Pedido</h6>
+        </div>
+        <div class="uk-flex uk-flex-middle">
+            <input class="input-search-customers uk-text-center" type="text" placeholder="Busqueda por nombre o código">
+            <i class="fas fa-search color-blue"></i>
+        </div>
+        <div>
+            <a class="padding-horizontal-10" style="position: relative;" href=" ">
+                <img class="img-bag-shopping-customers" src="./data/Carrito-de-compras.png " alt=" " uk-img>
+                <h6 class="text-bag-shopping-customers" style="position: absolute; ">0</h6>
+            </a>
+        </div>
+        <div class="uk-inline cursor-pointer padding-horizontal-30">
+            <button class="button-data-user-customers uk-flex uk-flex-middle cursor-pointer">
+                <img class="logo-user-customers" style="margin-right: 5px;" src="./data/user.png " alt=" ">
+                <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Mireya Mopan</h4>
+                <i class="fas fa-caret-down "></i>
+            </button>
+            <div uk-drop="mode: click">
+                <div class="uk-card uk-card-body uk-card-default uk-box-shadow-large drop-data-user-customers">
+                    <div class="padding-vertical-10">
+                        <h5 class="uk-text-bold uk-margin-remove">Roles activados:</h5>
+                        <h5 class="uk-margin-remove ">Propietario de la empresa</h5>
+                    </div>
+                    <div class="hr-tab"></div>
+                    <div class="padding-vertical-10">
+                        <h5 class="uk-text-bold uk-margin-remove ">Su documento es:</h5>
+                        <h5 class="uk-margin-remove ">CC: 55555555555001</h5>
+                    </div>
+                    <div class="hr-tab"></div>
+                    <div class="padding-vertical-10">
+                        <h5 class="uk-text-bold uk-margin-remove">Id de usuario:</h5>
+                        <h5 class="uk-margin-remove ">94518</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contenido de la vista de clientes -->
+    <div style="display: inline;">
+        <div class="menu-vertical-customers">
+            <ul class="uk-list">
+                <button class="button-items-menu-customers">
+                    <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-08.png);" uk-img></div>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Comida</h6>
+                </button>
+                <button class="button-items-menu-customers uk-margin-remove">
+                    <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-09.png);" uk-img></div>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Accesorios</h6>
+                </button>
+                <button class="button-items-menu-customers uk-margin-remove">
+                    <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-10.png);" uk-img></div>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Aceites</h6>
+                </button>
+                <button class="button-items-menu-customers uk-margin-remove">
+                    <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-11.png);" uk-img></div>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Bicicletas</h6>
+                </button>
+                <button class="button-items-menu-customers uk-margin-remove">
+                    <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-12.png);" uk-img></div>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Motores</h6>
+                </button>
+                <button class="button-items-menu-customers uk-margin-remove">
+                    <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-14.png);" uk-img></div>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Accesorios de motocicletas</h6>
+                </button>
+            </ul>
+        </div>
+        <div class="main-container-add-products-customers">
+            <div class="uk-flex uk-flex-wrap uk-grid-small uk-grid-match" style="position: relative; margin-top: 10px;" uk-grid>
+                <div class="uk-card uk-card-default uk-card-body card-add-product-customers uk-flex" style="position: relative !important;;">
+                    <div class="uk-width-1-2" style="padding-top: 8px;">
+                        <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
+                        <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                    <div class="uk-width-1-2 uk-text-center">
+                        <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                        <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                            <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-blue">1</h6>
+                            <i class="fas fa-plus font-size-12 cursor-pointer"></i>
+                        </div>
+                        <Button class="button-card-add-customers uk-text-bold cursor-pointer">Agregar</Button>
+                        <img class="heart-card-customers" src="./data/Like-activado.png" style="position: absolute;" alt="">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body card-add-product-customers uk-flex" style="position: relative !important;;">
+                    <div class="uk-width-1-2" style="padding-top: 8px;">
+                        <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
+                        <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                    <div class="uk-width-1-2 uk-text-center">
+                        <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                        <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                            <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-blue">1</h6>
+                            <i class="fas fa-plus font-size-12 cursor-pointer"></i>
+                        </div>
+                        <Button class="button-card-add-customers uk-text-bold cursor-pointer">Agregar</Button>
+                        <img class="heart-card-customers" src="./data/Like-activado.png" style="position: absolute;" alt="">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body card-add-product-customers uk-flex" style="position: relative !important;;">
+                    <div class="uk-width-1-2" style="padding-top: 8px;">
+                        <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
+                        <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                    <div class="uk-width-1-2 uk-text-center">
+                        <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                        <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                            <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-blue">1</h6>
+                            <i class="fas fa-plus font-size-12 cursor-pointer"></i>
+                        </div>
+                        <Button class="button-card-add-customers uk-text-bold cursor-pointer">Agregar</Button>
+                        <img class="heart-card-customers" src="./data/Like-activado.png" style="position: absolute;" alt="">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body card-add-product-customers uk-flex" style="position: relative !important;;">
+                    <div class="uk-width-1-2" style="padding-top: 8px;">
+                        <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
+                        <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                    <div class="uk-width-1-2 uk-text-center">
+                        <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                        <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                            <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-blue">1</h6>
+                            <i class="fas fa-plus font-size-12 cursor-pointer"></i>
+                        </div>
+                        <Button class="button-card-add-customers uk-text-bold cursor-pointer">Agregar</Button>
+                        <img class="heart-card-customers" src="./data/Like-activado.png" style="position: absolute;" alt="">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body card-add-product-customers uk-flex" style="position: relative !important;;">
+                    <div class="uk-width-1-2" style="padding-top: 8px;">
+                        <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
+                        <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                    <div class="uk-width-1-2 uk-text-center">
+                        <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                        <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                            <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-blue">1</h6>
+                            <i class="fas fa-plus font-size-12 cursor-pointer"></i>
+                        </div>
+                        <Button class="button-card-add-customers uk-text-bold cursor-pointer">Agregar</Button>
+                        <img class="heart-card-customers" src="./data/Like-activado.png" style="position: absolute;" alt="">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body card-add-product-customers uk-flex" style="position: relative !important;;">
+                    <div class="uk-width-1-2" style="padding-top: 8px;">
+                        <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
+                        <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                    <div class="uk-width-1-2 uk-text-center">
+                        <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                        <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                            <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-blue">1</h6>
+                            <i class="fas fa-plus font-size-12 cursor-pointer"></i>
+                        </div>
+                        <Button class="button-card-add-customers uk-text-bold cursor-pointer">Agregar</Button>
+                        <img class="heart-card-customers" src="./data/Like-activado.png" style="position: absolute;" alt="">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body card-add-product-customers uk-flex" style="position: relative !important;;">
+                    <div class="uk-width-1-2" style="padding-top: 8px;">
+                        <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
+                        <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                    <div class="uk-width-1-2 uk-text-center">
+                        <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                        <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                            <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-blue">1</h6>
+                            <i class="fas fa-plus font-size-12 cursor-pointer"></i>
+                        </div>
+                        <Button class="button-card-add-customers uk-text-bold cursor-pointer">Agregar</Button>
+                        <img class="heart-card-customers" src="./data/Like-activado.png" style="position: absolute;" alt="">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body card-add-product-customers uk-flex" style="position: relative !important;;">
+                    <div class="uk-width-1-2" style="padding-top: 8px;">
+                        <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
+                        <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                    <div class="uk-width-1-2 uk-text-center">
+                        <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                        <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                            <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-blue">1</h6>
+                            <i class="fas fa-plus font-size-12 cursor-pointer"></i>
+                        </div>
+                        <Button class="button-card-add-customers uk-text-bold cursor-pointer">Agregar</Button>
+                        <img class="heart-card-customers" src="./data/Like-activado.png" style="position: absolute;" alt="">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body card-add-product-customers uk-flex" style="position: relative !important;;">
+                    <div class="uk-width-1-2" style="padding-top: 8px;">
+                        <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
+                        <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                    <div class="uk-width-1-2 uk-text-center">
+                        <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                        <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                            <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-blue">1</h6>
+                            <i class="fas fa-plus font-size-12 cursor-pointer"></i>
+                        </div>
+                        <Button class="button-card-add-customers uk-text-bold cursor-pointer">Agregar</Button>
+                        <img class="heart-card-customers" src="./data/Like-activado.png" style="position: absolute;" alt="">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body card-add-product-customers uk-flex" style="position: relative !important;;">
+                    <div class="uk-width-1-2" style="padding-top: 8px;">
+                        <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
+                        <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                    <div class="uk-width-1-2 uk-text-center">
+                        <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                        <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                            <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-blue">1</h6>
+                            <i class="fas fa-plus font-size-12 cursor-pointer"></i>
+                        </div>
+                        <Button class="button-card-add-customers uk-text-bold cursor-pointer">Agregar</Button>
+                        <img class="heart-card-customers" src="./data/Like-activado.png" style="position: absolute;" alt="">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body card-add-product-customers uk-flex" style="position: relative !important;;">
+                    <div class="uk-width-1-2" style="padding-top: 8px;">
+                        <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
+                        <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                    <div class="uk-width-1-2 uk-text-center">
+                        <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                        <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                            <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-blue">1</h6>
+                            <i class="fas fa-plus font-size-12 cursor-pointer"></i>
+                        </div>
+                        <Button class="button-card-add-customers uk-text-bold cursor-pointer">Agregar</Button>
+                        <img class="heart-card-customers" src="./data/Like-activado.png" style="position: absolute;" alt="">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body card-add-product-customers uk-flex" style="position: relative !important;;">
+                    <div class="uk-width-1-2" style="padding-top: 8px;">
+                        <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
+                        <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                    <div class="uk-width-1-2 uk-text-center">
+                        <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                        <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                            <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-blue">1</h6>
+                            <i class="fas fa-plus font-size-12 cursor-pointer"></i>
+                        </div>
+                        <Button class="button-card-add-customers uk-text-bold cursor-pointer">Agregar</Button>
+                        <img class="heart-card-customers" src="./data/Like-activado.png" style="position: absolute;" alt="">
+                    </div>
+                </div>
+                <div class="info-float-customers cursor-pointer">
+                    <div class="uk-flex uk-flex-middle">
+                        <h5 class="uk-margin-remove uk-text-bold font-size-12">0</h5>
+                        <div class="uk-text-center" style="margin-left:20px ;">
+                            <h6 class="uk-margin-remove font-size-12">80</h6>
+                            <h6 class="uk-margin-remove uk-text-bold font-size-12 cursor-pointer">Concretar pedido</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-right-vertical-customers">
+                <ul class="uk-list">
+                    <h6 class="uk-margin-remove font-size-12 uk-text-bold ">Productos relacionados con este artículo</h6>
+                    <div class="uk-flex uk-flex-middle ">
+                        <div class="img-menu-right-vertical-customers uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-size-11 " style="padding-left: 5px; ">Hamburguesa 2</h6>
+                    </div>
+                    <div class="uk-flex uk-flex-middle ">
+                        <div class="img-menu-right-vertical-customers uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-size-11 " style="padding-left: 5px; ">Hamburguesa 3</h6>
+                    </div>
+                    <div class="uk-flex uk-flex-middle ">
+                        <div class="img-menu-right-vertical-customers uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-size-11 " style="padding-left: 5px; ">Hamburguesa 4</h6>
+                    </div>
+                    <div class="uk-flex uk-flex-middle ">
+                        <div class="img-menu-right-vertical-customers uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-size-11 " style="padding-left: 5px; ">Hamburguesa 5</h6>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div style="display: inline;">
+        <div class="footer-customers uk-flex uk-flex-between uk-flex-middle">
+            <div class="padding-horizontal-40">
+                <h6 class="uk-margin-remove font-size-9">TODOS LOS DERECHOS RESERVADOS</h6>
+                <h6 class="uk-margin-remove font-size-9">Denlinea de Colombia S.A. Calle 99 11 A-32 Bogotá Colombia</h6>
+                <h6 class="uk-margin-remove font-size-9">NIT: 900.017447-8 Teléfono: Bogotá 5878002 E-mail:</h6>
+                <h6 class="uk-margin-remove font-size-9">serviciosalcliente@denlinea.com.com</h6>
+            </div>
+            <div>
+                <h6 class="uk-margin-remove font-size-12 uk-text-bold">COMPRA 100% SEGURA</h6>
+            </div>
+            <div class="padding-horizontal-40">
+                <h6 class="uk-margin-remove font-size-11">CLAUDIAEPICENTER@GMAIL.COM</h6>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
