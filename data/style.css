@@ -81,9 +81,10 @@
 }
 
 .text-bag-shopping-customers {
-    color: black;
-    left: 25px;
+    color: #3a6193;
+    left: 26px;
     top: -35px;
+    font-size: 13px;
 }
 
 .button-data-user-customers {
@@ -110,7 +111,7 @@
     top: 73px;
     padding-top: 10px;
     width: 100px !important;
-    height: calc(100% - 160px) !important;
+    height: calc(100% - 140px) !important;
     position: fixed;
     z-index: 30;
     overflow-y: scroll;
@@ -122,6 +123,24 @@
 
 .menu-vertical-customers::-webkit-scrollbar {
     display: none;
+}
+
+.categories-menu-vertical-customers {
+    position: fixed !important;
+    margin: 0px !important;
+    transition-duration: 0s, 0s !important;
+}
+
+.box-categories-menu-vertical-customers {
+    height: 92px !important;
+    width: 550px !important;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid black;
+    border-left: none;
+    padding: 0px !important;
+    transition-duration: 0s, 0s !important;
+    margin: 0px !important;
 }
 
 .button-items-menu-customers {
@@ -140,6 +159,40 @@
 
 .button-items-menu-customers:focus {
     outline: 0;
+}
+
+.button-items-menu-categories-customers {
+    background-color: white;
+    border: none;
+    height: 90px;
+    width: 90px !important;
+    background-repeat: no-repeat !important;
+    background-size: 50%;
+    background-position: 100% auto;
+}
+
+.button-items-menu-categories-customers:hover {
+    background-color: rgb(248, 232, 163);
+}
+
+.button-items-menu-categories-customers:focus {
+    outline: 0;
+}
+
+.subcategories-menu-vertical-customers {
+    margin: 0px !important;
+    transition-duration: 0s, 0s !important;
+}
+
+.box-subcategories-menu-vertical-customers {
+    height: 195px !important;
+    width: 90px !important;
+    transition-duration: 0s, 0s !important;
+    background-color: white;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .img-items-menu-scroll-customers {
@@ -271,5 +324,10 @@
     background-color: white;
     z-index: 200;
     height: 70px;
-    border-top: 1px solid black;
+    border-top: 1px solid rgb(177, 177, 177);
+}
+
+.font-footer-customers {
+    color: black;
+    line-height: 9px;
 }
