@@ -576,32 +576,66 @@
         </div>
     </div>
     <!-- vista de ingreso de usuario -->
-    <div class="background-customer-login">
-        <div class="uk-flex uk-flex-center">
-            <div style="margin-top: 150px;">
-                <img class="image-logo-login-customers" src="./data/logo-denlinea.png" alt="">
-                <h5 class="uk-margin-remove">Nombre</h5>
-                <input type="text">
-                <h5 class="uk-margin-remove">Apellidos</h5>
-                <input type="text">
-                <h6 class="uk-margin-remove">¿Olvidaste tu contraseña?</h6>
-                <button>ENTRAR</button>
-                <h5 class="uk-margin-remove">o Registrarse</h5>
+    <div style="display: none;">
+        <div class="background-customer-login">
+            <i class="fas fa-caret-left color-blue cursor-pointer" style="font-size: 30px; margin-top: 30px; margin-left: 30px;"></i>
+            <div class="uk-flex uk-flex-center">
+                <div style=" margin-top: 30px;">
+                    <img class="image-logo-login-customers cursor-pointer" src="./data/logo-denlinea.png " alt=" ">
+                    <div style="z-index: 20 !important; position: absolute !important; margin-left: 40px;">
+                        <h5 class="uk-margin-remove font-size-12 uk-text-bold">Nombre</h5>
+                        <input class="input-data-user-customers" type="text ">
+                        <h5 class="uk-margin-remove font-size-12 uk-text-bold" style="padding-top: 5px;">Apellidos</h5>
+                        <input class="input-data-user-customers" type="text ">
+                        <h6 class="uk-margin-remove uk-text-right font-size-10 uk-text-bold cursor-pointer padding-vertical-10">¿Olvidaste tu contraseña?</h6>
+                        <div class="uk-text-center">
+                            <button class="button-get-in-user-customers">ENTRAR</button>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-bold cursor-pointer">o Registrarse</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div>
-            <div class="uk-position-bottom-left" style="z-index: 2;">
-                <img class="image-resource1-background-login-customers" src="./data/Recurso-1.png" alt="">
-            </div>
-            <div class="uk-position-bottom-right" style="z-index: 2;">
-                <img class="image-resource2-background-login-customers" src="./data/Recurso-2.png" alt="">
-            </div>
-            <div class="uk-position-bottom-right" style="z-index: 1;">
-                <img class="image-resource-background-white-customers" src="./data/Recurso-del-fondo.png" alt="">
+            <div>
+                <div class="uk-position-bottom-left " style="z-index: 2 !important; ">
+                    <img class="image-resource1-background-login-customers " src="./data/Recurso-1.png " alt=" ">
+                </div>
+                <div class="uk-position-bottom-right " style="z-index: 2 !important; ">
+                    <img class="image-resource2-background-login-customers " src="./data/Recurso-2.png " alt=" ">
+                </div>
+                <div class="uk-position-bottom-right" style="z-index: 1 !important; ">
+                    <img class="image-resource-background-white-customers " src="./data/Recurso-del-fondo.png " alt=" ">
+                </div>
             </div>
         </div>
     </div>
-
+    <!-- vista de registro -->
+    <div style="display: inline;">
+        <div class="background-customer-login">
+            <i class="fas fa-caret-left color-blue cursor-pointer" style="font-size: 30px; padding-top: 30px; padding-left: 30px;"></i>
+            <div class="uk-flex uk-flex-center">
+                <div>
+                    <img class="image-logo-registry-customers cursor-pointer" src="./data/logo-denlinea.png " alt=" ">
+                    <div style="z-index: 20 !important; position: absolute !important;">
+                        <h5 class="uk-margin-remove font-size-12 uk-text-bold">Nombre</h5>
+                        <input class="input-data-user-customers" type="text ">
+                        <h5 class="uk-margin-remove font-size-12 uk-text-bold">Nombre</h5>
+                        <input class="input-data-user-customers" type="text ">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-position-bottom-left " style="z-index: 2 !important; ">
+                    <img class="image-resource1-background-login-customers " src="./data/Recurso-1.png " alt=" ">
+                </div>
+                <div class="uk-position-bottom-right " style="z-index: 2 !important; ">
+                    <img class="image-resource2-background-login-customers " src="./data/Recurso-2.png " alt=" ">
+                </div>
+                <div class="uk-position-bottom-right" style="z-index: 1 !important; ">
+                    <img class="image-resource-background-white-customers " src="./data/Recurso-del-fondo.png " alt=" ">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

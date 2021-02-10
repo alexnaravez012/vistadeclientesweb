@@ -431,29 +431,55 @@
     
     .background-customer-login {
         background-image: url('./Fondo-pantalla-de-ingreso.jpg');
-        width: 1365px;
-        height: 625px;
-        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
     }
     
     .image-resource1-background-login-customers {
         height: 480px;
         width: 350px;
+        margin-left: 30px;
     }
     
     .image-resource2-background-login-customers {
-        height: 430px;
+        height: 420px;
         width: 410px;
-        z-index: 2;
+        margin-right: 10px;
     }
     
     .image-resource-background-white-customers {
         width: 1050px;
         height: 450px;
-        z-index: 1;
+        position: relative !important;
     }
     
     .image-logo-login-customers {
         height: 230px;
         width: 300px;
+    }
+    
+    .input-data-user-customers {
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+    
+    .button-get-in-user-customers {
+        border-radius: 10px;
+        height: 35px;
+        width: 150px;
+        background-color: #2E67B0;
+        border: none;
+        color: white;
+        font-weight: 800;
+        margin-bottom: 5px;
+    }
+    
+    .image-logo-registry-customers {
+        height: 180px;
+        width: 250px;
+        margin-right: 100px;
     }
