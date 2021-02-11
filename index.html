@@ -16,7 +16,7 @@
 
 <body id="body-height-customers">
     <!-- Vista de selección de productos base -->
-    <div style="display: none;">
+    <div style="display: inline;">
         <!--Navbar-->
         <div class="uk-flex uk-flex-middle uk-flex-around navbar-customers">
             <div class="cursor-pointer uk-flex uk-flex-middle padding-horizontal-20">
@@ -38,7 +38,7 @@
                 </a>
             </div>
             <!-- Cuando el usuario no ha iniciado sesion boton -->
-            <div style="display: none;">
+            <div style="display: inline;">
                 <button onclick="openLogin('login')" class="button-user-login-customers" type="button">
                 <img  class="logo-user-customers cursor-pointer" style="margin-right: 5px;" src="./data/user.png " alt=" ">
             </button>
@@ -161,153 +161,153 @@
                 </div>
             </div>
         </div>
-        <!--Vista de selección de productos-->
-        <div style="display: none;">
-            <div class="menu-vertical-customers">
-                <ul class="uk-list">
-                    <div class="uk-inline">
-                        <button class="button-items-menu-customers">
+        <!--menu de selección de productos por categorias-->
+        <div class="menu-vertical-customers">
+            <ul class="uk-list">
+                <div class="uk-inline">
+                    <button class="button-items-menu-customers">
                         <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-08.png);" uk-img></div>
                         <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Comida</h6>
                     </button>
-                        <div uk-drop="pos: right-center" class="categories-menu-vertical-customers">
-                            <div class="uk-card uk-card-body uk-card-default box-categories-menu-vertical-customers uk-flex uk-flex-middle">
-                                <div class="uk-inline">
-                                    <button class="button-items-menu-categories-customers uk-margin-remove">
+                    <div uk-drop="pos: right-center" class="categories-menu-vertical-customers">
+                        <div class="uk-card uk-card-body uk-card-default box-categories-menu-vertical-customers uk-flex uk-flex-middle">
+                            <div class="uk-inline">
+                                <button class="button-items-menu-categories-customers uk-margin-remove">
                                     <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-08.png);" uk-img></div>
                                     <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Hamburguesas</h6>
                                 </button>
-                                    <div uk-drop class="subcategories-menu-vertical-customers">
-                                        <div class="box-subcategories-menu-vertical-customers">
-                                            <button class="button-items-menu-categories-customers uk-margin-remove">
+                                <div uk-drop class="subcategories-menu-vertical-customers">
+                                    <div class="box-subcategories-menu-vertical-customers">
+                                        <button class="button-items-menu-categories-customers uk-margin-remove">
                                             <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-15.png);" uk-img></div>
                                             <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Vegetarianas</h6>
                                         </button>
-                                            <button class="button-items-menu-categories-customers uk-margin-remove">
+                                        <button class="button-items-menu-categories-customers uk-margin-remove">
                                             <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-15.png);" uk-img></div>
                                             <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Carnes</h6>
                                         </button>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="uk-inline">
-                                    <button class="button-items-menu-categories-customers uk-margin-remove">
+                            </div>
+                            <div class="uk-inline">
+                                <button class="button-items-menu-categories-customers uk-margin-remove">
                                     <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-15.png);" uk-img></div>
                                     <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Pizzas</h6>
                                 </button>
-                                    <div uk-drop class="subcategories-menu-vertical-customers">
-                                        <div class="box-subcategories-menu-vertical-customers">
-                                            <button class="button-items-menu-categories-customers uk-margin-remove">
+                                <div uk-drop class="subcategories-menu-vertical-customers">
+                                    <div class="box-subcategories-menu-vertical-customers">
+                                        <button class="button-items-menu-categories-customers uk-margin-remove">
                                             <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-15.png);" uk-img></div>
                                             <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Vegetarianas</h6>
                                         </button>
-                                            <button class="button-items-menu-categories-customers uk-margin-remove">
+                                        <button class="button-items-menu-categories-customers uk-margin-remove">
                                             <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-15.png);" uk-img></div>
                                             <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Carnes</h6>
                                         </button>
-                                        </div>
                                     </div>
                                 </div>
-                                <button class="button-items-menu-categories-customers uk-margin-remove">
+                            </div>
+                            <button class="button-items-menu-categories-customers uk-margin-remove">
                                 <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-16.png);" uk-img></div>
                                 <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Emparedados</h6>
                             </button>
-                                <button class="button-items-menu-categories-customers uk-margin-remove">
+                            <button class="button-items-menu-categories-customers uk-margin-remove">
                                 <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-17.png);" uk-img></div>
                                 <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Perros</h6>
                             </button>
-                                <button class="button-items-menu-categories-customers uk-margin-remove">
+                            <button class="button-items-menu-categories-customers uk-margin-remove">
                                 <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-18.png);" uk-img></div>
                                 <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Bebidas</h6>
                             </button>
-                                <button class="button-items-menu-categories-customers uk-margin-remove">
+                            <button class="button-items-menu-categories-customers uk-margin-remove">
                                 <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-19.png);" uk-img></div>
                                 <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Postres</h6>
                             </button>
-                            </div>
                         </div>
                     </div>
-                    <div class="uk-inline">
-                        <button class="button-items-menu-customers uk-margin-remove">
+                </div>
+                <div class="uk-inline">
+                    <button class="button-items-menu-customers uk-margin-remove">
                         <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-09.png);" uk-img></div>
                         <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Accesorios</h6>
                     </button>
-                        <div uk-drop="pos: right-center" class="categories-menu-vertical-customers">
-                            <div class="uk-card uk-card-body uk-card-default box-categories-menu-vertical-customers uk-flex uk-flex-middle">
-                                <div class="uk-inline">
-                                    <button class="button-items-menu-categories-customers uk-margin-remove">
+                    <div uk-drop="pos: right-center" class="categories-menu-vertical-customers">
+                        <div class="uk-card uk-card-body uk-card-default box-categories-menu-vertical-customers uk-flex uk-flex-middle">
+                            <div class="uk-inline">
+                                <button class="button-items-menu-categories-customers uk-margin-remove">
                                     <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-08.png);" uk-img></div>
                                     <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Hmaburguesas</h6>
                                 </button>
-                                    <div uk-drop class="subcategories-menu-vertical-customers">
-                                        <div class="box-subcategories-menu-vertical-customers">
-                                            <button class="button-items-menu-categories-customers uk-margin-remove">
+                                <div uk-drop class="subcategories-menu-vertical-customers">
+                                    <div class="box-subcategories-menu-vertical-customers">
+                                        <button class="button-items-menu-categories-customers uk-margin-remove">
                                             <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-15.png);" uk-img></div>
                                             <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Vegetarianas</h6>
                                         </button>
-                                            <button class="button-items-menu-categories-customers uk-margin-remove">
+                                        <button class="button-items-menu-categories-customers uk-margin-remove">
                                             <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-15.png);" uk-img></div>
                                             <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Carnes</h6>
                                         </button>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="uk-inline">
-                                    <button class="button-items-menu-categories-customers uk-margin-remove">
+                            </div>
+                            <div class="uk-inline">
+                                <button class="button-items-menu-categories-customers uk-margin-remove">
                                     <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-15.png);" uk-img></div>
                                     <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Pizzas</h6>
                                 </button>
-                                    <div uk-drop class="subcategories-menu-vertical-customers">
-                                        <div class="box-subcategories-menu-vertical-customers">
-                                            <button class="button-items-menu-categories-customers uk-margin-remove">
+                                <div uk-drop class="subcategories-menu-vertical-customers">
+                                    <div class="box-subcategories-menu-vertical-customers">
+                                        <button class="button-items-menu-categories-customers uk-margin-remove">
                                             <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-15.png);" uk-img></div>
                                             <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Vegetarianas</h6>
                                         </button>
-                                            <button class="button-items-menu-categories-customers uk-margin-remove">
+                                        <button class="button-items-menu-categories-customers uk-margin-remove">
                                             <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-15.png);" uk-img></div>
                                             <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Carnes</h6>
                                         </button>
-                                        </div>
                                     </div>
                                 </div>
-                                <button class="button-items-menu-categories-customers uk-margin-remove">
+                            </div>
+                            <button class="button-items-menu-categories-customers uk-margin-remove">
                                 <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-16.png);" uk-img></div>
                                 <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Emparedados</h6>
                             </button>
-                                <button class="button-items-menu-categories-customers uk-margin-remove">
+                            <button class="button-items-menu-categories-customers uk-margin-remove">
                                 <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-17.png);" uk-img></div>
                                 <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Perros</h6>
                             </button>
-                                <button class="button-items-menu-categories-customers uk-margin-remove">
+                            <button class="button-items-menu-categories-customers uk-margin-remove">
                                 <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-18.png);" uk-img></div>
                                 <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Bebidas</h6>
                             </button>
-                                <button class="button-items-menu-categories-customers uk-margin-remove">
+                            <button class="button-items-menu-categories-customers uk-margin-remove">
                                 <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-19.png);" uk-img></div>
                                 <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Postres</h6>
                             </button>
-                            </div>
                         </div>
                     </div>
-                    <button class="button-items-menu-customers uk-margin-remove">
+                </div>
+                <button class="button-items-menu-customers uk-margin-remove">
                     <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-10.png);" uk-img></div>
                     <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Aceites</h6>
                 </button>
-                    <button class="button-items-menu-customers uk-margin-remove">
+                <button class="button-items-menu-customers uk-margin-remove">
                     <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-11.png);" uk-img></div>
                     <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Bicicletas</h6>
                 </button>
-                    <button class="button-items-menu-customers uk-margin-remove">
+                <button class="button-items-menu-customers uk-margin-remove">
                     <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-12.png);" uk-img></div>
                     <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Motores</h6>
                 </button>
-                    <button class="button-items-menu-customers uk-margin-remove">
+                <button class="button-items-menu-customers uk-margin-remove">
                     <div class="img-items-menu-scroll-customers uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-14.png);" uk-img></div>
                     <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Accesorios de motocicletas</h6>
                 </button>
-                </ul>
-            </div>
-            <!-- Contenido de agregar producto -->
+            </ul>
+        </div>
+        <!-- Contenido de agregar producto -->
+        <div style="display: none;">
             <div class="main-container-add-products-customers">
                 <div class="uk-flex uk-flex-wrap uk-grid-small uk-grid-match" style="position: relative; margin-top: 10px;" uk-grid>
                     <div class="uk-card uk-card-default uk-card-body card-add-product-customers uk-flex" style="position: relative !important;;">
@@ -587,7 +587,7 @@
                         <input class="input-data-user-customers" type="text ">
                         <h5 class="uk-margin-remove font-size-12 uk-text-bold" style="padding-top: 5px;">Apellidos</h5>
                         <input class="input-data-user-customers" type="text ">
-                        <h6 class="uk-margin-remove uk-text-right font-size-10 uk-text-bold cursor-pointer padding-vertical-10">¿Olvidaste tu contraseña?</h6>
+                        <h6 class="uk-margin-remove uk-text-right font-size-10 uk-text-bold cursor-pointer">¿Olvidaste tu contraseña?</h6>
                         <div class="uk-text-center">
                             <button class="button-get-in-user-customers">ENTRAR</button>
                             <h5 class="uk-margin-remove font-size-12 uk-text-bold cursor-pointer">o Registrarse</h5>
@@ -609,17 +609,35 @@
         </div>
     </div>
     <!-- vista de registro -->
-    <div style="display: inline;">
+    <div style="display: none;">
         <div class="background-customer-login">
             <i class="fas fa-caret-left color-blue cursor-pointer" style="font-size: 30px; padding-top: 30px; padding-left: 30px;"></i>
             <div class="uk-flex uk-flex-center">
                 <div>
                     <img class="image-logo-registry-customers cursor-pointer" src="./data/logo-denlinea.png " alt=" ">
-                    <div style="z-index: 20 !important; position: absolute !important;">
-                        <h5 class="uk-margin-remove font-size-12 uk-text-bold">Nombre</h5>
-                        <input class="input-data-user-customers" type="text ">
-                        <h5 class="uk-margin-remove font-size-12 uk-text-bold">Nombre</h5>
-                        <input class="input-data-user-customers" type="text ">
+                    <div style="z-index: 20 !important; position: absolute !important; right: 450px !important;">
+                        <div class="uk-column-1-2" style="">
+                            <div>
+                                <h5 class="uk-margin-remove font-size-12 uk-text-bold">Nombre</h5>
+                                <input class="input-data-user-customers" type="text ">
+                                <h5 class="uk-margin-remove font-size-12 uk-text-bold">Apellidos</h5>
+                                <input class="input-data-user-customers" type="text ">
+                                <h5 class="uk-margin-remove font-size-12 uk-text-bold">Correo electrónico</h5>
+                                <input class="input-data-user-customers" type="text ">
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove font-size-12 uk-text-bold">Celular</h5>
+                                <input class="input-data-user-customers" type="text ">
+                                <h5 class="uk-margin-remove font-size-12 uk-text-bold">Contraseña</h5>
+                                <input class="input-data-user-customers" type="text ">
+                                <h5 class="uk-margin-remove font-size-12 uk-text-bold">Confirma contraseña</h5>
+                                <input class="input-data-user-customers" type="text ">
+                            </div>
+                        </div>
+                        <div class="uk-text-center">
+                            <button class="button-get-in-user-customers" style="margin-top: 20px;">Registrarse</button>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-bold cursor-pointer">o Iniciar Sesión</h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -633,6 +651,45 @@
                 <div class="uk-position-bottom-right" style="z-index: 1 !important; ">
                     <img class="image-resource-background-white-customers " src="./data/Recurso-del-fondo.png " alt=" ">
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vista de Registro>ingreso de dirección -->
+    <div style="display: none;">
+        <div class="background-customer-login">
+            <div class="uk-flex uk-flex-middle padding-horizontal-40">
+                <i class="fas fa-caret-left color-blue cursor-pointer" style="font-size: 30px;"></i>
+                <img class="logo-direction-customers padding-horizontal-40" src="./data/logo1.png" alt="">
+            </div>
+            <div class="uk-flex uk-flex-middle">
+                <div style="margin-top: 450px; margin-left: 300px; position: absolute !important; z-index: 200 !important;">
+                    <div style="margin-bottom: 20px;">
+                        <h4 class="uk-margin-remove uk-text-bold">Direccion</h4>
+                        <h5 class="uk-margin-remove ">Escribela y da click en “Localizar”</h5>
+                    </div>
+                    <h5 class="uk-margin-remove font-size-12 uk-text-bold">Pais</h5>
+                    <input class="input-data-user-customers" type="text ">
+                    <h5 class="uk-margin-remove font-size-12 uk-text-bold">Ciudad</h5>
+                    <input class="input-data-user-customers" type="text ">
+                    <h5 class="uk-margin-remove font-size-12 uk-text-bold">Calle</h5>
+                    <div style="margin-bottom: 10px;">
+                        <input class="input-data-user-customers" style="width: 40px;" type="text ">
+                        <input class="input-data-user-customers" style="width: 150px;" type="text ">
+                    </div>
+                    <div>
+                        <button class="button-direction-customers" style="background-color: black;">Localizar</button>
+                    </div>
+                    <div>
+                        <button class="button-direction-customers">Siguiente</button>
+                    </div>
+                </div>
+                <div style="background-color: white;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16289433.401729723!2d-83.39814111764282!3d4.609691158847656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e15a43aae1594a3%3A0x9a0d9a04eff2a340!2sColombia!5e0!3m2!1ses!2sco!4v1613061711211!5m2!1ses!2sco"
+                        class="map-direction-customers" width="400" height="300" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            <div class="uk-position-bottom-right" style="z-index: 1 !important;">
+                <img class="image-resource-background-white-customers " src="./data/Recurso-del-fondo.png " alt=" ">
             </div>
         </div>
     </div>

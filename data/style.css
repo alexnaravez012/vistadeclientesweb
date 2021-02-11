@@ -452,6 +452,7 @@
         width: 1050px;
         height: 450px;
         position: relative !important;
+        margin-right: 15px;
     }
     
     .image-logo-login-customers {
@@ -464,7 +465,8 @@
         height: 30px;
         border-radius: 5px;
         border: 1px solid black;
-        margin-top: 5px;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
     }
     
     .button-get-in-user-customers {
@@ -476,10 +478,36 @@
         color: white;
         font-weight: 800;
         margin-bottom: 5px;
+        margin-top: 10px;
     }
     
     .image-logo-registry-customers {
         height: 180px;
         width: 250px;
-        margin-right: 100px;
+        margin-bottom: 30px;
+    }
+    
+    .logo-direction-customers {
+        width: 420px;
+        height: 120px;
+    }
+    
+    .button-direction-customers {
+        border: none;
+        width: 150px;
+        height: 40px;
+        background-color: #2E67B0;
+        font-weight: 800;
+        color: white;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    
+    .map-direction-customers {
+        border: 0;
+        border-radius: 15px;
+        position: absolute !important;
+        z-index: 50 !important;
+        top: 170px;
+        left: 600px;
     }
