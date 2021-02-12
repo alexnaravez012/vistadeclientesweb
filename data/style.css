@@ -87,7 +87,7 @@
     .text-bag-shopping-customers {
         color: black;
         left: 15px;
-        top: -32px;
+        top: -25px;
         font-size: 13px;
     }
     
@@ -510,4 +510,65 @@
         z-index: 50 !important;
         top: 170px;
         left: 600px;
+    }
+    
+    .button-filter-customers {
+        border: none;
+        background-color: white;
+    }
+    
+    .button-filter-customers:focus {
+        outline: 0;
+    }
+    
+    .menu-filter-customers {
+        background-color: white;
+        margin-left: 928px;
+        height: 440px !important;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        width: 280px;
+        padding: 20px !important;
+    }
+    
+    .padding-vertical-20 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .button-circle-filter-customers {
+        border-radius: 50px;
+        border: 1px solid black;
+        height: 20px;
+        width: 20px;
+        background-color: white;
+    }
+    
+    .button-circle-filter-customers:focus {
+        outline: 0;
+    }
+    
+    .button-circle-filter-customers:active {
+        background-color: #3a6193;
+    }
+    
+    .color-grey {
+        color: rgb(168, 168, 168);
+    }
+    
+    .button-apply-customers {
+        color: white;
+        border-radius: 10px;
+        border: none;
+        background-color: #45B771;
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    
+    .button-apply-customers:focus {
+        outline: 0;
     }

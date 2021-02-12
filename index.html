@@ -19,19 +19,21 @@
     <div style="display: inline;">
         <!--Navbar-->
         <div class="uk-flex uk-flex-middle uk-flex-around navbar-customers">
-            <div class="cursor-pointer uk-flex uk-flex-middle padding-horizontal-20">
+            <div class="cursor-pointer uk-flex uk-flex-middle">
                 <img class="logo-store-customers" style="margin-right: 5px;" src="./data/logo2.png " alt=" ">
                 <i class="fas fa-caret-down"></i>
             </div>
-            <div>
+            <div class="uk-visible@m">
                 <h6 class="uk-text-muted uk-margin-remove">LaFerra/Mesas/Mesa1/Añadir Pedido</h6>
             </div>
-            <div class="uk-flex uk-flex-middle">
-                <input class="input-search-customers uk-text-center" type="text" placeholder="Busqueda por nombre o código">
-                <i class="fas fa-search color-blue"></i>
-            </div>
-            <div>
-                <img class="filter-customers" src="./data/filtro-inactivo.png " alt=" " uk-img>
+            <div class="uk-flex uk-flex-middle" style=" padding-right: 120px !important;">
+                <div class="uk-flex uk-flex-middle" style="margin-right: 40px;">
+                    <input class="input-search-customers uk-text-center" type="text" placeholder="Busqueda por nombre o código">
+                    <i class="fas fa-search"></i>
+                </div>
+                <button onclick="openDropMenus('filter')" class="button-filter-customers">
+                     <img class="filter-customers" src="./data/filtro-inactivo.png " alt=" " uk-img>
+                </button>
                 <a style="position: relative;" href=" ">
                     <img class="img-bag-shopping-customers" src="./data/Canasta-inactivo.png " alt=" " uk-img>
                     <h6 class="text-bag-shopping-customers uk-text-bold" style="position: absolute; ">0</h6>
@@ -39,13 +41,13 @@
             </div>
             <!-- Cuando el usuario no ha iniciado sesion boton -->
             <div style="display: inline;">
-                <button onclick="openLogin('login')" class="button-user-login-customers" type="button">
-                <img  class="logo-user-customers cursor-pointer" style="margin-right: 5px;" src="./data/user.png " alt=" ">
-            </button>
+                <button onclick="openDropMenus('login')" class="button-user-login-customers" type="button">
+                    <img  class="logo-user-customers cursor-pointer" style="margin-right: 5px;" src="./data/user.png " alt=" ">
+                </button>
             </div>
             <!-- Cuando el usuario ya inicio sesion boton -->
             <div style="display: none;">
-                <button onclick="openLogin('sesion-started')" class="button-data-user-customers uk-flex uk-flex-middle cursor-pointer">
+                <button onclick="openDropMenus('sesion-started')" class="button-data-user-customers uk-flex uk-flex-middle cursor-pointer">
                  <img class="logo-user-customers" style="margin-right: 5px;" src="./data/user.png " alt=" ">
                  <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Mireya Mopan</h4>
                  <i class="fas fa-caret-down "></i>
@@ -74,6 +76,7 @@
                 <h5 class="uk-margin-remove cursor-pointer" style="padding-top: 10px;">Cerrar Sesión</h5>
             </div>
         </div>
+        <!-- Desplegable de pedidos activos y finalizados -->
         <div id="menu-orders" class="background-black-customers">
             <div class="menu-orders-customers">
                 <div class="padding-horizontal-20 navbar-menu-orders-customers">
@@ -158,6 +161,64 @@
                             <h6 class="uk-margin-remove font-size-12 font-weight-500">Repetir Pedido</h6>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-filter" class="background-black-customers">
+            <div class="menu-filter-customers">
+                <h4 class="uk-margin-remove uk-text-bold">Filtrar por</h4>
+                <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px; padding-bottom: 10px;">Precio promedio</h5>
+                <div class="uk-flex uk-flex-middle uk-flex-center padding-horizontal-10">
+                    <div class="uk-text-center">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h6 class="uk-margin-remove font-size-10 uk-text-center" style="padding-top: 10px;">Menos de 10.000</h6>
+                    </div>
+                    <div>
+                        <div class="uk-flex uk-flex-stretch uk-flex-center">
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h6 class="uk-margin-remove font-size-10 uk-text-center" style="padding-top: 10px;">Entre 10.000 - 20.000</h6>
+                    </div>
+                    <div>
+                        <div class="uk-flex uk-flex-stretch uk-flex-center">
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h6 class="uk-margin-remove font-size-10 uk-text-center" style="padding-top: 10px;">Entre 20.000 - 30.000</h6>
+                    </div>
+                    <div>
+                        <div class="uk-flex uk-flex-stretch uk-flex-center">
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h6 class="uk-margin-remove font-size-10 uk-text-center" style="padding-top: 10px;">Más de 30.000</h6>
+                    </div>
+                </div>
+                <div style="margin-top: 30px;">
+                    <h5 class="uk-margin-remove uk-text-bold">Empaque Verde</h5>
+                    <div class="uk-flex uk-flex-middle" style="margin-top: 5px;">
+                        <h6 class="uk-margin-remove font-size-11" style="width: 150px;">Restaurante comprometido con cuidar el planeta</h6>
+                        <button class="button-circle-filter-customers"></button>
+                    </div>
+                </div>
+                <div style="margin-top: 30PX;">
+                    <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">Categorias</h5>
+                    <div class="uk-flex uk-flex-middle">
+                        <h6 class="uk-margin-remove uk-text-bold cursor-pointer font-size-11 color-grey">Desayunos</h6>
+                        <h6 class="uk-margin-remove uk-text-bold cursor-pointer font-size-11 color-grey padding-horizontal-20">Hamburguesas</h6>
+                    </div>
+                    <div class="uk-flex uk-flex-middle padding-vertical-10">
+                        <h6 class="uk-margin-remove uk-text-bold cursor-pointer font-size-11 color-blue">Helados</h6>
+                        <h6 class="uk-margin-remove uk-text-bold cursor-pointer font-size-11 color-grey padding-horizontal-40">Postres</h6>
+                        <h6 class="uk-margin-remove uk-text-bold cursor-pointer font-size-11 color-grey">Saludables</h6>
+                    </div>
+                </div>
+                <div class="uk-flex uk-flex-center">
+                    <button class="button-apply-customers">Aplicar</button>
                 </div>
             </div>
         </div>
@@ -307,7 +368,7 @@
             </ul>
         </div>
         <!-- Contenido de agregar producto -->
-        <div style="display: none;">
+        <div style="display: inline;">
             <div class="main-container-add-products-customers">
                 <div class="uk-flex uk-flex-wrap uk-grid-small uk-grid-match" style="position: relative; margin-top: 10px;" uk-grid>
                     <div class="uk-card uk-card-default uk-card-body card-add-product-customers uk-flex" style="position: relative !important;;">
