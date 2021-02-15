@@ -766,7 +766,7 @@
         width: 100%;
         position: fixed;
         z-index: 200 !important;
-        border-bottom: 8px solid #efe28086;
+        border-bottom: 8px solid #F4FFAF;
     }
     
     .bag-navbar-checkout-customers {
@@ -784,6 +784,7 @@
     .user-navbar-checkout-customers {
         height: 35px;
         width: 35px;
+        cursor: pointer;
     }
     
     .main-container-checkout-customers {
@@ -804,10 +805,187 @@
     }
     
     .button-discount-checkout-customers {
-        background-color: #efe280;
+        background-color: #F4FFAF;
         border-radius: 5px;
         border: none;
         width: 40px;
         height: 20px;
         top: -35px;
+    }
+    
+    .card-products-checkout-customers {
+        border: 2px solid #80808050;
+        width: 450px;
+        border-radius: 10px;
+        padding: 20px;
+        padding-bottom: 30px;
+        margin-top: 20px;
+    }
+    
+    .card-product-like-dislike-checkout-customers {
+        border: 2px solid #80808050;
+        border-radius: 10px;
+        padding: 10px;
+        width: 200px;
+        height: 45px;
+        position: relative;
+    }
+    
+    .image-like-dislike-checkout-customers {
+        height: 37px;
+        width: 37px;
+        left: 195px;
+        top: 40px;
+        cursor: pointer;
+        position: absolute !important;
+    }
+    
+    .button-payment-method-customers {
+        border-radius: 5px;
+        border: 2px solid #80808077;
+        ;
+        width: 130px;
+        height: 40px;
+        cursor: pointer;
+    }
+    
+    .button-change-payment-method-customers {
+        height: 35px;
+        border: 2px solid rgba(0, 0, 0, 0.377);
+        border-radius: 10px;
+        width: 80px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    
+    .input-how-much-cash-customers {
+        border: none;
+        border-bottom: 1px solid black;
+        width: 100px;
+        margin-left: 20px;
+    }
+    
+    .input-how-much-cash-customers:focus {
+        outline: 0;
+    }
+    
+    .image-money-checkout-customers {
+        width: 45px;
+        height: 30px;
+    }
+    
+    .box-schedule-order-checkout-customers {
+        border: 1.5px solid rgba(0, 0, 0, 0.459);
+        border-radius: 10px;
+        width: 220px;
+        height: 70px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    
+    .button-day-schedule-order-checkout-customers {
+        border: 1px solid rgba(0, 0, 0, 0.383);
+        border-radius: 5px;
+        width: 80px;
+        height: 25px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    
+    .day-trip-checkout-checkbox-customers {
+        border: 1px solid;
+        border-radius: 50px !important;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+        background-color: white;
+    }
+    
+    .day-trip-checkout-checkbox-customers:focus {
+        background-color: #000;
+        outline: 0;
+    }
+    
+    .input-deliver-in-checkout-customers {
+        width: 250px;
+        height: 30PX;
+        border-radius: 5PX;
+        border: 1PX solid rgba(0, 0, 0, 0.459);
+    }
+    
+    .button-deliver-in-checkout-direction-customers {
+        height: 30px;
+        border-radius: 5PX;
+        width: 90px;
+        border: 1PX solid rgba(0, 0, 0, 0.459);
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    
+    .padding-horizontal-7 {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    
+    .box-order-summary-checkout-customers {
+        border: 1px solid rgba(0, 0, 0, 0.459);
+        border-radius: 10px;
+        width: 320px;
+        height: 240px;
+        padding: 20px;
+        margin-top: 10px;
+    }
+    
+    .font-size-7 {
+        font-size: 7px;
+    }
+    
+    .button-add-coupon-checkout-customers {
+        background-color: #ADE1FF;
+        border: none;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 600;
+        width: 100%;
+        height: 25px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+    
+    .button-add-coupon-checkout-customers:focus {
+        outline: 0;
+    }
+    
+    .button-summary-extended-checkout-customers {
+        background-color: #ffffff;
+        border: 1px solid rgb(73, 73, 226);
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 600;
+        width: 100%;
+        height: 25px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+    
+    .button-summary-extended-checkout-customers:focus {
+        outline: 0;
+    }
+    
+    .button-complete-order-checkout-customers {
+        background-color: #F4FFAF;
+        border: none;
+        border-radius: 5px;
+        font-weight: 800;
+        font-size: 17px;
+        width: 230px;
+        height: 50px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    
+    .button-complete-order-checkout-customers:focus {
+        outline: 0;
     }
