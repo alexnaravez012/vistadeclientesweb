@@ -1294,6 +1294,7 @@
             </div>
         </div>
     </div>
+    <!-- Checkout -->
     <div style="display: inline;">
         <!-- navbar checkout -->
         <div class="uk-flex uk-flex-middle uk-flex-between navbar-checkout-customers">
@@ -1313,7 +1314,8 @@
                 </div>
             </div>
         </div>
-        <div class="main-container-checkout-customers uk-flex">
+        <!-- Contendio Checkout -->
+        <div class="main-container-checkout-customers uk-flex uk-flex-wrap">
             <div style="margin-left: 80px;">
                 <div class="card-products-checkout-customers">
                     <h4 class="uk-margin-remove uk-text-bold">Productos</h4>
@@ -1363,124 +1365,210 @@
                             <h6 class="uk-margin-remove uk-text-bold">Efectivo</h6>
                             <img class="image-money-checkout-customers" src="./data/dinero-recurso.png" alt="">
                         </div>
-                        <div class="button-change-payment-method-customers uk-flex uk-flex-center uk-flex-middle">
+                        <div class="button-change-payment-method-customers uk-flex uk-flex-center uk-flex-middle" uk-toggle="target: #change-payment-method">
                             <h6 class="uk-margin-remove uk-text-bold color-green">Cambiar</h6>
                         </div>
+                        <!-- Sub menú de métodos de pago -->
+                        <div id="change-payment-method" uk-modal>
+                            <div class="uk-modal-dialog modal-change-payment-method-checkout-customers">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h4 class="uk-margin-remove uk-text-bold color-green" style="padding-left: 40px; padding-bottom: 20px;">Cambiar método de pago</h4>
+                                <div class="uk-flex uk-flex-middle" style="padding-left: 35px; height: 70px;">
+                                    <h5 class="uk-margin-remove uk-text-bold width-100">Efectivo</h5>
+                                    <img class="image-money-change-payment-customers" src="./data/dinero-recurso.png" alt="">
+                                    <div style="margin-left: 50px;">
+                                        <div class="radio-item">
+                                            <input type="radio" id="ritema" name="ritem" value="ropt1">
+                                            <label for="ritema"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hr-tab"></div>
+                                <div class="box-shadow-bottom-items-change-payment-customers uk-flex uk-flex-middle">
+                                    <div class="uk-flex uk-flex-middle" style="padding-left: 35px;">
+                                        <h5 class="uk-margin-remove uk-text-bold width-100">PSE</h5>
+                                        <img class="image-money-change-payment-customers" src="./data/PSE.png" alt="" style="height: 55px !important;">
+                                        <div style="margin-left: 50px;">
+                                            <div class="radio-item">
+                                                <input type="radio" id="ritemb" name="ritem" value="ropt2">
+                                                <label for="ritemb"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-shadow-bottom-items-change-payment-customers uk-flex uk-flex-middle">
+                                    <div class="uk-flex uk-flex-middle" style="padding-left: 40px;">
+                                        <h5 class="uk-margin-remove uk-text-bold width-100">Tarjeta</h5>
+                                        <img class="image-money-change-payment-customers" style="height: 50px;" src="./data/tarjetas-recursoo.png" alt="">
+                                        <i class="fas fa-caret-down cursor-pointer" style="font-size: 18px; margin-left: 50px;"></i>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 30px;">
+                                    <div class="uk-flex uk-flex-middle uk-flex-around" style="padding-right: 20px;">
+                                        <div class="uk-flex uk-flex-middle width-200">
+                                            <img class="image-money-change-payment-customers" style="height: 55px; margin-right: 10px;" src="./data/american-express.png" alt="">
+                                            <h6 class="uk-margin-remove uk-text-bold">Amex</h6>
+                                            <div style="margin-left: 57px;">
+                                                <div class="radio-item">
+                                                    <input type="radio" id="ritemc" name="ritem" value="ropt3">
+                                                    <label for="ritemc"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-flex uk-flex-middle width-200">
+                                            <img class="image-money-change-payment-customers" src="./data/visa.png" style="margin-right: 10px;" alt=" ">
+                                            <h6 class="uk-margin-remove uk-text-bold ">Visa</h6>
+                                            <div style="margin-left: 77px;">
+                                                <div class="radio-item">
+                                                    <input type="radio" id="ritemd" name="ritem" value="ropt4">
+                                                    <label for="ritemd"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle uk-flex-around" style="padding-right: 20px;">
+                                        <div class="uk-flex uk-flex-middle width-200 ">
+                                            <img class="image-money-change-payment-customers" style="height: 52px; margin-right: 10px; " src="./data/master-card.png " alt=" ">
+                                            <h6 class="uk-margin-remove uk-text-bold ">Mastercard</h6>
+                                            <div style="margin-left: 22px;">
+                                                <div class="radio-item">
+                                                    <input type="radio" id="riteme" name="ritem" value="ropt5">
+                                                    <label for="riteme"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-flex uk-flex-middle width-200 ">
+                                            <img class="image-money-change-payment-customers" style="height: 45px; margin-right: 10px; " src="./data/Dinners-club.png " alt=" ">
+                                            <h6 class="uk-margin-remove uk-text-bold ">Dinners Club</h6>
+                                            <div style="margin-left: 20px;">
+                                                <div class="radio-item">
+                                                    <input type="radio" id="ritemf" name="ritem" value="ropt6">
+                                                    <label for="ritemf"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-flex uk-flex-center" style="margin-top: 30px;">
+                                    <button class="button-next-change-payment-customers">Continuar</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="uk-flex uk-flex-middle">
-                        <h6 class="uk-margin-remove">¿Con cuanto efectivo?</h6>
-                        <input type="text" placeholder="0$" class="uk-text-right uk-text-bold input-how-much-cash-customers">
+                    <div class="uk-flex uk-flex-middle ">
+                        <h6 class="uk-margin-remove ">¿Con cuanto efectivo?</h6>
+                        <input type="text " placeholder="0$ " class="uk-text-right uk-text-bold input-how-much-cash-customers ">
                     </div>
                 </div>
             </div>
-            <div style="padding: 20px;">
+            <div style="padding: 20px; ">
                 <div>
-                    <h5 class="uk-margin-remove uk-text-bold">Programa tu pedido</h5>
-                    <div class="uk-flex uk-flex uk-flex-around box-schedule-order-checkout-customers">
+                    <h5 class="uk-margin-remove uk-text-bold ">Programa tu pedido</h5>
+                    <div class="uk-flex uk-flex uk-flex-around box-schedule-order-checkout-customers ">
                         <div>
-                            <h6 class="uk-margin-remove uk-text-bold">Día</h6>
-                            <div class="uk-flex uk-flex-middle uk-flex-around uk-box-shadow-medium button-day-schedule-order-checkout-customers">
-                                <H6 class="uk-margin-remove">18</H6>
-                                <i class="fas fa-caret-down" style="font-size: 18px;"></i>
+                            <h6 class="uk-margin-remove uk-text-bold ">Día</h6>
+                            <div class="uk-flex uk-flex-middle uk-flex-around uk-box-shadow-medium button-day-schedule-order-checkout-customers ">
+                                <H6 class="uk-margin-remove ">18</H6>
+                                <i class="fas fa-caret-down " style="font-size: 18px; "></i>
                             </div>
                         </div>
                         <div>
-                            <h6 class="uk-margin-remove uk-text-bold">Mes</h6>
-                            <div class="uk-flex uk-flex-middle uk-flex-around uk-box-shadow-medium button-day-schedule-order-checkout-customers">
-                                <H6 class="uk-margin-remove">Mayo</H6>
-                                <i class="fas fa-caret-down" style="font-size: 18px;"></i>
+                            <h6 class="uk-margin-remove uk-text-bold ">Mes</h6>
+                            <div class="uk-flex uk-flex-middle uk-flex-around uk-box-shadow-medium button-day-schedule-order-checkout-customers ">
+                                <H6 class="uk-margin-remove ">Mayo</H6>
+                                <i class="fas fa-caret-down " style="font-size: 18px; "></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="uk-flex uk-flex-center" style="margin-top:30px;">
-                    <div class="uk-flex">
-                        <div style="margin-right: 15px;">
-                            <h6 class="uk-margin-remove">Jornada</h6>
+                <div class="uk-flex uk-flex-center " style="margin-top:30px; ">
+                    <div class="uk-flex ">
+                        <div style="margin-right: 15px; ">
+                            <h6 class="uk-margin-remove ">Jornada</h6>
                         </div>
                         <div>
-                            <div class="uk-flex uk-flex-middle">
-                                <h6 class="uk-margin-remove">1 pm a 4 pm</h6>
-                                <button class="day-trip-checkout-checkbox-customers"></button>
+                            <div class="uk-flex uk-flex-middle ">
+                                <h6 class="uk-margin-remove ">1 pm a 4 pm</h6>
+                                <button class="day-trip-checkout-checkbox-customers "></button>
                             </div>
-                            <div class="uk-flex uk-flex-middle" style="margin-top: 10px;">
-                                <h6 class="uk-margin-remove">4 pm a 8 pm</h6>
-                                <button class="day-trip-checkout-checkbox-customers"></button>
+                            <div class="uk-flex uk-flex-middle " style="margin-top: 10px; ">
+                                <h6 class="uk-margin-remove ">4 pm a 8 pm</h6>
+                                <button class="day-trip-checkout-checkbox-customers "></button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div style="margin-top: 30px;">
-                    <h5 class="uk-margin-remove uk-text-bold">Entregarlo en:</h5>
-                    <div style="margin-top: 10px;">
-                        <div class="uk-flex uk-flex-middle">
-                            <div class="uk-flex uk-flex-middle uk-flex-around button-deliver-in-checkout-direction-customers">
-                                <h6 class="uk-margin-remove uk-text-bold">Calle</h6>
-                                <i class="fas fa-caret-down" style="font-size: 18px;"></i>
+                <div style="margin-top: 30px; ">
+                    <h5 class="uk-margin-remove uk-text-bold ">Entregarlo en:</h5>
+                    <div style="margin-top: 10px; ">
+                        <div class="uk-flex uk-flex-middle ">
+                            <div class="uk-flex uk-flex-middle uk-flex-around button-deliver-in-checkout-direction-customers ">
+                                <h6 class="uk-margin-remove uk-text-bold ">Calle</h6>
+                                <i class="fas fa-caret-down " style="font-size: 18px; "></i>
                             </div>
-                            <input type="text" style="width: 130px !important;" class="input-deliver-in-checkout-customers">
+                            <input type="text " style="width: 130px !important; " class="input-deliver-in-checkout-customers ">
                         </div>
-                        <div class="uk-flex uk-flex-middle" style="margin-top: 10px;">
-                            <h4 class="uk-margin-remove uk-text-bold" style="padding-right: 8px; padding-left: 5px;">#</h4>
-                            <input type="text" style="width: 60px !important;" class="input-deliver-in-checkout-customers">
-                            <h4 class="uk-margin-remove uk-text-bold padding-horizontal-7">-</h4>
-                            <input type="text" style="width: 70px !important;" class="input-deliver-in-checkout-customers">
-                            <h6 class="uk-margin-remove uk-text-bold uk-flex uk-flex-center uk-flex-middle button-deliver-in-checkout-direction-customers" style="width: 80px; margin-left: 10px !important;">Mapa</h6>
+                        <div class="uk-flex uk-flex-middle " style="margin-top: 10px; ">
+                            <h4 class="uk-margin-remove uk-text-bold " style="padding-right: 8px; padding-left: 5px; ">#</h4>
+                            <input type="text " style="width: 60px !important; " class="input-deliver-in-checkout-customers ">
+                            <h4 class="uk-margin-remove uk-text-bold padding-horizontal-7 ">-</h4>
+                            <input type="text " style="width: 70px !important; " class="input-deliver-in-checkout-customers ">
+                            <h6 class="uk-margin-remove uk-text-bold uk-flex uk-flex-center uk-flex-middle button-deliver-in-checkout-direction-customers " style="width: 80px; margin-left: 10px !important; ">Mapa</h6>
                         </div>
-                        <div style="margin-top: 10px;">
-                            <input type="text" style="padding-left: 10px;" class="input-deliver-in-checkout-customers font-size-11" placeholder="Datos Adicionales Ej: Torre 2 apto 303">
+                        <div style="margin-top: 10px; ">
+                            <input type="text " style="padding-left: 10px; " class="input-deliver-in-checkout-customers font-size-11 " placeholder="Datos Adicionales Ej: Torre 2 apto 303 ">
                         </div>
                     </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-top: 10px;">
-                        <h6 class="uk-margin-remove">Entrega estimada</h6>
-                        <h6 class="uk-margin-remove uk-text-bold">33 - 48 mins</h6>
+                    <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 10px; ">
+                        <h6 class="uk-margin-remove ">Entrega estimada</h6>
+                        <h6 class="uk-margin-remove uk-text-bold ">33 - 48 mins</h6>
                     </div>
                 </div>
             </div>
-            <div style="padding: 20px; margin-left: 20px;">
-                <h5 class="uk-margin-remove uk-text-bold">Resumen de tu pedido</h5>
-                <div class="box-order-summary-checkout-customers">
+            <div style="padding: 20px; margin-left: 20px; ">
+                <h5 class="uk-margin-remove uk-text-bold ">Resumen de tu pedido</h5>
+                <div class="box-order-summary-checkout-customers ">
                     <div>
-                        <div class="uk-flex uk-flex-middle uk-flex-between">
-                            <div class="uk-flex uk-flex-middle">
-                                <i class="fas fa-circle font-size-7" style="margin-right: 10px;"></i>
-                                <h6 class="uk-margin-remove uk-text-bold">Numero de productos</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-between ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
+                                <h6 class="uk-margin-remove uk-text-bold ">Numero de productos</h6>
                             </div>
-                            <h6 class="uk-margin-remove font-size-11" style="padding-right: 10px;"></h6>
+                            <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; "></h6>
                         </div>
-                        <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-top: 5px;">
-                            <div class="uk-flex uk-flex-middle">
-                                <i class="fas fa-circle font-size-7" style="margin-right: 10px;"></i>
-                                <h6 class="uk-margin-remove uk-text-bold">Sub-Total</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 5px; ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
+                                <h6 class="uk-margin-remove uk-text-bold ">Sub-Total</h6>
                             </div>
-                            <h6 class="uk-margin-remove font-size-11" style="padding-right: 10px;">$230.000</h6>
+                            <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">$230.000</h6>
                         </div>
-                        <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-top: 5px;">
-                            <div class="uk-flex uk-flex-middle">
-                                <i class="fas fa-circle font-size-7" style="margin-right: 10px;"></i>
-                                <h6 class="uk-margin-remove uk-text-bold">Domicilio</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 5px; ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
+                                <h6 class="uk-margin-remove uk-text-bold ">Domicilio</h6>
                             </div>
-                            <h6 class="uk-margin-remove font-size-11" style="padding-right: 10px;">$9.900</h6>
+                            <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">$9.900</h6>
                         </div>
-                    </div>
-                    <div>
-                        <button class="button-add-coupon-checkout-customers">¡Click aquí para ingresar tu cupón!</button>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-around">
-                        <h6 class="uk-margin-remove uk-text-bold">Descuento</h6>
-                        <h6 class="uk-margin-remove">$0.00</h6>
-                    </div>
-                    <div class="hr-tab" style="margin-top: 15px; margin-bottom: 15px;"></div>
-                    <div class="uk-flex uk-flex-middle uk-flex-between">
-                        <h4 class="uk-margin-remove uk-text-bold">Total</h4>
-                        <h4 class="uk-margin-remove uk-text-bold" style="padding-right: 10px;">$45.500</h4>
                     </div>
                     <div>
-                        <button class="button-summary-extended-checkout-customers">Ver Resumen extendido</button>
+                        <button class="button-add-coupon-checkout-customers ">¡Click aquí para ingresar tu cupón!</button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-around ">
+                        <h6 class="uk-margin-remove uk-text-bold ">Descuento</h6>
+                        <h6 class="uk-margin-remove ">$0.00</h6>
+                    </div>
+                    <div class="hr-tab " style="margin-top: 15px; margin-bottom: 15px; "></div>
+                    <div class="uk-flex uk-flex-middle uk-flex-between ">
+                        <h4 class="uk-margin-remove uk-text-bold ">Total</h4>
+                        <h4 class="uk-margin-remove uk-text-bold " style="padding-right: 10px; ">$45.500</h4>
+                    </div>
+                    <div>
+                        <button class="button-summary-extended-checkout-customers ">Ver Resumen extendido</button>
                     </div>
                 </div>
-                <div class="uk-flex uk-flex-center">
-                    <button class="button-complete-order-checkout-customers">Completar pedido</button>
+                <div class="uk-flex uk-flex-center ">
+                    <button class="button-complete-order-checkout-customers ">Completar pedido</button>
                 </div>
             </div>
         </div>

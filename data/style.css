@@ -899,6 +899,7 @@
         height: 15px;
         cursor: pointer;
         background-color: white;
+        margin-left: 5px;
     }
     
     .day-trip-checkout-checkbox-customers:focus {
@@ -988,4 +989,80 @@
     
     .button-complete-order-checkout-customers:focus {
         outline: 0;
+    }
+    
+    .modal-change-payment-method-checkout-customers {
+        width: 600px !important;
+        height: 500px !important;
+        border-radius: 15px !important;
+        padding: 0px;
+        margin: 0px;
+        padding-top: 20px;
+    }
+    
+    .image-money-change-payment-customers {
+        height: 40px;
+        width: 55px;
+    }
+    
+    .box-shadow-bottom-items-change-payment-customers {
+        box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.10);
+        height: 70px;
+    }
+    
+    .width-100 {
+        width: 100px;
+    }
+    
+    .width-200 {
+        width: 200px;
+    }
+    
+    .button-next-change-payment-customers {
+        border: none;
+        background-color: #F4FFAF;
+        font-size: 13px;
+        font-weight: 600;
+        height: 30px;
+        width: 130px;
+        cursor: pointer;
+    }
+    
+    .button-next-change-payment-customers:focus {
+        outline: 0;
+    }
+    
+    .radio-item {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .radio-item input[type='radio'] {
+        display: none;
+    }
+    
+    .radio-item label:before {
+        content: "";
+        display: block;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: rgb(236, 235, 235);
+    }
+    
+    .radio-item input[type=radio]:checked+label:after {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: calc(50% - 5px)!important;
+        left: calc(50% - 5px)!important;
+        content: "";
+        background: black;
+    }
+    
+    .radio-item input[type=radio]:checked+label:before {
+        background: #F4FFAF;
     }
