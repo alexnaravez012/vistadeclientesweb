@@ -60,7 +60,14 @@
         font-weight: 500;
     }
     
-    .navbar-customers {}
+    .navbar-customers {
+        background-color: white;
+        height: 80px !important;
+        width: 100%;
+        position: fixed;
+        z-index: 200 !important;
+        box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.10);
+    }
     
     .logo-store-customers {
         height: 70px;
@@ -996,7 +1003,6 @@
         height: 500px !important;
         border-radius: 15px !important;
         padding: 0px;
-        margin: 0px;
         padding-top: 20px;
     }
     
@@ -1020,7 +1026,7 @@
     
     .button-next-change-payment-customers {
         border: none;
-        background-color: #F4FFAF;
+        background-color: #FFF284;
         font-size: 13px;
         font-weight: 600;
         height: 30px;
@@ -1050,6 +1056,7 @@
         border-radius: 50%;
         border: 1px solid rgb(0, 0, 0);
         background-color: rgb(236, 235, 235);
+        cursor: pointer;
     }
     
     .radio-item input[type=radio]:checked+label:after {
@@ -1064,5 +1071,61 @@
     }
     
     .radio-item input[type=radio]:checked+label:before {
-        background: #F4FFAF;
+        background: #FFF284;
+    }
+    
+    .modal-selected-payment-method-checkout-customers {
+        width: 470px !important;
+        height: 520px !important;
+        border-radius: 50px !important;
+    }
+    
+    .input-inscription-card-checkout-customers {
+        height: 30px;
+        width: 215px;
+        border: none;
+        background-color: #F3F3F3;
+        border-radius: 5px;
+    }
+    
+    .input-inscription-card-checkout-customers:focus {
+        outline: 0;
+    }
+    
+    .button-document-type-inscription-card-customers {
+        height: 30px;
+        width: 70px;
+        border: none;
+        background-color: #F3F3F3;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 17px;
+        margin-right: 17px;
+    }
+    
+    .padding-horizontal-60 {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
+    .padding-vertical-15 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .padding-vertical-30 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .button-cancel-save-inscription-card-customers {
+        width: 150px;
+        height: 30px;
+        border: none;
+        background-color: #FFF284;
+        cursor: pointer;
+    }
+    
+    .button-cancel-save-inscription-card-customers:focus {
+        outline: 0;
     }

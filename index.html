@@ -1408,7 +1408,7 @@
                                         <div class="uk-flex uk-flex-middle width-200">
                                             <img class="image-money-change-payment-customers" style="height: 55px; margin-right: 10px;" src="./data/american-express.png" alt="">
                                             <h6 class="uk-margin-remove uk-text-bold">Amex</h6>
-                                            <div style="margin-left: 57px;">
+                                            <div style="margin-left: 58px;">
                                                 <div class="radio-item">
                                                     <input type="radio" id="ritemc" name="ritem" value="ropt3">
                                                     <label for="ritemc"></label>
@@ -1450,7 +1450,115 @@
                                     </div>
                                 </div>
                                 <div class="uk-flex uk-flex-center" style="margin-top: 30px;">
-                                    <button class="button-next-change-payment-customers">Continuar</button>
+                                    <button class="button-next-change-payment-customers" uk-toggle="target: #selected-payment-method-1">Continuar</button>
+                                    <!-- Sub menú de métodos de pago > Inscripción de tarjeta de crédito -->
+                                    <!-- <div>
+                                        <div id="selected-payment-method-1" uk-modal>
+                                            <div class="uk-modal-dialog modal-selected-payment-method-checkout-customers">
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <i class="fas fa-caret-left cursor-pointer" style="font-size: 20px; margin-top: 20px; margin-left: 30px;" uk-toggle="target: #change-payment-method"></i>
+                                                    <button class="uk-modal-close-default" type="button" style="margin-top: 5px; margin-right: 20px;" uk-close></button>
+                                                </div>
+                                                <div class="uk-flex uk-flex-center">
+                                                    <h4 class="uk-margin-remove uk-text-center width-200 uk-text-bold">Inscripción de tarjeta Master Card</h4>
+                                                </div>
+                                                <div class="padding-horizontal-40" style="margin-top: 15px;">
+                                                    <h5 class="uk-margin-remove uk-text-muted">INFORMACIÓN DE FACTURACIÓN</h5>
+                                                    <h6 class="uk-margin-remove uk-text-muted">No se te hará ningún cargo hasta que realices una compra</h6>
+                                                </div>
+                                                <div class="padding-horizontal-60" style="margin-top: 30px;">
+                                                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                                                        <h6 class="uk-margin-remove">Nombre</h6>
+                                                        <input class="input-inscription-card-checkout-customers uk-text-center" type="text" placeholder="Nombre en la tarjeta">
+                                                    </div>
+                                                    <div class="uk-flex uk-flex-middle uk-flex-between padding-vertical-15">
+                                                        <h6 class="uk-margin-remove">Número de Tarjeta</h6>
+                                                        <input class="input-inscription-card-checkout-customers uk-text-center" type="text" placeholder="-">
+                                                    </div>
+                                                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                                                        <h6 class="uk-margin-remove">Caduca el:</h6>
+                                                        <input class="input-inscription-card-checkout-customers uk-text-center" type="text" placeholder="MM/AAAA">
+                                                    </div>
+                                                    <div class="uk-flex uk-flex-middle padding-vertical-15">
+                                                        <h6 class="uk-margin-remove">Tipo</h6>
+                                                        <div class="uk-flex uk-flex-middle uk-flex-around button-document-type-inscription-card-customers">
+                                                            <h6 class="uk-margin-remove">CC</h6>
+                                                            <i class="fas fa-caret-down" style="font-size: 17px;"></i>
+                                                        </div>
+                                                        <input class="input-inscription-card-checkout-customers uk-text-center" type="text" placeholder="Número de documento">
+                                                    </div>
+                                                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                                                        <h6 class="uk-margin-remove">CVV</h6>
+                                                        <input class="input-inscription-card-checkout-customers uk-text-center" type="text" placeholder="ccv">
+                                                    </div>
+                                                    <div class="uk-flex uk-flex-center padding-vertical-30">
+                                                        <div>
+                                                            <button class="uk-modal-close button-cancel-save-inscription-card-customers uk-text-bold" style="margin-right: 10px !important; background-color: #D2D2D2;">Cancelar</button>
+                                                            <button class="button-cancel-save-inscription-card-customers uk-text-bold">Guardar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <!-- Sub menú de métodos de pago > Pago por PSE  -->
+                                    <div>
+                                        <div id="selected-payment-method-1" uk-modal>
+                                            <div class="uk-modal-dialog modal-selected-payment-method-checkout-customers">
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <i class="fas fa-caret-left cursor-pointer" style="font-size: 20px; margin-top: 20px; margin-left: 30px;" uk-toggle="target: #change-payment-method"></i>
+                                                    <button class="uk-modal-close-default" type="button" style="margin-top: 5px; margin-right: 20px;" uk-close></button>
+                                                </div>
+                                                <div class="uk-flex uk-flex-center">
+                                                    <div>
+                                                        <h4 class="uk-margin-remove uk-text-center width-200 uk-text-bold">Datos del PSE</h4>
+                                                        <h5 class="uk-margin-remove uk-text-center uk-text-muted">(Pagos seguros en línea)</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h5 class="uk-margin-remove uk-text-bold">Persona:</h5>
+                                                    <div class="uk-flex uk-flex-middle">
+                                                        <h5 class="uk-margin-remove">Natural</h5>
+                                                        <div class="radio-item">
+                                                            <input type="radio" id="ritemg" name="ritem" value="ropt7">
+                                                            <label for="ritemg"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-flex uk-flex-middle">
+                                                        <h5 class="uk-margin-remove">Juridica</h5>
+                                                        <div class="radio-item">
+                                                            <input type="radio" id="ritemh" name="ritem" value="ropt8">
+                                                            <label for="ritemh"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove">Banco</h6>
+                                                    <i class="fas fa-caret-down cursor-pointer" style="font-size: 17px;"></i>
+                                                </div>
+                                                <input type="text">
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <div class="uk-flex uk-flex-middle">
+                                                        <h6 class="uk-margin-remove">CC</h6>
+                                                        <i class="fas fa-caret-down cursor-pointer" style="font-size: 17px;"></i>
+                                                    </div>
+                                                    <input type="text">
+                                                </div>
+                                                <input type="text">
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <img src="" alt="">
+                                                    <i class="fas fa-caret-down cursor-pointer" style="font-size: 17px;"></i>
+                                                    <h6 class="uk-margin-remove">Telefono Celular</h6>
+                                                </div>
+                                                <div class="uk-flex uk-flex-center padding-vertical-30">
+                                                    <div>
+                                                        <button class="uk-modal-close button-cancel-save-inscription-card-customers uk-text-bold" style="margin-right: 10px !important; background-color: #D2D2D2;">Cancelar</button>
+                                                        <button class="button-cancel-save-inscription-card-customers uk-text-bold">Guardar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
