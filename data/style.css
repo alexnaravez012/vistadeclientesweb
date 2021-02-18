@@ -1124,8 +1124,102 @@
         border: none;
         background-color: #FFF284;
         cursor: pointer;
+        font-size: 15px;
     }
     
     .button-cancel-save-inscription-card-customers:focus {
         outline: 0;
+    }
+    
+    .input-inscription-pse-checkout-customers {
+        height: 32px;
+        width: 310px;
+        border: none;
+        background-color: #F3F3F3;
+        border-radius: 5px;
+    }
+    
+    .input-inscription-pse-checkout-customers:focus {
+        outline: 0;
+    }
+    
+    .button-dates-inscription-pse-customers {
+        height: 32px;
+        width: 350px;
+        border: none;
+        background-color: #F3F3F3;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .image-icon-flag-country-pse-customers {
+        width: 21px;
+        height: 17px;
+    }
+    
+    .modal-extended-order-checkout-customers {
+        width: 545px !important;
+        height: 525px !important;
+        border-radius: 15px !important;
+        padding: 0px;
+        padding-top: 20px;
+    }
+    
+    .image-logo-store-extended-order-customers {
+        width: 100px;
+        height: 90px;
+        margin-left: 80px;
+    }
+    
+    .width-150 {
+        width: 150px;
+    }
+    
+    .font-size-18 {
+        font-size: 18px;
+    }
+    
+    .input-enter-coupon-checkout-customers {
+        width: 200px;
+        height: 33px;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 17px;
+        padding-left: 10px;
+    }
+    
+    .input-enter-coupon-checkout-customers::-webkit-input-placeholder {
+        color: rgb(158, 158, 158);
+    }
+    
+    .input-enter-coupon-checkout-customers:focus {
+        outline: 0;
+    }
+    
+    .button-enter-coupon-checkout-customers {
+        width: 90px;
+        height: 37px;
+        border: 1px solid black;
+        border-radius: 8px;
+        background-color: white;
+        font-size: 14px;
+        color: #3DAE49;
+        font-weight: 500 !important;
+        cursor: pointer;
+        margin-left: 25px;
+    }
+    
+    .button-enter-coupon-checkout-customers:focus {
+        outline: 0;
+    }
+    
+    .margin-vertical-20 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .image-coupon-customers {
+        width: 27px;
+        height: 27px;
     }
