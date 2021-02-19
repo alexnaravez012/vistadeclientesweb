@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./data/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./fontawesome-web/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/css/uikit.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit.min.js"></script>
@@ -1295,7 +1296,7 @@
         </div>
     </div>
     <!-- Checkout -->
-    <div style="display: inline;">
+    <div style="display: none;">
         <!-- navbar checkout -->
         <div class="uk-flex uk-flex-middle uk-flex-between navbar-checkout-customers">
             <div style="margin-left: 30px;">
@@ -1667,6 +1668,7 @@
                     </div>
                     <div>
                         <button class="button-add-coupon-checkout-customers" uk-toggle="target: #enter-coupon">¡Click aquí para ingresar tu cupón!</button>
+                        <!-- Sub menú de ingreso y administración de cupones -->
                         <div>
                             <div id="enter-coupon" uk-modal>
                                 <div class="uk-modal-dialog modal-extended-order-checkout-customers">
@@ -1682,11 +1684,11 @@
                                     </div>
                                     <div class="hr-tab"></div>
                                     <div class="uk-flex uk-flex-middle">
-                                        <button class="uk-flex uk-flex-middle">
+                                        <button class="uk-flex uk-flex-middle uk-flex-center buttons-select-type-coupon-customers">
                                             <img class="image-coupon-customers" src="./data/Cupones-disponibles.png" alt="">
-                                            <h6 class="uk-margin-remove uk-text-bold">¡Disponibles!</h6>
+                                            <h6 class="uk-margin-remove uk-text-bold" style="color: #3DAE49;">¡Disponibles!</h6>
                                         </button>
-                                        <button class="uk-flex uk-flex-middle">
+                                        <button class="uk-flex uk-flex-middle uk-flex-center buttons-select-type-coupon-customers">
                                             <img class="image-coupon-customers" src="./data/cupones-inactivos.png" alt="">
                                             <h6 class="uk-margin-remove uk-text-bold">Vencidos</h6>
                                         </button>
@@ -1779,6 +1781,132 @@
                 </div>
                 <div class="uk-flex uk-flex-center ">
                     <button class="button-complete-order-checkout-customers ">Completar pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tren de estado -->
+    <div style="display: inline;">
+        <!-- navbar checkout -->
+        <div class="uk-flex uk-flex-middle uk-flex-between navbar-checkout-customers">
+            <div style="margin-left: 30px;">
+                <img class="logo-store-customers cursor-pointer" src="./data/logo2.png" alt="">
+            </div>
+            <div>
+                <h3 class="uk-margin-remove uk-text-bold">Checkout</h3>
+            </div>
+            <div class="uk-flex">
+                <a style="position: relative;" href=" ">
+                    <img class="bag-navbar-checkout-customers" src="./data/Canasta-inactivo.png " alt=" " uk-img>
+                    <h6 class="text-bag-navbar-checkout-customers uk-text-bold" style="position: absolute; ">2</h6>
+                </a>
+                <div style="margin-right: 30px; margin-left: 3px;">
+                    <img class="user-navbar-checkout-customers" src="./data/user.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container-state-train-customers">
+                <div class="uk-flex" style="margin-top: 50px; margin-left: 200px;">
+                    <div>
+                        <img class="image-state-train-customers" src="./data/recibido.png" alt="">
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <h4 class="width-100">Recibido</h4>
+                        <h4 class="width-100" style="margin-top: 73px;">En proceso</h4>
+                        <h4 class="width-100" style="margin-top: 65px;">Alistando Pedido</h4>
+                        <h4 class="width-100" style="margin-top: 40px;">En Camino</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container-summary-order-train-customers">
+                <div>
+                    <h4 class="uk-margin-remove uk-text-bold">Resumen de tu pedido</h4>
+                    <div class="uk-flex uk-flex-middle padding-vertical-10">
+                        <h6 class="uk-margin-remove">Estado:</h6>
+                        <h6 class="uk-margin-remove uk-text-bold">Recibido</h6>
+                    </div>
+                    <!-- scroll -->
+                    <div class="container-scroll-products-state-train-customers">
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold">2</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12">$17.800</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold">2</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12">$17.800</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold">2</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12">$17.800</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold">2</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12">$17.800</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold">2</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12">$17.800</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold">2</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12">$17.800</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-200" style="margin-top: 25px;">
+                        <h6 class="uk-margin-remove font-size-12 uk-text-bold">*Cualquier inconveniente con el envio te sera comunicado por correo electrónico.</h6>
+                    </div>
+                </div>
+                <div>
+
                 </div>
             </div>
         </div>

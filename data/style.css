@@ -773,7 +773,7 @@
         width: 100%;
         position: fixed;
         z-index: 200 !important;
-        border-bottom: 8px solid #F4FFAF;
+        border-bottom: 8px solid #FFF284;
     }
     
     .bag-navbar-checkout-customers {
@@ -983,7 +983,7 @@
     }
     
     .button-complete-order-checkout-customers {
-        background-color: #F4FFAF;
+        background-color: #FFF284;
         border: none;
         border-radius: 5px;
         font-weight: 800;
@@ -1222,4 +1222,73 @@
     .image-coupon-customers {
         width: 27px;
         height: 27px;
+    }
+    
+    .buttons-select-type-coupon-customers {
+        background-color: white;
+        border: none;
+        width: 160px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+    }
+    
+    .buttons-select-type-coupon-customers:focus {
+        outline: 0;
+        border-bottom: 2px solid black;
+    }
+    
+    .container-state-train-customers {
+        padding-top: 90px;
+        width: 400px;
+        height: 100%;
+        border-right: 1px solid rgb(179, 179, 179);
+        position: fixed;
+    }
+    
+    .image-state-train-customers {
+        height: 320px;
+        width: 32px;
+    }
+    
+    .main-container-summary-order-train-customers {
+        padding-left: 430px;
+        padding-top: 120px;
+    }
+    
+    .items-products-scroll-state-train-customers {
+        width: 205px;
+        height: 50px;
+        border: 1px solid rgb(158, 158, 158);
+        border-radius: 5px;
+        box-shadow: 0px 2px 8px -2px rgba(0, 0, 0, 0.35);
+        margin-top: 10px;
+    }
+    
+    .container-scroll-products-state-train-customers {
+        width: 230px;
+        height: 195px !important;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    .container-scroll-products-state-train-customers::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .container-scroll-products-state-train-customers::-webkit-scrollbar-thumb {
+        background: #ADE1FF;
+        border-radius: 10px;
+    }
+    
+    .container-scroll-products-state-train-customers::-webkit-scrollbar-thumb:hover {
+        background: #ADE1FF;
+    }
+    
+    .container-scroll-products-state-train-customers::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: inset 7px 10px 12px #f0f0f0;
+        border: 1px solid rgb(180, 180, 180);
     }
