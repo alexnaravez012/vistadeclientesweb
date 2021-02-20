@@ -21,4 +21,9 @@ function openDropMenus(type) {
         document.getElementById("menu-orders").setAttribute("style", `height: ${higthMax}px !important`);
         document.getElementById("menu-orders").classList.toggle("show");
     }
+    if (type == 'body-show') {
+        document.getElementById("menu-filter").classList.remove("show");
+        document.getElementById("menu-login").classList.remove("show");
+        console.log("body");
+    }
 }

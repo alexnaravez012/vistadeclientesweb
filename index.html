@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./data/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./fontawesome-web/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/css/uikit.min.css" />
@@ -17,7 +19,7 @@
 
 <body id="body-height-customers">
     <!-- Vista de selección de productos base -->
-    <div style="display: none;">
+    <div style="display: inline;">
         <!--Navbar-->
         <div class="uk-flex uk-flex-middle uk-flex-around navbar-customers">
             <div class="cursor-pointer uk-flex uk-flex-middle">
@@ -66,14 +68,14 @@
         <!-- Vista del boton de usuario -->
         <div id="menu-login" class="background-black-customers">
             <div class="uk-flex uk-flex-middle uk-flex-around menu-login-customers">
-                <h4 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Inicia Sesión</h4>
-                <h6 class="uk-margin-remove cursor-pointer">o Registrate</h6>
+                <h5 class="uk-margin-remove uk-text-bold color-blue cursor-pointer font-size-18" style="padding-left: 10px;">Inicia Sesión</h5>
+                <h6 class="uk-margin-remove cursor-pointer" style="padding-right: 10px;">o Registrate</h6>
             </div>
         </div>
         <!-- Este menú, temporalmente solo dispone de una opción para regular los pedidos Activos y Finalizados -->
         <div id="menu-sesion-started" class="background-black-customers">
             <div class="started-login-customers">
-                <h4 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Mis Pedidos</h4>
+                <h4 class="uk-margin-remove uk-text-bold color-blue cursor-pointer font-size-18">Mis Pedidos</h4>
                 <h5 class="uk-margin-remove cursor-pointer" style="padding-top: 10px;">Cerrar Sesión</h5>
             </div>
         </div>
@@ -81,9 +83,9 @@
         <div id="menu-orders" class="background-black-customers">
             <div class="menu-orders-customers">
                 <div class="padding-horizontal-20 navbar-menu-orders-customers">
-                    <div class="uk-flex uk-flex-middle">
+                    <div class="uk-flex uk-flex-middle" style="padding-top: 20px;">
                         <i class="fas fa-caret-left cursor-pointer" style="font-size: 18px; padding-right: 10px;"></i>
-                        <h5 class="uk-margin-remove uk-text-bold">Mis Pedidos</h5>
+                        <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 15px;">Mis Pedidos</h5>
                     </div>
                     <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 10px;">
                         <button class="buttons-menu-orders-customers uk-text-bold uk-text-center">Activos</button>
@@ -376,7 +378,7 @@
                             <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
                         </div>
-                        <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                        <h6 class="button-discount-customers" style="position: absolute !important; font-size: 11px; font-weight: 500;">-25%</h6>
                         <div class="uk-width-1-2 uk-text-center">
                             <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
                             <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
@@ -394,7 +396,7 @@
                             <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
                         </div>
-                        <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                        <h6 class="button-discount-customers" style="position: absolute; font-size: 11px; font-weight: 500;">-25%</h6>
                         <div class="uk-width-1-2 uk-text-center">
                             <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
                             <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
@@ -412,7 +414,7 @@
                             <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
                         </div>
-                        <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                        <h6 class="button-discount-customers" style="position: absolute; font-size: 11px; font-weight: 500;">-25%</h6>
                         <div class="uk-width-1-2 uk-text-center">
                             <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
                             <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
@@ -430,7 +432,7 @@
                             <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
                         </div>
-                        <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                        <h6 class="button-discount-customers" style="position: absolute; font-size: 11px; font-weight: 500;">-25%</h6>
                         <div class="uk-width-1-2 uk-text-center">
                             <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
                             <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
@@ -448,7 +450,7 @@
                             <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
                         </div>
-                        <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                        <h6 class="button-discount-customers" style="position: absolute; font-size: 11px; font-weight: 500;">-25%</h6>
                         <div class="uk-width-1-2 uk-text-center">
                             <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
                             <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
@@ -466,7 +468,7 @@
                             <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
                         </div>
-                        <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                        <h6 class="button-discount-customers" style="position: absolute; font-size: 11px; font-weight: 500;">-25%</h6>
                         <div class="uk-width-1-2 uk-text-center">
                             <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
                             <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
@@ -484,7 +486,7 @@
                             <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
                         </div>
-                        <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                        <h6 class="button-discount-customers" style="position: absolute; font-size: 11px; font-weight: 500;">-25%</h6>
                         <div class="uk-width-1-2 uk-text-center">
                             <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
                             <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
@@ -502,7 +504,7 @@
                             <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
                         </div>
-                        <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                        <h6 class="button-discount-customers" style="position: absolute; font-size: 11px; font-weight: 500;">-25%</h6>
                         <div class="uk-width-1-2 uk-text-center">
                             <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
                             <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
@@ -520,7 +522,7 @@
                             <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
                         </div>
-                        <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                        <h6 class="button-discount-customers" style="position: absolute; font-size: 11px; font-weight: 500;">-25%</h6>
                         <div class="uk-width-1-2 uk-text-center">
                             <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
                             <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
@@ -538,7 +540,7 @@
                             <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
                         </div>
-                        <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                        <h6 class="button-discount-customers" style="position: absolute; font-size: 11px; font-weight: 500;">-25%</h6>
                         <div class="uk-width-1-2 uk-text-center">
                             <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
                             <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
@@ -556,7 +558,7 @@
                             <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
                         </div>
-                        <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                        <h6 class="button-discount-customers" style="position: absolute; font-size: 11px; font-weight: 500;">-25%</h6>
                         <div class="uk-width-1-2 uk-text-center">
                             <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
                             <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
@@ -574,7 +576,7 @@
                             <div class="img-card-add-products-customers-70" style="background-image: url(./data/burguer.png);" uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
                         </div>
-                        <h6 class="button-discount-customers" style="position: absolute;">-25%</h6>
+                        <h6 class="button-discount-customers" style="position: absolute; font-size: 11px; font-weight: 500;">-25%</h6>
                         <div class="uk-width-1-2 uk-text-center">
                             <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
                             <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
@@ -720,7 +722,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-width-1-5">
+                <div class="uk-width-1-5 uk-visible@m">
                     <ul class="uk-list">
                         <h5 class="uk-margin-remove uk-text-bold ">Productos relacionados con este artículo</h5>
                         <div class="uk-flex uk-flex-middle ">
@@ -1453,7 +1455,7 @@
                                 <div class="uk-flex uk-flex-center" style="margin-top: 30px;">
                                     <button class="button-next-change-payment-customers" uk-toggle="target: #selected-payment-method-1">Continuar</button>
                                     <!-- Sub menú de métodos de pago > Inscripción de tarjeta de crédito -->
-                                    <div>
+                                    <!-- <div>
                                         <div id="selected-payment-method-1" uk-modal>
                                             <div class="uk-modal-dialog modal-selected-payment-method-checkout-customers">
                                                 <div class="uk-flex uk-flex-middle">
@@ -1501,9 +1503,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!-- Sub menú de métodos de pago > Pago por PSE  -->
-                                    <!-- <div>
+                                    <div>
                                         <div id="selected-payment-method-1" uk-modal>
                                             <div class="uk-modal-dialog modal-selected-payment-method-checkout-customers">
                                                 <div class="uk-flex uk-flex-middle">
@@ -1565,7 +1567,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1785,8 +1787,8 @@
             </div>
         </div>
     </div>
-    <!-- tren de estado -->
-    <div style="display: inline;">
+    <!-- tren de estado RECIBIDO-->
+    <div style="display: none;">
         <!-- navbar checkout -->
         <div class="uk-flex uk-flex-middle uk-flex-between navbar-checkout-customers">
             <div style="margin-left: 30px;">
@@ -1819,94 +1821,696 @@
                     </div>
                 </div>
             </div>
-            <div class="main-container-summary-order-train-customers">
+            <div class="main-container-summary-order-train-customers uk-flex uk-flex-wrap">
                 <div>
-                    <h4 class="uk-margin-remove uk-text-bold">Resumen de tu pedido</h4>
-                    <div class="uk-flex uk-flex-middle padding-vertical-10">
-                        <h6 class="uk-margin-remove">Estado:</h6>
-                        <h6 class="uk-margin-remove uk-text-bold">Recibido</h6>
+                    <h4 class="uk-margin-remove uk-text-bold ">Resumen de tu pedido</h4>
+                    <div class="uk-flex uk-flex-middle padding-vertical-10 ">
+                        <h6 class="uk-margin-remove ">Estado:</h6>
+                        <h6 class="uk-margin-remove uk-text-bold ">Recibido</h6>
                     </div>
                     <!-- scroll -->
-                    <div class="container-scroll-products-state-train-customers">
-                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers">
+                    <div class="container-scroll-products-state-train-customers ">
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
                             <div>
-                                <h6 class="uk-margin-remove uk-text-bold font-size-10">Producto 1</h6>
-                                <h6 class="uk-margin-remove font-size-10">Unidad: $8.900</h6>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
                             </div>
                             <div>
-                                <h5 class="uk-margin-remove uk-text-bold">2</h5>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">2</h5>
                             </div>
                             <div>
-                                <h6 class="uk-margin-remove font-size-12">$17.800</h6>
-                            </div>
-                        </div>
-                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers">
-                            <div>
-                                <h6 class="uk-margin-remove uk-text-bold font-size-10">Producto 1</h6>
-                                <h6 class="uk-margin-remove font-size-10">Unidad: $8.900</h6>
-                            </div>
-                            <div>
-                                <h5 class="uk-margin-remove uk-text-bold">2</h5>
-                            </div>
-                            <div>
-                                <h6 class="uk-margin-remove font-size-12">$17.800</h6>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$17.800</h6>
                             </div>
                         </div>
-                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers">
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
                             <div>
-                                <h6 class="uk-margin-remove uk-text-bold font-size-10">Producto 1</h6>
-                                <h6 class="uk-margin-remove font-size-10">Unidad: $8.900</h6>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
                             </div>
                             <div>
-                                <h5 class="uk-margin-remove uk-text-bold">2</h5>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
                             </div>
                             <div>
-                                <h6 class="uk-margin-remove font-size-12">$17.800</h6>
-                            </div>
-                        </div>
-                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers">
-                            <div>
-                                <h6 class="uk-margin-remove uk-text-bold font-size-10">Producto 1</h6>
-                                <h6 class="uk-margin-remove font-size-10">Unidad: $8.900</h6>
-                            </div>
-                            <div>
-                                <h5 class="uk-margin-remove uk-text-bold">2</h5>
-                            </div>
-                            <div>
-                                <h6 class="uk-margin-remove font-size-12">$17.800</h6>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
                             </div>
                         </div>
-                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers">
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
                             <div>
-                                <h6 class="uk-margin-remove uk-text-bold font-size-10">Producto 1</h6>
-                                <h6 class="uk-margin-remove font-size-10">Unidad: $8.900</h6>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
                             </div>
                             <div>
-                                <h5 class="uk-margin-remove uk-text-bold">2</h5>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
                             </div>
                             <div>
-                                <h6 class="uk-margin-remove font-size-12">$17.800</h6>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
                             </div>
                         </div>
-                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers">
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
                             <div>
-                                <h6 class="uk-margin-remove uk-text-bold font-size-10">Producto 1</h6>
-                                <h6 class="uk-margin-remove font-size-10">Unidad: $8.900</h6>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
                             </div>
                             <div>
-                                <h5 class="uk-margin-remove uk-text-bold">2</h5>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
                             </div>
                             <div>
-                                <h6 class="uk-margin-remove font-size-12">$17.800</h6>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="width-200" style="margin-top: 25px;">
-                        <h6 class="uk-margin-remove font-size-12 uk-text-bold">*Cualquier inconveniente con el envio te sera comunicado por correo electrónico.</h6>
+                    <div style="margin-top: 25px; width: 180px; ">
+                        <h6 class="uk-margin-remove uk-text-bold font-size-11 ">*Cualquier inconveniente con el envio te sera comunicado por correo electrónico.</h6>
+                    </div>
+                </div>
+                <div style="margin-left: 30px; ">
+                    <div class="box-order-cost-train-customers ">
+                        <div class="uk-flex uk-flex-middle uk-flex-between ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Numero de productos</h6>
+                            </div>
+                            <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">4</h6>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 8px; ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Sub-Total</h6>
+                            </div>
+                            <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">$230.000</h6>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 8px; ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Domicilio</h6>
+                            </div>
+                            <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">$9.900</h6>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top:20px; margin-left: 17px; margin-right: 11px; ">
+                            <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Descuento</h6>
+                            <h6 class="uk-margin-remove ">$0.00</h6>
+                        </div>
+                        <div class="hr-tab " style="margin-top: 15px; margin-bottom: 10px; "></div>
+                        <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-10 ">
+                            <h4 class="uk-margin-remove " style="padding-left: 5px; ">Total</h4>
+                            <h4 class="uk-margin-remove uk-text-bold ">$45.500</h4>
+                        </div>
+                    </div>
+                    <div style="margin-top: 15px; ">
+                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">Metodo de pago seleccionado:</h6>
+                        <div class="uk-flex uk-flex-middle " style="margin-top: 8px; ">
+                            <h6 class="uk-margin-remove font-size-12 font-weight-500 ">Efectivo</h6>
+                            <img class="image-money-train-customers " src="./data/dinero-recurso.png " alt=" ">
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 75px; margin-left: 20px; ">
+                    <div>
+                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">Tienda (Empresa):</h6>
+                        <h6 class="uk-margin-remove font-size-13 ">Cra. 48 # 123 - 73</h6>
+                    </div>
+                    <div style="margin-top: 40px; ">
+                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">Se entrega en:</h6>
+                        <h6 class="uk-margin-remove font-size-13 ">Cra. 13 # 88-17</h6>
+                    </div>
+                    <div style="margin-top: 45px; ">
+                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">El día:</h6>
+                        <h6 class="uk-margin-remove font-size-12 ">18 de Mayo</h6>
+                        <h6 class="uk-margin-remove font-size-12 ">En jornada de 1 pm a 4 pm</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tren de estado EN PROCESO-->
+    <div style="display: none; ">
+        <!-- navbar checkout -->
+        <div class="uk-flex uk-flex-middle uk-flex-between navbar-checkout-customers ">
+            <div style="margin-left: 30px; ">
+                <img class="logo-store-customers cursor-pointer " src="./data/logo2.png " alt=" ">
+            </div>
+            <div>
+                <h3 class="uk-margin-remove uk-text-bold ">Checkout</h3>
+            </div>
+            <div class="uk-flex ">
+                <a style="position: relative; " href=" ">
+                    <img class="bag-navbar-checkout-customers " src="./data/Canasta-inactivo.png " alt=" " uk-img>
+                    <h6 class="text-bag-navbar-checkout-customers uk-text-bold " style="position: absolute; ">2</h6>
+                </a>
+                <div style="margin-right: 30px; margin-left: 3px; ">
+                    <img class="user-navbar-checkout-customers " src="./data/user.png " alt=" ">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container-state-train-customers ">
+                <div class="uk-flex " style="margin-top: 50px; margin-left: 200px; ">
+                    <div>
+                        <img class="image-state-train-customers " src="./data/en-proceso.png " alt=" ">
+                    </div>
+                    <div style="margin-left: 20px; ">
+                        <h4 class="width-100 ">Recibido</h4>
+                        <h4 class="width-100 " style="margin-top: 73px; ">En proceso</h4>
+                        <h4 class="width-100 " style="margin-top: 65px; ">Alistando Pedido</h4>
+                        <h4 class="width-100 " style="margin-top: 40px; ">En Camino</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container-summary-order-train-customers uk-flex uk-flex-wrap">
+                <div>
+                    <h4 class="uk-margin-remove uk-text-bold ">Resumen de tu pedido</h4>
+                    <div class="uk-flex uk-flex-middle padding-vertical-10 ">
+                        <h6 class="uk-margin-remove ">Estado:</h6>
+                        <h6 class="uk-margin-remove uk-text-bold ">Recibido</h6>
+                    </div>
+                    <!-- scroll -->
+                    <div class="container-scroll-products-state-train-customers ">
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">2</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$17.800</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 25px; width: 180px; ">
+                        <h6 class="uk-margin-remove uk-text-bold font-size-11 ">*Cualquier inconveniente con el envio te sera comunicado por correo electrónico.</h6>
+                    </div>
+                </div>
+                <div style="margin-left: 30px; ">
+                    <div class="box-order-cost-train-customers ">
+                        <div class="uk-flex uk-flex-middle uk-flex-between ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Numero de productos</h6>
+                            </div>
+                            <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">4</h6>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 8px; ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Sub-Total</h6>
+                            </div>
+                            <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">$230.000</h6>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 8px; ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Domicilio</h6>
+                            </div>
+                            <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">$9.900</h6>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top:20px; margin-left: 17px; margin-right: 11px; ">
+                            <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Descuento</h6>
+                            <h6 class="uk-margin-remove ">$0.00</h6>
+                        </div>
+                        <div class="hr-tab " style="margin-top: 15px; margin-bottom: 10px; "></div>
+                        <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-10 ">
+                            <h4 class="uk-margin-remove " style="padding-left: 5px; ">Total</h4>
+                            <h4 class="uk-margin-remove uk-text-bold ">$45.500</h4>
+                        </div>
+                    </div>
+                    <div style="margin-top: 15px; ">
+                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">Metodo de pago seleccionado:</h6>
+                        <div class="uk-flex uk-flex-middle " style="margin-top: 8px; ">
+                            <h6 class="uk-margin-remove font-size-12 font-weight-500 ">Efectivo</h6>
+                            <img class="image-money-train-customers " src="./data/dinero-recurso.png " alt=" ">
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 75px; margin-left: 20px; ">
+                    <div>
+                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">Tienda (Empresa):</h6>
+                        <h6 class="uk-margin-remove font-size-13 ">Cra. 48 # 123 - 73</h6>
+                    </div>
+                    <div style="margin-top: 40px; ">
+                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">Se entrega en:</h6>
+                        <h6 class="uk-margin-remove font-size-13 ">Cra. 13 # 88-17</h6>
+                    </div>
+                    <div style="margin-top: 45px; ">
+                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">El día:</h6>
+                        <h6 class="uk-margin-remove font-size-12 ">18 de Mayo</h6>
+                        <h6 class="uk-margin-remove font-size-12 ">En jornada de 1 pm a 4 pm</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tren de estado ALISTANDO PEDIDO-->
+    <div style="display: none; ">
+        <!-- navbar checkout -->
+        <div class="uk-flex uk-flex-middle uk-flex-between navbar-checkout-customers ">
+            <div style="margin-left: 30px; ">
+                <img class="logo-store-customers cursor-pointer " src="./data/logo2.png " alt=" ">
+            </div>
+            <div>
+                <h3 class="uk-margin-remove uk-text-bold ">Checkout</h3>
+            </div>
+            <div class="uk-flex ">
+                <a style="position: relative; " href=" ">
+                    <img class="bag-navbar-checkout-customers " src="./data/Canasta-inactivo.png " alt=" " uk-img>
+                    <h6 class="text-bag-navbar-checkout-customers uk-text-bold " style="position: absolute; ">2</h6>
+                </a>
+                <div style="margin-right: 30px; margin-left: 3px; ">
+                    <img class="user-navbar-checkout-customers " src="./data/user.png " alt=" ">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container-state-train-customers ">
+                <div class="uk-flex " style="margin-top: 50px; margin-left: 200px; ">
+                    <div>
+                        <img class="image-state-train-customers " src="./data/alistando-pedido.png " alt=" ">
+                    </div>
+                    <div style="margin-left: 20px; ">
+                        <h4 class="width-100 ">Recibido</h4>
+                        <h4 class="width-100 " style="margin-top: 73px; ">En proceso</h4>
+                        <h4 class="width-100 " style="margin-top: 65px; ">Alistando Pedido</h4>
+                        <h4 class="width-100 " style="margin-top: 40px; ">En Camino</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container-summary-order-train-customers uk-flex uk-flex-wrap">
+                <div>
+                    <h4 class="uk-margin-remove uk-text-bold ">Resumen de tu pedido</h4>
+                    <div class="uk-flex uk-flex-middle padding-vertical-10 ">
+                        <h6 class="uk-margin-remove ">Estado:</h6>
+                        <h6 class="uk-margin-remove uk-text-bold ">Recibido</h6>
+                    </div>
+                    <!-- scroll -->
+                    <div class="container-scroll-products-state-train-customers ">
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">2</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$17.800</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 25px; width: 180px; ">
+                        <h6 class="uk-margin-remove uk-text-bold font-size-11 ">*Cualquier inconveniente con el envio te sera comunicado por correo electrónico.</h6>
+                    </div>
+                </div>
+                <div style="margin-left: 30px; ">
+                    <div class="box-order-cost-train-customers ">
+                        <div class="uk-flex uk-flex-middle uk-flex-between ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Numero de productos</h6>
+                            </div>
+                            <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">4</h6>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 8px; ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Sub-Total</h6>
+                            </div>
+                            <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">$230.000</h6>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 8px; ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Domicilio</h6>
+                            </div>
+                            <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">$9.900</h6>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top:20px; margin-left: 17px; margin-right: 11px; ">
+                            <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Descuento</h6>
+                            <h6 class="uk-margin-remove ">$0.00</h6>
+                        </div>
+                        <div class="hr-tab " style="margin-top: 15px; margin-bottom: 10px; "></div>
+                        <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-10 ">
+                            <h4 class="uk-margin-remove " style="padding-left: 5px; ">Total</h4>
+                            <h4 class="uk-margin-remove uk-text-bold ">$45.500</h4>
+                        </div>
+                    </div>
+                    <div style="margin-top: 15px; ">
+                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">Metodo de pago seleccionado:</h6>
+                        <div class="uk-flex uk-flex-middle " style="margin-top: 8px; ">
+                            <h6 class="uk-margin-remove font-size-12 font-weight-500 ">Efectivo</h6>
+                            <img class="image-money-train-customers " src="./data/dinero-recurso.png " alt=" ">
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 75px; margin-left: 20px; ">
+                    <div>
+                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">Tienda (Empresa):</h6>
+                        <h6 class="uk-margin-remove font-size-13 ">Cra. 48 # 123 - 73</h6>
+                    </div>
+                    <div style="margin-top: 40px; ">
+                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">Se entrega en:</h6>
+                        <h6 class="uk-margin-remove font-size-13 ">Cra. 13 # 88-17</h6>
+                    </div>
+                    <div style="margin-top: 45px; ">
+                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">El día:</h6>
+                        <h6 class="uk-margin-remove font-size-12 ">18 de Mayo</h6>
+                        <h6 class="uk-margin-remove font-size-12 ">En jornada de 1 pm a 4 pm</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tren de estado EN CAMINO-->
+    <div style="display: none; ">
+        <!-- navbar checkout -->
+        <div class="uk-flex uk-flex-middle uk-flex-between navbar-checkout-customers ">
+            <div style="margin-left: 30px; ">
+                <img class="logo-store-customers cursor-pointer " src="./data/logo2.png " alt=" ">
+            </div>
+            <div>
+                <h3 class="uk-margin-remove uk-text-bold ">Checkout</h3>
+            </div>
+            <div class="uk-flex ">
+                <a style="position: relative; " href=" ">
+                    <img class="bag-navbar-checkout-customers " src="./data/Canasta-inactivo.png " alt=" " uk-img>
+                    <h6 class="text-bag-navbar-checkout-customers uk-text-bold " style="position: absolute; ">2</h6>
+                </a>
+                <div style="margin-right: 30px; margin-left: 3px; ">
+                    <img class="user-navbar-checkout-customers " src="./data/user.png " alt=" ">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container-state-train-customers ">
+                <div class="uk-flex " style="margin-top: 50px; margin-left: 200px; ">
+                    <div>
+                        <img class="image-state-train-on-the-way-customers " src="./data/en-camino.png " alt=" ">
+                    </div>
+                    <div style="margin-left: 20px; ">
+                        <h4 class="width-100 ">Recibido</h4>
+                        <h4 class="width-100 " style="margin-top: 73px; ">En proceso</h4>
+                        <h4 class="width-100 " style="margin-top: 65px; ">Alistando Pedido</h4>
+                        <h4 class="width-100 " style="margin-top: 40px; ">En Camino</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container-summary-order-train-customers uk-flex uk-flex-wrap">
+                <div>
+                    <h4 class="uk-margin-remove uk-text-bold ">Resumen de tu pedido</h4>
+                    <div class="uk-flex uk-flex-middle padding-vertical-10 ">
+                        <h6 class="uk-margin-remove ">Estado:</h6>
+                        <h6 class="uk-margin-remove uk-text-bold ">Recibido</h6>
+                    </div>
+                    <!-- scroll -->
+                    <div class="container-scroll-products-state-train-customers ">
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">2</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$17.800</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around items-products-scroll-state-train-customers ">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-10 ">Producto 1</h6>
+                                <h6 class="uk-margin-remove font-size-10 ">Unidad: $8.900</h6>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove uk-text-bold width-30 ">1</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-12 width-50 ">$8.900</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 25px; width: 180px; ">
+                        <h6 class="uk-margin-remove uk-text-bold font-size-11 ">*Cualquier inconveniente con el envio te sera comunicado por correo electrónico.</h6>
+                    </div>
+                </div>
+                <div style="margin-left: 20px; ">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16289433.401729723!2d-83.3981411176428!3d4.609691158847657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e15a43aae1594a3%3A0x9a0d9a04eff2a340!2sColombia!5e0!3m2!1ses!2sco!4v1613833895859!5m2!1ses!2sco "
+                            width="400 " height="200 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
+                    </div>
+                    <div class="uk-flex " style="margin-top: 20px; ">
+                        <div class="box-order-cost-train-on-the-way-customers ">
+                            <div class="uk-flex uk-flex-middle uk-flex-between ">
+                                <div class="uk-flex uk-flex-middle ">
+                                    <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Numero de productos</h6>
+                                </div>
+                                <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">4</h6>
+                            </div>
+                            <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 5px; ">
+                                <div class="uk-flex uk-flex-middle ">
+                                    <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Sub-Total</h6>
+                                </div>
+                                <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">$230.000</h6>
+                            </div>
+                            <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 5px; ">
+                                <div class="uk-flex uk-flex-middle ">
+                                    <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Domicilio</h6>
+                                </div>
+                                <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">$9.900</h6>
+                            </div>
+                            <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top:20px; margin-left: 17px; margin-right: 11px; ">
+                                <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Descuento</h6>
+                                <h6 class="uk-margin-remove ">$0.00</h6>
+                            </div>
+                            <div class="hr-tab " style="margin-top: 15px; margin-bottom: 10px; "></div>
+                            <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-10 ">
+                                <h4 class="uk-margin-remove " style="padding-left: 5px; ">Total</h4>
+                                <h4 class="uk-margin-remove uk-text-bold ">$45.500</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="margin-left: 20px; ">
+                                <div>
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-13 ">Tienda (Empresa):</h6>
+                                    <h6 class="uk-margin-remove font-size-13 ">Cra. 48 # 123 - 73</h6>
+                                </div>
+                                <div style="margin-top: 30px; ">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-13 ">Se entrega en:</h6>
+                                    <h6 class="uk-margin-remove font-size-13 ">Cra. 13 # 88-17</h6>
+                                </div>
+                                <div style="margin-top: 35px; ">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-13 ">El día:</h6>
+                                    <h6 class="uk-margin-remove font-size-12 ">18 de Mayo</h6>
+                                    <h6 class="uk-margin-remove font-size-12 ">En jornada de 1 pm a 4 pm</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px; ">
+                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">Metodo de pago seleccionado:</h6>
+                        <div class="uk-flex uk-flex-middle " style="margin-top: 5px; ">
+                            <h6 class="uk-margin-remove font-size-12 font-weight-500 ">Efectivo</h6>
+                            <img class="image-money-train-customers " src="./data/dinero-recurso.png " alt=" ">
+                        </div>
                     </div>
                 </div>
                 <div>
-
+                    <h6 class="uk-margin-remove font-size-11 uk-text-bold ">Tiempo aproximado de llegada:</h6>
+                    <h4 class="uk-margin-remove uk-text-bold ">11 minutos</h4>
                 </div>
             </div>
         </div>
