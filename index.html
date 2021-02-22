@@ -19,11 +19,11 @@
 
 <body id="body-height-customers">
     <!-- Vista de selección de productos base -->
-    <div style="display: inline;">
+    <div style="display: none;">
         <!--Navbar-->
-        <div class="uk-flex uk-flex-middle uk-flex-around navbar-customers">
+        <div class="uk-flex uk-flex-middle uk-flex-between navbar-customers">
             <div class="cursor-pointer uk-flex uk-flex-middle">
-                <img class="logo-store-customers" style="margin-right: 5px;" src="./data/logo2.png " alt=" ">
+                <img class="logo-store-customers" src="./data/logo2.png " alt=" ">
                 <i class="fas fa-caret-down"></i>
             </div>
             <div class="uk-visible@m">
@@ -45,7 +45,7 @@
             <!-- Cuando el usuario no ha iniciado sesion boton -->
             <div style="display: inline;">
                 <button onclick="openDropMenus('login')" class="button-user-login-customers" type="button">
-                    <img  class="logo-user-customers cursor-pointer" style="margin-right: 5px;" src="./data/user.png " alt=" ">
+                    <img  class="logo-user-customers cursor-pointer" src="./data/user.png " alt=" ">
                 </button>
             </div>
             <!-- Cuando el usuario ya inicio sesion boton -->
@@ -169,59 +169,61 @@
         <!-- Drop de filtrar -->
         <div id="menu-filter" class="background-black-customers">
             <div class="menu-filter-customers">
-                <h4 class="uk-margin-remove uk-text-bold">Filtrar por</h4>
-                <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px; padding-bottom: 10px;">Precio promedio</h5>
-                <div class="uk-flex uk-flex-middle uk-flex-center padding-horizontal-10">
-                    <div class="uk-text-center">
-                        <i class="fas fa-dollar-sign"></i>
-                        <h6 class="uk-margin-remove font-size-10 uk-text-center" style="padding-top: 10px;">Menos de 10.000</h6>
+                <h5 class="uk-margin-remove uk-text-bold">Filtrar por</h5>
+                <h6 class="uk-margin-remove uk-text-bold font-size-11" style="padding-top: 15px; padding-bottom: 7px;">Precio promedio</h6>
+                <div class="uk-flex">
+                    <div>
+                        <div class="uk-flex uk-flex-stretch uk-flex-center">
+                            <i class="fas fa-dollar-sign font-size-13 font-weight-500"></i>
+                        </div>
+                        <h6 class="uk-margin-remove font-size-8 uk-text-center" style="padding-top: 10px;">Menos de 10.000</h6>
                     </div>
                     <div>
                         <div class="uk-flex uk-flex-stretch uk-flex-center">
-                            <i class="fas fa-dollar-sign"></i>
-                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign font-size-13 font-weight-500"></i>
+                            <i class="fas fa-dollar-sign font-size-13 font-weight-500"></i>
                         </div>
-                        <h6 class="uk-margin-remove font-size-10 uk-text-center" style="padding-top: 10px;">Entre 10.000 - 20.000</h6>
+                        <h6 class="uk-margin-remove font-size-8 uk-text-center" style="padding-top: 10px;">Entre 10.000 - 20.000</h6>
                     </div>
                     <div>
                         <div class="uk-flex uk-flex-stretch uk-flex-center">
-                            <i class="fas fa-dollar-sign"></i>
-                            <i class="fas fa-dollar-sign"></i>
-                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign font-size-13 font-weight-500"></i>
+                            <i class="fas fa-dollar-sign font-size-13 font-weight-500"></i>
+                            <i class="fas fa-dollar-sign font-size-13 font-weight-500"></i>
                         </div>
-                        <h6 class="uk-margin-remove font-size-10 uk-text-center" style="padding-top: 10px;">Entre 20.000 - 30.000</h6>
+                        <h6 class="uk-margin-remove font-size-8 uk-text-center" style="padding-top: 10px;">Entre 20.000 - 30.000</h6>
                     </div>
                     <div>
                         <div class="uk-flex uk-flex-stretch uk-flex-center">
-                            <i class="fas fa-dollar-sign"></i>
-                            <i class="fas fa-dollar-sign"></i>
-                            <i class="fas fa-dollar-sign"></i>
-                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-dollar-sign font-size-13 font-weight-500"></i>
+                            <i class="fas fa-dollar-sign font-size-13 font-weight-500"></i>
+                            <i class="fas fa-dollar-sign font-size-13 font-weight-500"></i>
+                            <i class="fas fa-dollar-sign font-size-13 font-weight-500"></i>
                         </div>
-                        <h6 class="uk-margin-remove font-size-10 uk-text-center" style="padding-top: 10px;">Más de 30.000</h6>
+                        <h6 class="uk-margin-remove font-size-8 uk-text-center" style="padding-top: 10px;">Más de 30.000</h6>
                     </div>
                 </div>
                 <div style="margin-top: 30px;">
-                    <h5 class="uk-margin-remove uk-text-bold">Empaque Verde</h5>
+                    <h6 class="uk-margin-remove uk-text-bold font-size-11">Empaque Verde</h6>
                     <div class="uk-flex uk-flex-middle" style="margin-top: 5px;">
-                        <h6 class="uk-margin-remove font-size-11" style="width: 150px;">Restaurante comprometido con cuidar el planeta</h6>
+                        <h6 class="uk-margin-remove font-size-9 width-120">Restaurante comprometido con cuidar el planeta</h6>
                         <button class="button-circle-filter-customers"></button>
                     </div>
                 </div>
-                <div style="margin-top: 30PX;">
-                    <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">Categorias</h5>
+                <div style="margin-top: 20PX;">
+                    <h6 class="uk-margin-remove uk-text-bold padding-vertical-10 font-size-11">Categorias</h6>
                     <div class="uk-flex uk-flex-middle">
-                        <h6 class="uk-margin-remove uk-text-bold cursor-pointer font-size-11 color-grey">Desayunos</h6>
-                        <h6 class="uk-margin-remove uk-text-bold cursor-pointer font-size-11 color-grey padding-horizontal-20">Hamburguesas</h6>
+                        <h6 class="uk-margin-remove uk-text-bold cursor-pointer font-size-10 color-grey">Desayunos</h6>
+                        <h6 class="uk-margin-remove uk-text-bold cursor-pointer font-size-10 color-grey padding-horizontal-10">Hamburguesas</h6>
                     </div>
                     <div class="uk-flex uk-flex-middle padding-vertical-10">
-                        <h6 class="uk-margin-remove uk-text-bold cursor-pointer font-size-11 color-blue">Helados</h6>
-                        <h6 class="uk-margin-remove uk-text-bold cursor-pointer font-size-11 color-grey padding-horizontal-40">Postres</h6>
-                        <h6 class="uk-margin-remove uk-text-bold cursor-pointer font-size-11 color-grey">Saludables</h6>
+                        <h6 class="uk-margin-remove uk-text-bold cursor-pointer font-size-10 color-blue">Helados</h6>
+                        <h6 class="uk-margin-remove uk-text-bold cursor-pointer font-size-10 color-grey padding-horizontal-20">Postres</h6>
+                        <h6 class="uk-margin-remove uk-text-bold cursor-pointer font-size-10 color-grey">Saludables</h6>
                     </div>
                 </div>
                 <div class="uk-flex uk-flex-center">
-                    <button class="button-apply-customers">Aplicar</button>
+                    <button class="button-apply-filter-customers">Aplicar</button>
                 </div>
             </div>
         </div>
@@ -601,7 +603,9 @@
                 </div>
                 <div class="menu-right-vertical-customers">
                     <ul class="uk-list">
-                        <h6 class="uk-margin-remove font-size-12 uk-text-bold ">Productos relacionados con este artículo</h6>
+                        <div class="width-130">
+                            <h6 class="uk-margin-remove font-size-11 uk-text-bold">Productos relacionados con este artículo</h6>
+                        </div>
                         <div class="uk-flex uk-flex-middle ">
                             <div class="img-menu-right-vertical-customers uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
                             <h6 class="uk-margin-remove font-size-11 " style="padding-left: 5px; ">Hamburguesa 2</h6>
@@ -639,13 +643,13 @@
         </div>
         <!-- Vista de producto especializada -->
         <div style="display: none;">
-            <div class="uk-flex uk-flex-between uk-flex-wrap" style="padding-top: 110px;">
+            <div class="uk-flex uk-flex-wrap" style="padding-top: 110px;">
                 <div class="uk-flex uk-width-1-5" style="margin-left: 180px;">
                     <div style="padding-left: 10px; padding-top: 5px;">
                         <i class="fas fa-caret-left uk-margin-remove cursor-pointer" style="font-size: 30px; padding-right: 40px;"></i>
                     </div>
                     <div>
-                        <h2 class="uk-margin-remove uk-text-bold">AK116BIS</h2>
+                        <h3 class="uk-margin-remove uk-text-bold font-size-28">AK116BIS</h3>
                         <div class="uk-flex uk-flex-middle" style="padding-top: 20px;">
                             <i class="fas fa-star uk-margin-remove color-yellow-star-customers"></i>
                             <i class="fas fa-star uk-margin-remove color-yellow-star-customers padding-horizontal-5"></i>
@@ -654,24 +658,24 @@
                             <i class="fas fa-star uk-margin-remove color-yellow-star-customers"></i>
                         </div>
                         <div>
-                            <h4 class="uk-margin-remove" style="font-weight: 400; padding-top: 20px;">15.000$</h4>
+                            <h5 class="uk-margin-remove" style="font-weight: 400; padding-top: 20px;">15.000$</h5>
                         </div>
                         <div class="uk-flex uk-flex-middle uk-flex-around box-add-product-gallery-customers">
-                            <h6 class="uk-margin-remove uk-text-bold">Añadir</h6>
+                            <h6 class="uk-margin-remove uk-text-bold font-size-11">Añadir</h6>
                             <img class="size-bag-add-gallery-customers uk-margin-remove" src="./data/Canasta-inactivo.png" alt="">
                         </div>
                         <div>
-                            <ul class="uk-list uk-list-disc" style="padding-top: 20px;">
-                                <li class="uk-margin-remove font-size-15">Carne de gama alta</li>
-                                <li class="uk-margin-remove font-size-15">Pan arabe</li>
-                                <li class="uk-margin-remove font-size-15">Jamon cerrano</li>
-                                <li class="uk-margin-remove font-size-15">Cebollitas apanadas</li>
-                                <li class="uk-margin-remove font-size-15">Queso mozzarela</li>
+                            <ul class="uk-list uk-list-disc" style="padding-top: 50px;">
+                                <li class="uk-margin-remove font-size-12">Carne de gama alta</li>
+                                <li class="uk-margin-remove font-size-12">Pan arabe</li>
+                                <li class="uk-margin-remove font-size-12">Jamon cerrano</li>
+                                <li class="uk-margin-remove font-size-12">Cebollitas apanadas</li>
+                                <li class="uk-margin-remove font-size-12">Queso mozzarela</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div>
+                <div style="margin-left: 20px;">
                     <div class="uk-flex uk-width-1-1">
                         <div class="mini-menu-vertical-gallery-customers">
                             <ul class="uk-list">
@@ -684,22 +688,22 @@
                             </ul>
                         </div>
                         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
-                            <ul class="uk-slideshow-items" style="height: 300px; width: 300px; border-radius: 50% !important;">
+                            <ul class="uk-slideshow-items" style="height: 250px; width: 250px; border-radius: 50% !important;">
                                 <li>
-                                    <img data-src="./data/burguer2.png" width="180" height="190" alt="" uk-cover uk-img="target: !ul > :last-child, !* +*">
+                                    <img data-src="./data/burguer2.png" width="70" height="70" alt="" uk-cover uk-img="target: !ul > :last-child, !* +*">
                                 </li>
                                 <li>
-                                    <img data-src="./data/burguer2.png" width="180" height="190" alt="" uk-cover uk-img="target: !* -*, !* +*">
+                                    <img data-src="./data/burguer2.png" width="70" height="70" alt="" uk-cover uk-img="target: !* -*, !* +*">
                                 </li>
                                 <li>
-                                    <img data-src="./data/burguer2.png" width="180" height="190" alt="" uk-cover uk-img="target: !* -*, !ul > :first-child">
+                                    <img data-src="./data/burguer2.png" width="70" height="70" alt="" uk-cover uk-img="target: !* -*, !ul > :first-child">
                                 </li>
                             </ul>
                             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
                             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
                         </div>
                     </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 20px;">
+                    <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-left: 120px; padding-top: 20px;">
                         <div>
                             <div class="uk-flex uk-flex-middle">
                                 <h6 class="uk-margin-remove uk-text-bold">Salsa</h6>
@@ -722,24 +726,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-width-1-5 uk-visible@m">
+                <div class="uk-width-1-5 uk-visible@m" style="margin-left: 230px;">
                     <ul class="uk-list">
-                        <h5 class="uk-margin-remove uk-text-bold ">Productos relacionados con este artículo</h5>
-                        <div class="uk-flex uk-flex-middle ">
-                            <div class="img-related-posts-customers uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
-                            <h6 class="uk-margin-remove" style="padding-left: 30px; ">Hamburguesa 2</h6>
+                        <div class="width-130">
+                            <h6 class="uk-margin-remove font-size-11 uk-text-bold">Productos relacionados con este artículo</h6>
                         </div>
                         <div class="uk-flex uk-flex-middle ">
-                            <div class="img-related-posts-customers uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
-                            <h6 class="uk-margin-remove" style="padding-left: 30px; ">Hamburguesa 3</h6>
+                            <div class="img-related-posts-gallery-customers uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
+                            <h6 class="uk-margin-remove font-size-11" style="padding-left: 30px; ">Hamburguesa 2</h6>
                         </div>
                         <div class="uk-flex uk-flex-middle ">
-                            <div class="img-related-posts-customers uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
-                            <h6 class="uk-margin-remove" style="padding-left: 30px; ">Hamburguesa 4</h6>
+                            <div class="img-related-posts-gallery-customers uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
+                            <h6 class="uk-margin-remove font-size-11" style="padding-left: 30px; ">Hamburguesa 3</h6>
                         </div>
                         <div class="uk-flex uk-flex-middle ">
-                            <div class="img-related-posts-customers uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
-                            <h6 class="uk-margin-remove" style="padding-left: 30px; ">Hamburguesa 5</h6>
+                            <div class="img-related-posts-gallery-customers uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
+                            <h6 class="uk-margin-remove font-size-11" style="padding-left: 30px; ">Hamburguesa 4</h6>
+                        </div>
+                        <div class="uk-flex uk-flex-middle ">
+                            <div class="img-related-posts-gallery-customers uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
+                            <h6 class="uk-margin-remove font-size-11" style="padding-left: 30px; ">Hamburguesa 5</h6>
                         </div>
                     </ul>
                 </div>
@@ -750,7 +756,7 @@
                     <div class="hr-vertical"></div>
                     <div class="uk-text-center" style="margin-left:5px ;">
                         <h6 class="uk-margin-remove font-size-12">$15,000</h6>
-                        <h6 class="uk-margin-remove uk-text-bold font-size-11 cursor-pointer">Completar pedido</h6>
+                        <h6 class="uk-margin-remove uk-text-bold font-size-10 cursor-pointer">Completar pedido</h6>
                     </div>
                     <img class="size-bag-float-customers uk-margin-remove" src="./data/Canasta-inactivo.png" alt="">
                     <div id="place-order-customers" uk-modal>
@@ -1181,80 +1187,74 @@
     </div>
     <!-- vista de ingreso de usuario -->
     <div style="display: none;">
-        <div class="background-customer-login">
-            <i class="fas fa-caret-left color-blue cursor-pointer" style="font-size: 30px; margin-top: 30px; margin-left: 30px;"></i>
-            <div class="uk-flex uk-flex-center">
-                <div style=" margin-top: 30px;">
-                    <img class="image-logo-login-customers cursor-pointer" src="./data/logo-denlinea.png " alt=" ">
-                    <div style="z-index: 20 !important; position: absolute !important; margin-left: 40px;">
-                        <h5 class="uk-margin-remove font-size-12 uk-text-bold">Nombre</h5>
-                        <input class="input-data-user-customers" type="text ">
-                        <h5 class="uk-margin-remove font-size-12 uk-text-bold" style="padding-top: 5px;">Contraseña</h5>
-                        <input class="input-data-user-customers" type="text ">
-                        <h6 class="uk-margin-remove uk-text-right font-size-10 uk-text-bold cursor-pointer">¿Olvidaste tu contraseña?</h6>
-                        <div class="uk-text-center">
-                            <button class="button-get-in-user-customers">ENTRAR</button>
-                            <h5 class="uk-margin-remove font-size-12 uk-text-bold cursor-pointer">o Registrarse</h5>
-                        </div>
+        <div class="background-customer-login uk-flex uk-flex-between">
+            <div>
+                <div>
+                    <i class="fas fa-caret-left color-blue cursor-pointer" style="font-size: 30px; margin-top: 30px; margin-left: 30px;"></i>
+                </div>
+                <div class="uk-visible@s" style="padding-top: 83px; padding-left: 20px;">
+                    <img class="image-resource1-background-login-customers" src="./data/Recurso-1.png " alt=" ">
+                </div>
+            </div>
+            <div style="margin-right: 20px; padding-top: 60px;">
+                <img class="image-logo-login-customers cursor-pointer" src="./data/logo-denlinea.png " alt=" ">
+                <div class="width-200" style="margin-left: 40px;">
+                    <h5 class="uk-margin-remove font-size-12 uk-text-bold">Nombre</h5>
+                    <input class="input-data-user-customers" type="text ">
+                    <h5 class="uk-margin-remove font-size-12 uk-text-bold" style="padding-top: 5px;">Contraseña</h5>
+                    <input class="input-data-user-customers" type="text ">
+                    <h6 class="uk-margin-remove uk-text-right font-size-10 uk-text-bold cursor-pointer">¿Olvidaste tu contraseña?</h6>
+                    <div class="uk-text-center">
+                        <button class="button-get-in-user-customers">ENTRAR</button>
+                        <h5 class="uk-margin-remove font-size-12 uk-text-bold cursor-pointer">o Registrarse</h5>
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="uk-position-bottom-left " style="z-index: 2 !important; ">
-                    <img class="image-resource1-background-login-customers " src="./data/Recurso-1.png " alt=" ">
-                </div>
-                <div class="uk-position-bottom-right " style="z-index: 2 !important; ">
-                    <img class="image-resource2-background-login-customers " src="./data/Recurso-2.png " alt=" ">
-                </div>
-                <div class="uk-position-bottom-right" style="z-index: 1 !important; ">
-                    <img class="image-resource-background-white-customers " src="./data/Recurso-del-fondo.png " alt=" ">
-                </div>
+            <div class="uk-visible@m" style="padding-top: 205px; padding-right: 20px;">
+                <img class="image-resource2-background-login-customers" src="./data/Recurso-2.png " alt=" ">
             </div>
         </div>
     </div>
     <!-- vista de registro -->
     <div style="display: none;">
-        <div class="background-customer-login">
-            <i class="fas fa-caret-left color-blue cursor-pointer" style="font-size: 30px; padding-top: 30px; padding-left: 30px;"></i>
-            <div class="uk-flex uk-flex-center">
+        <div class="background-customer-login uk-flex uk-flex-between">
+            <div>
                 <div>
-                    <img class="image-logo-registry-customers cursor-pointer" src="./data/logo-denlinea.png " alt=" ">
-                    <div style="z-index: 20 !important; position: absolute !important; right: 450px !important;">
-                        <div class="uk-column-1-2" style="">
-                            <div>
-                                <h5 class="uk-margin-remove font-size-12 uk-text-bold">Nombre</h5>
-                                <input class="input-data-user-customers" type="text ">
-                                <h5 class="uk-margin-remove font-size-12 uk-text-bold">Apellidos</h5>
-                                <input class="input-data-user-customers" type="text ">
-                                <h5 class="uk-margin-remove font-size-12 uk-text-bold">Correo electrónico</h5>
-                                <input class="input-data-user-customers" type="text ">
-                            </div>
-                            <div>
-                                <h5 class="uk-margin-remove font-size-12 uk-text-bold">Celular</h5>
-                                <input class="input-data-user-customers" type="text ">
-                                <h5 class="uk-margin-remove font-size-12 uk-text-bold">Contraseña</h5>
-                                <input class="input-data-user-customers" type="text ">
-                                <h5 class="uk-margin-remove font-size-12 uk-text-bold">Confirma contraseña</h5>
-                                <input class="input-data-user-customers" type="text ">
-                            </div>
+                    <i class="fas fa-caret-left color-blue cursor-pointer" style="font-size: 30px; margin-top: 30px; margin-left: 30px;"></i>
+                </div>
+                <div class="uk-visible@m" style="padding-top: 83px; padding-left: 20px;">
+                    <img class="image-resource1-background-login-customers" src="./data/Recurso-1.png " alt=" ">
+                </div>
+            </div>
+            <div style="margin-right: 20px; padding-top: 60px;">
+                <img class="image-logo-login-customers cursor-pointer" style="margin-left: 75px;" src="./data/logo-denlinea.png " alt=" ">
+                <div>
+                    <div class="uk-column-1-2">
+                        <div>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-bold">Nombre</h5>
+                            <input class="input-data-user-customers" type="text ">
+                            <h5 class="uk-margin-remove font-size-12 uk-text-bold">Apellidos</h5>
+                            <input class="input-data-user-customers" type="text ">
+                            <h5 class="uk-margin-remove font-size-12 uk-text-bold">Correo electrónico</h5>
+                            <input class="input-data-user-customers" type="text ">
                         </div>
-                        <div class="uk-text-center">
-                            <button class="button-get-in-user-customers" style="margin-top: 20px;">Registrarse</button>
-                            <h5 class="uk-margin-remove font-size-12 uk-text-bold cursor-pointer">o Iniciar Sesión</h5>
+                        <div>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-bold">Celular</h5>
+                            <input class="input-data-user-customers" type="text ">
+                            <h5 class="uk-margin-remove font-size-12 uk-text-bold">Contraseña</h5>
+                            <input class="input-data-user-customers" type="text ">
+                            <h5 class="uk-margin-remove font-size-12 uk-text-bold">Confirma contraseña</h5>
+                            <input class="input-data-user-customers" type="text ">
                         </div>
+                    </div>
+                    <div class="uk-text-center">
+                        <button class="button-get-in-user-customers" style="margin-top: 20px;">Registrarse</button>
+                        <h5 class="uk-margin-remove font-size-12 uk-text-bold cursor-pointer">o Iniciar Sesión</h5>
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="uk-position-bottom-left " style="z-index: 2 !important; ">
-                    <img class="image-resource1-background-login-customers " src="./data/Recurso-1.png " alt=" ">
-                </div>
-                <div class="uk-position-bottom-right " style="z-index: 2 !important; ">
-                    <img class="image-resource2-background-login-customers " src="./data/Recurso-2.png " alt=" ">
-                </div>
-                <div class="uk-position-bottom-right" style="z-index: 1 !important; ">
-                    <img class="image-resource-background-white-customers " src="./data/Recurso-del-fondo.png " alt=" ">
-                </div>
+            <div class="uk-visible@m" style="padding-top: 205px; padding-right: 20px;">
+                <img class="image-resource2-background-login-customers" src="./data/Recurso-2.png " alt=" ">
             </div>
         </div>
     </div>
@@ -1265,25 +1265,33 @@
                 <i class="fas fa-caret-left color-blue cursor-pointer" style="font-size: 30px;"></i>
                 <img class="logo-direction-customers padding-horizontal-40" src="./data/logo1.png" alt="">
             </div>
-            <div class="uk-flex uk-flex-middle">
-                <div style="margin-top: 450px; margin-left: 300px; position: absolute !important; z-index: 200 !important;">
+            <div class="uk-flex uk-flex-middle" style="padding-top: 40px;">
+                <div style="margin-left: 300px;">
                     <div style="margin-bottom: 20px;">
                         <h4 class="uk-margin-remove uk-text-bold">Direccion</h4>
                         <h5 class="uk-margin-remove ">Escribela y da click en “Localizar”</h5>
                     </div>
-                    <h5 class="uk-margin-remove font-size-12 uk-text-bold">Pais</h5>
-                    <input class="input-data-user-customers" type="text ">
-                    <h5 class="uk-margin-remove font-size-12 uk-text-bold">Ciudad</h5>
-                    <input class="input-data-user-customers" type="text ">
-                    <h5 class="uk-margin-remove font-size-12 uk-text-bold">Calle</h5>
-                    <div style="margin-bottom: 10px;">
-                        <input class="input-data-user-customers" style="width: 40px;" type="text ">
-                        <input class="input-data-user-customers" style="width: 150px;" type="text ">
+                    <div class="uk-flex uk-flex-middle uk-flex-around button-data-direction-customers cursor-pointer">
+                        <h6 class="uk-margin-remove font-size-12 uk-text-bold">Selecciona tu ciudad</h6>
+                        <i class="fas fa-caret-down font-size-18"></i>
                     </div>
-                    <div>
-                        <button class="button-direction-customers" style="background-color: black;">Localizar</button>
+                    <div class="uk-flex uk-flex-middle cursor-pointer" style="margin-top: 20px;">
+                        <div class="uk-flex uk-flex-middle uk-flex-around button-data-direction-customers" style="width: 100px;">
+                            <h6 class="uk-margin-remove font-size-12 uk-text-bold">Carrera</h6>
+                            <i class="fas fa-caret-down font-size-18"></i>
+                        </div>
+                        <input class="input-data-user-customers uk-text-center" placeholder="16A SUR" style="width: 200px; margin-left: 21px;" type="text ">
                     </div>
-                    <div>
+                    <div class="uk-flex uk-flex-middle" style="margin-top: 20px;">
+                        <input class="input-data-user-customers uk-text-center" placeholder="2C" style="width: 98px;" type="text ">
+                        <h3 class="uk-margin-remove uk-text-bold padding-horizontal-5">-</h3>
+                        <input class="input-data-user-customers uk-text-center" placeholder="32" style="width: 200px;" type="text ">
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <input class="input-data-user-customers uk-text-center" placeholder="Información Adicional" style="width: 322px;" type="text ">
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 15px;">
+                        <button class="button-direction-customers" style="background-color: black; margin-right: 10px;">Localizar</button>
                         <button class="button-direction-customers">Siguiente</button>
                     </div>
                 </div>
@@ -1291,9 +1299,6 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16289433.401729723!2d-83.39814111764282!3d4.609691158847656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e15a43aae1594a3%3A0x9a0d9a04eff2a340!2sColombia!5e0!3m2!1ses!2sco!4v1613061711211!5m2!1ses!2sco"
                         class="map-direction-customers" width="400" height="300" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-            </div>
-            <div class="uk-position-bottom-right" style="z-index: 1 !important;">
-                <img class="image-resource-background-white-customers " src="./data/Recurso-del-fondo.png " alt=" ">
             </div>
         </div>
     </div>
@@ -1403,10 +1408,10 @@
                                     <div class="uk-flex uk-flex-middle" style="padding-left: 40px;">
                                         <h5 class="uk-margin-remove uk-text-bold width-100">Tarjeta</h5>
                                         <img class="image-money-change-payment-customers" style="height: 50px;" src="./data/tarjetas-recursoo.png" alt="">
-                                        <i class="fas fa-caret-down cursor-pointer" style="font-size: 18px; margin-left: 50px;"></i>
+                                        <i class="fas fa-caret-down cursor-pointer" style="font-size: 18px; margin-left: 50px;" uk-toggle="target: #toggle-usage"></i>
                                     </div>
                                 </div>
-                                <div style="margin-top: 30px;">
+                                <div id="toggle-usage" style="margin-top: 30px;">
                                     <div class="uk-flex uk-flex-middle uk-flex-around" style="padding-right: 20px;">
                                         <div class="uk-flex uk-flex-middle width-200">
                                             <img class="image-money-change-payment-customers" style="height: 55px; margin-right: 10px;" src="./data/american-express.png" alt="">
@@ -1788,7 +1793,7 @@
         </div>
     </div>
     <!-- tren de estado RECIBIDO-->
-    <div style="display: none;">
+    <div style="display: inline;">
         <!-- navbar checkout -->
         <div class="uk-flex uk-flex-middle uk-flex-between navbar-checkout-customers">
             <div style="margin-left: 30px;">
@@ -1815,9 +1820,9 @@
                     </div>
                     <div style="margin-left: 20px;">
                         <h4 class="width-100">Recibido</h4>
-                        <h4 class="width-100" style="margin-top: 73px;">En proceso</h4>
-                        <h4 class="width-100" style="margin-top: 65px;">Alistando Pedido</h4>
-                        <h4 class="width-100" style="margin-top: 40px;">En Camino</h4>
+                        <h4 class="width-100" style="margin-top: 73px; font-family: Roboto, sans-serif !important;">En proceso</h4>
+                        <h4 class="width-100" style="margin-top: 65px; font-family: Roboto, sans-serif !important;">Alistando Pedido</h4>
+                        <h4 class="width-100" style="margin-top: 40px; font-family: Roboto, sans-serif !important;">En Camino</h4>
                     </div>
                 </div>
             </div>
@@ -1825,8 +1830,8 @@
                 <div>
                     <h4 class="uk-margin-remove uk-text-bold ">Resumen de tu pedido</h4>
                     <div class="uk-flex uk-flex-middle padding-vertical-10 ">
-                        <h6 class="uk-margin-remove ">Estado:</h6>
-                        <h6 class="uk-margin-remove uk-text-bold ">Recibido</h6>
+                        <h6 class="uk-margin-remove">Estado:</h6>
+                        <h6 class="uk-margin-remove uk-text-bold padding-horizontal-10">Recibido</h6>
                     </div>
                     <!-- scroll -->
                     <div class="container-scroll-products-state-train-customers ">
@@ -2005,7 +2010,7 @@
                     <h4 class="uk-margin-remove uk-text-bold ">Resumen de tu pedido</h4>
                     <div class="uk-flex uk-flex-middle padding-vertical-10 ">
                         <h6 class="uk-margin-remove ">Estado:</h6>
-                        <h6 class="uk-margin-remove uk-text-bold ">Recibido</h6>
+                        <h6 class="uk-margin-remove uk-text-bold padding-horizontal-10">Recibido</h6>
                     </div>
                     <!-- scroll -->
                     <div class="container-scroll-products-state-train-customers ">
@@ -2184,7 +2189,7 @@
                     <h4 class="uk-margin-remove uk-text-bold ">Resumen de tu pedido</h4>
                     <div class="uk-flex uk-flex-middle padding-vertical-10 ">
                         <h6 class="uk-margin-remove ">Estado:</h6>
-                        <h6 class="uk-margin-remove uk-text-bold ">Recibido</h6>
+                        <h6 class="uk-margin-remove uk-text-bold padding-horizontal-10">Recibido</h6>
                     </div>
                     <!-- scroll -->
                     <div class="container-scroll-products-state-train-customers ">
@@ -2363,7 +2368,7 @@
                     <h4 class="uk-margin-remove uk-text-bold ">Resumen de tu pedido</h4>
                     <div class="uk-flex uk-flex-middle padding-vertical-10 ">
                         <h6 class="uk-margin-remove ">Estado:</h6>
-                        <h6 class="uk-margin-remove uk-text-bold ">Recibido</h6>
+                        <h6 class="uk-margin-remove uk-text-bold padding-horizontal-10">Recibido</h6>
                     </div>
                     <!-- scroll -->
                     <div class="container-scroll-products-state-train-customers ">

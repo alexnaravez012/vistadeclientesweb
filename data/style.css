@@ -72,6 +72,7 @@
     .logo-store-customers {
         height: 70px;
         width: 140px;
+        margin-left: 20px;
     }
     
     .input-search-customers {
@@ -99,6 +100,7 @@
     .button-data-user-customers {
         border: none;
         background-color: white;
+        margin-right: 20px;
     }
     
     .button-data-user-customers:focus {
@@ -108,6 +110,7 @@
     .logo-user-customers {
         height: 40px;
         width: 40px;
+        margin-right: 10px;
     }
     
     .drop-data-user-customers {
@@ -218,7 +221,7 @@
     }
     
     .main-container-add-products-customers {
-        padding-left: 250px;
+        padding-left: 220px;
         padding-top: 90px;
         padding-bottom: 140px;
         padding-right: 180px;
@@ -295,7 +298,7 @@
     }
     
     .menu-right-vertical-customers {
-        top: 130px;
+        top: 100px;
         padding-top: 20px;
         left: calc(100% - 220px);
         width: 200px !important;
@@ -312,16 +315,15 @@
     }
     
     .img-menu-right-vertical-customers {
-        min-width: 70px;
-        max-width: 70px;
-        width: 70px;
-        height: 70px;
+        min-width: 75px;
+        max-width: 75px;
+        width: 75px;
+        height: 75px;
         border-radius: 50%;
         background-position: 50%;
         background-size: 100% auto;
         cursor: pointer;
         margin-right: 10px;
-        margin-left: 10px;
         padding: 0px;
     }
     
@@ -435,29 +437,23 @@
     }
     
     .background-customer-login {
-        background-image: url('./Fondo-pantalla-de-ingreso.jpg');
+        background: url(./Fondo-pantalla-de-ingreso.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         width: 100%;
-        height: 100%;
-        position: absolute;
+        height: 100vh;
     }
     
     .image-resource1-background-login-customers {
         height: 480px;
         width: 350px;
-        margin-left: 30px;
     }
     
     .image-resource2-background-login-customers {
         height: 420px;
         width: 410px;
-        margin-right: 10px;
-    }
-    
-    .image-resource-background-white-customers {
-        width: 1050px;
-        height: 450px;
-        position: relative !important;
-        margin-right: 15px;
     }
     
     .image-logo-login-customers {
@@ -472,6 +468,27 @@
         border: 1px solid black;
         margin-top: 5px !important;
         margin-bottom: 5px !important;
+    }
+    
+    .input-data-direction-customers {
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+    
+    .button-data-direction-customers {
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: white;
+    }
+    
+    .button-data-direction-customers:focus {
+        outline: 0;
     }
     
     .button-get-in-user-customers {
@@ -505,8 +522,8 @@
     
     .button-direction-customers {
         border: none;
-        width: 150px;
-        height: 40px;
+        width: 160px;
+        height: 38px;
         background-color: #2E67B0;
         font-weight: 800;
         color: white;
@@ -518,10 +535,10 @@
     .map-direction-customers {
         border: 0;
         border-radius: 15px;
-        position: absolute !important;
-        z-index: 50 !important;
         top: 170px;
         left: 600px;
+        margin-left: 60px;
+        margin-top: 65px;
     }
     
     .button-filter-customers {
@@ -536,11 +553,13 @@
     .menu-filter-customers {
         background-color: white;
         margin-left: 928px;
-        height: 440px !important;
+        height: 340px !important;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
-        width: 280px;
-        padding: 20px !important;
+        width: 180px;
+        padding-right: 40px;
+        padding-left: 20px;
+        padding-top: 20px;
     }
     
     .padding-vertical-20 {
@@ -551,9 +570,13 @@
     .button-circle-filter-customers {
         border-radius: 50px;
         border: 1px solid black;
-        height: 20px;
-        width: 20px;
+        height: 15px;
+        width: 15px;
         background-color: white;
+    }
+    
+    .width-120 {
+        width: 120px;
     }
     
     .button-circle-filter-customers:focus {
@@ -568,17 +591,21 @@
         color: rgb(168, 168, 168);
     }
     
-    .button-apply-customers {
+    .button-apply-filter-customers {
         color: white;
         border-radius: 10px;
         border: none;
         background-color: #45B771;
-        width: 120px;
-        height: 40px;
-        font-size: 15px;
-        font-weight: 600;
-        margin-top: 20px;
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 5px;
         cursor: pointer;
+    }
+    
+    .font-size-28 {
+        font-size: 28px;
     }
     
     .button-apply-customers:focus {
@@ -587,15 +614,17 @@
     
     .color-yellow-star-customers {
         color: #E69D2F;
+        font-size: 17px;
     }
     
     .box-add-product-gallery-customers {
         background-color: #EFE280;
         height: 50px;
-        width: 170px;
+        width: 155px;
         border-radius: 5px;
         margin-top: 20px;
         cursor: pointer;
+        padding-left: 20px;
     }
     
     .size-bag-add-gallery-customers {
@@ -604,8 +633,8 @@
     }
     
     .mini-menu-vertical-gallery-customers {
-        width: 80px !important;
-        height: 300px !important;
+        width: 100px !important;
+        height: 245px !important;
         overflow-y: scroll;
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -660,10 +689,10 @@
     }
     
     .img-mini-menu-scroll-gallery-customers {
-        min-width: 60px;
-        max-width: 60px;
-        width: 60px;
-        height: 60px;
+        min-width: 75px;
+        max-width: 75px;
+        width: 75px;
+        height: 75px;
         border-radius: 50%;
         background-position: 50%;
         background-size: 100% auto;
@@ -673,11 +702,11 @@
         margin-left: 10px;
     }
     
-    .img-related-posts-customers {
-        min-width: 80px;
-        max-width: 80px;
-        width: 80px;
-        height: 80px;
+    .img-related-posts-gallery-customers {
+        min-width: 85px;
+        max-width: 85px;
+        width: 85px;
+        height: 85px;
         border-radius: 50%;
         background-position: 50%;
         background-size: 100% auto;
@@ -687,11 +716,13 @@
         background-color: #EFE280;
         border-radius: 10px;
         padding: 10px;
+        padding-bottom: 13px;
         top: calc(100% - 110px) !important;
         left: calc(50% - 75px);
         position: fixed !important;
         z-index: 300 !important;
-        width: 180px;
+        width: 150px;
+        height: 30px;
         cursor: pointer;
     }
     
@@ -1000,7 +1031,7 @@
     
     .modal-change-payment-method-checkout-customers {
         width: 600px !important;
-        height: 500px !important;
+        height: auto !important;
         border-radius: 15px !important;
         padding: 0px;
         padding-top: 20px;
@@ -1032,6 +1063,7 @@
         height: 30px;
         width: 130px;
         cursor: pointer;
+        margin-bottom: 20px;
     }
     
     .button-next-change-payment-customers:focus {
@@ -1370,4 +1402,12 @@
     
     input {
         font-family: 'Roboto', sans-serif !important;
+    }
+    
+    .width-130 {
+        width: 130px;
+    }
+    
+    .font-size-8 {
+        font-size: 8px;
     }
