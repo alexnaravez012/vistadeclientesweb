@@ -93,7 +93,7 @@
     .text-bag-shopping-customers {
         color: black;
         left: 15px;
-        top: -25px;
+        top: -23px;
         font-size: 13px;
     }
     
@@ -166,7 +166,7 @@
     }
     
     .button-items-menu-customers:hover {
-        background-color: rgb(248, 232, 163);
+        background-color: #F4FFAF;
     }
     
     .button-items-menu-customers:focus {
@@ -184,7 +184,7 @@
     }
     
     .button-items-menu-categories-customers:hover {
-        background-color: rgb(248, 232, 163);
+        background-color: #F4FFAF;
     }
     
     .button-items-menu-categories-customers:focus {
@@ -258,14 +258,14 @@
     
     .button-discount-customers {
         border-radius: 10px;
-        background-color: rgb(248, 232, 163);
+        background-color: #F4FFAF;
         color: black;
         width: 50px !important;
+        height: 20px;
         text-align: center;
         bottom: 100px;
         right: 200px;
-        padding-top: 1px;
-        padding-bottom: 1px;
+        padding: 5px;
         font-size: 12px;
     }
     
@@ -287,7 +287,7 @@
     }
     
     .info-float-customers {
-        background-color: rgb(248, 232, 163);
+        background-color: #F4FFAF;
         border-radius: 10px;
         padding: 10px;
         top: calc(100% - 150px) !important;
@@ -461,6 +461,12 @@
         width: 300px;
     }
     
+    .image-logo-registration-customers {
+        height: 200px;
+        width: 270px;
+        margin-bottom: 20px;
+    }
+    
     .input-data-user-customers {
         width: 200px;
         height: 30px;
@@ -552,7 +558,7 @@
     
     .menu-filter-customers {
         background-color: white;
-        margin-left: 928px;
+        margin-left: 938px;
         height: 340px !important;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
@@ -715,20 +721,21 @@
     .info-float-gallery-customers {
         background-color: #EFE280;
         border-radius: 10px;
+        padding-bottom: 16px;
         padding: 10px;
-        padding-bottom: 13px;
         top: calc(100% - 110px) !important;
         left: calc(50% - 75px);
         position: fixed !important;
         z-index: 300 !important;
-        width: 150px;
+        width: 155px;
         height: 30px;
         cursor: pointer;
     }
     
     .size-bag-float-customers {
-        height: 30px;
+        height: 32px;
         width: 30px;
+        margin-left: 5px;
     }
     
     .hr-vertical {
@@ -1030,7 +1037,7 @@
     }
     
     .modal-change-payment-method-checkout-customers {
-        width: 600px !important;
+        width: 580px !important;
         height: auto !important;
         border-radius: 15px !important;
         padding: 0px;
@@ -1064,6 +1071,7 @@
         width: 130px;
         cursor: pointer;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
     
     .button-next-change-payment-customers:focus {
@@ -1190,7 +1198,7 @@
     }
     
     .modal-extended-order-checkout-customers {
-        width: 545px !important;
+        width: 530px !important;
         height: 525px !important;
         border-radius: 15px !important;
         padding: 0px;
@@ -1289,12 +1297,12 @@
     
     .items-products-scroll-state-train-customers {
         width: 220px;
-        height: 60px;
+        height: 62px;
         border: 1px solid rgb(158, 158, 158);
         border-radius: 5px;
         box-shadow: 0px 2px 8px -2px rgba(0, 0, 0, 0.35);
-        margin-bottom: 10px;
-        margin-top: 9px;
+        margin-bottom: 12px;
+        margin-top: 1px;
     }
     
     .container-scroll-products-state-train-customers {
@@ -1328,11 +1336,11 @@
     
     .box-order-cost-train-customers {
         width: 250px;
-        height: 168px;
+        height: 173px;
         border: 1PX solid rgb(156, 156, 156);
         box-shadow: 0px 2px 8px -2px rgba(0, 0, 0, 0.35);
         border-radius: 5px;
-        margin-top: 73px;
+        margin-top: 69px;
         padding: 20px;
     }
     
@@ -1410,4 +1418,12 @@
     
     .font-size-8 {
         font-size: 8px;
+    }
+    
+    .font-size-16 {
+        font-size: 16px;
+    }
+    
+    .font-size-17 {
+        font-size: 17px;
     }
