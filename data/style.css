@@ -65,7 +65,7 @@
         height: 80px !important;
         width: 100%;
         position: fixed;
-        z-index: 200 !important;
+        z-index: 500 !important;
         box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.10);
     }
     
@@ -88,11 +88,12 @@
     .img-bag-shopping-customers {
         width: 45px;
         height: 45px;
+        margin-left: 10px;
     }
     
     .text-bag-shopping-customers {
         color: black;
-        left: 15px;
+        left: 25px;
         top: -23px;
         font-size: 13px;
     }
@@ -125,7 +126,7 @@
         width: 100px !important;
         height: calc(100% - 140px) !important;
         position: fixed;
-        z-index: 30;
+        z-index: 30 !important;
         overflow-y: scroll;
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -344,13 +345,26 @@
     }
     
     .background-black-customers {
-        z-index: 500;
-        position: absolute;
-        position: fixed;
+        z-index: 300 !important;
         width: 100% !important;
         background-color: rgba(0, 0, 0, 0.3);
         display: none;
-        margin-top: 80px;
+        position: absolute !important;
+    }
+    
+    .menu-filter-customers {
+        background-color: white;
+        height: 370px !important;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        width: 220px !important;
+        padding-right: 40px;
+        padding-left: 20px;
+        padding-top: 20px;
+        margin-top: 90px !important;
+        border-top: none !important;
+        box-shadow: none !important;
+        box-shadow: 0px 31px 18px 16px rgba(0, 0, 0, 0.35) !important;
     }
     
     #user-button:active+.background-black-customers {
@@ -363,10 +377,13 @@
     
     .menu-login-customers {
         background-color: white;
-        margin-left: 1090px;
-        height: 80px !important;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        width: 250px !important;
+        height: 70px !important;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: none;
+        box-shadow: none !important;
+        box-shadow: -14px 20px 18px 0px rgba(0, 0, 0, 0.25) !important;
     }
     
     .button-user-login-customers {
@@ -432,7 +449,7 @@
     
     .filter-customers {
         height: 45px;
-        width: 45px;
+        width: 50px;
         cursor: pointer;
     }
     
@@ -550,22 +567,15 @@
     .button-filter-customers {
         border: none;
         background-color: white;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
     
     .button-filter-customers:focus {
+        box-shadow: -10px 0px 10px -7px #00000080, 10px 0px 10px -7px #00000063, 5px 5px 15px 5px rgba(0, 0, 0, 0);
         outline: 0;
-    }
-    
-    .menu-filter-customers {
-        background-color: white;
-        margin-left: 938px;
-        height: 340px !important;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-        width: 180px;
-        padding-right: 40px;
-        padding-left: 20px;
-        padding-top: 20px;
     }
     
     .padding-vertical-20 {
