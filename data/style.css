@@ -102,6 +102,8 @@
         border: none;
         background-color: white;
         margin-right: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
     
     .button-data-user-customers:focus {
@@ -399,10 +401,14 @@
         background-color: white;
         margin-left: 1100px;
         height: 80px !important;
+        width: 250px !important;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        padding-left: 30px;
-        padding-top: 20px;
+        padding-left: 30px !important;
+        padding-top: 10px !important;
+        padding-bottom: 20px !important;
+        box-shadow: none !important;
+        box-shadow: -14px 20px 18px 0px rgba(0, 0, 0, 0.25) !important;
     }
     
     .started-login-customers {
@@ -416,10 +422,14 @@
     }
     
     .menu-orders-customers {
+        padding: 0px !important;
         background-color: white;
         margin-left: 1080px;
-        height: 485px !important;
+        width: 220px !important;
+        height: 465px !important;
         border-bottom-left-radius: 25px;
+        box-shadow: none !important;
+        box-shadow: -14px 20px 18px 0px rgba(0, 0, 0, 0.25) !important;
     }
     
     .navbar-menu-orders-customers {

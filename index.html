@@ -110,7 +110,7 @@
                 </a>
             </div>
             <!-- Cuando el usuario no ha iniciado sesion boton -->
-            <div style="display: none;">
+            <div style="display: inline;">
                 <div class="uk-inline" style="padding-top: -20px !important; padding-bottom: -20px !important;">
                     <button class="button-user-login-customers" type="button">
                         <img  class="logo-user-customers cursor-pointer" src="./data/user.png " alt=" ">
@@ -124,111 +124,109 @@
                 </div>
             </div>
             <!-- Cuando el usuario ya inicio sesion boton -->
-            <div style="display: inline;">
-                <button class="button-data-user-customers uk-flex uk-flex-middle cursor-pointer">
-                    <img class="logo-user-customers" style="margin-right: 5px;" src="./data/user.png " alt=" ">
-                    <h4 class="uk-text-bold uk-margin-remove width-130" style="padding-right: 5px;">Mireya Mopan</h4>
-                    <i class="fas fa-caret-down "></i>
-                </button>
+            <div style="display: none;">
+                <div class="uk-inline">
+                    <button class="button-data-user-customers uk-flex uk-flex-middle cursor-pointer">
+                        <img class="logo-user-customers" style="margin-right: 5px;" src="./data/user.png " alt=" ">
+                        <h4 class="uk-text-bold uk-margin-remove width-130" style="padding-right: 5px;">Mireya Mopan</h4>
+                        <i class="fas fa-caret-down "></i>
+                    </button>
+                </div>
+                <div uk-dropdown="mode: click" class="started-login-customers">
+                    <h4 class="uk-margin-remove uk-text-bold color-blue cursor-pointer font-size-18">Mis Pedidos</h4>
+                    <h5 class="uk-margin-remove cursor-pointer" style="padding-top: 10px;">Cerrar Sesión</h5>
+                </div>
             </div>
             <!-- contenido menu de mis ordenes boton -->
             <div style="display: none;">
-                <button onclick="openDropMenus('orders')" class="button-data-user-customers uk-flex uk-flex-middle cursor-pointer">
-                    <img class="logo-user-customers" style="margin-right: 5px;" src="./data/user.png " alt=" ">
-                    <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Mireya Mopan</h4>
-                    <i class="fas fa-caret-down "></i>
-                </button>
-            </div>
-        </div>
-        <!-- Este menú, temporalmente solo dispone de una opción para regular los pedidos Activos y Finalizados -->
-        <div id="menu-sesion-started" class="background-black-customers">
-            <div class="started-login-customers">
-                <h4 class="uk-margin-remove uk-text-bold color-blue cursor-pointer font-size-18">Mis Pedidos</h4>
-                <h5 class="uk-margin-remove cursor-pointer" style="padding-top: 10px;">Cerrar Sesión</h5>
-            </div>
-        </div>
-        <!-- Desplegable de pedidos activos y finalizados -->
-        <div id="menu-orders" class="background-black-customers">
-            <div class="menu-orders-customers">
-                <div class="padding-horizontal-20 navbar-menu-orders-customers">
-                    <div class="uk-flex uk-flex-middle" style="padding-top: 20px;">
-                        <i class="fas fa-caret-left cursor-pointer" style="font-size: 18px; padding-right: 10px;"></i>
-                        <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 15px;">Mis Pedidos</h5>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 10px;">
-                        <button class="buttons-menu-orders-customers uk-text-bold uk-text-center">Activos</button>
-                        <button class="buttons-menu-orders-customers uk-text-bold uk-text-center">Finalizados</button>
-                    </div>
+                <div class="uk-inline">
+                    <button class="button-data-user-customers uk-flex uk-flex-middle cursor-pointer">
+                        <img class="logo-user-customers" style="margin-right: 5px;" src="./data/user.png " alt=" ">
+                        <h4 class="uk-text-bold uk-margin-remove width-130" style="padding-right: 5px;">Mireya Mopan</h4>
+                        <i class="fas fa-caret-down "></i>
+                    </button>
                 </div>
-                <div class="padding-horizontal-10">
-                    <div class="card-menu-orders-customers">
-                        <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-bottom: 40px;">
-                            <div>
-                                <h6 class="uk-margin-remove font-size-12 font-weight-500">PP--3</h6>
-                                <h6 class="uk-margin-remove font-size-11">Nº Pedido</h6>
-                            </div>
-                            <div class="uk-text-center">
-                                <h6 class="uk-margin-remove font-size-12 font-weight-500">2020-06-26</h6>
-                                <h6 class="uk-margin-remove cursor-pointer color-blue font-size-11 font-weight-500">Recibido</h6>
-                            </div>
-                            <div>
-                                <h6 class="font-size-12 font-weight-500">10:37AM</h6>
-                            </div>
+                <div uk-dropdown="mode: click" class="menu-orders-customers">
+                    <div class="padding-horizontal-20 navbar-menu-orders-customers">
+                        <div class="uk-flex uk-flex-middle" style="padding-top: 20px;">
+                            <i class="fas fa-caret-left cursor-pointer" style="font-size: 18px; padding-right: 10px;"></i>
+                            <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 15px;">Mis Pedidos</h5>
                         </div>
-                        <div>
-                            <div class="hr-tab"></div>
-                        </div>
-                        <div class="uk-flex uk-flex-middle uk-flex-between">
-                            <h6 class="uk-margin-remove font-size-12 font-weight-500">Calificar</h6>
-                            <h6 class="uk-margin-remove font-size-12 font-weight-500">Repetir Pedido</h6>
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 10px;">
+                            <button class="buttons-menu-orders-customers uk-text-bold uk-text-center">Activos</button>
+                            <button class="buttons-menu-orders-customers uk-text-bold uk-text-center">Finalizados</button>
                         </div>
                     </div>
-                </div>
-                <div class="padding-horizontal-10">
-                    <div class="card-menu-orders-customers">
-                        <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-bottom: 40px;">
+                    <div class="padding-horizontal-10">
+                        <div class="card-menu-orders-customers">
+                            <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-bottom: 40px;">
+                                <div>
+                                    <h6 class="uk-margin-remove font-size-12 font-weight-500">PP--3</h6>
+                                    <h6 class="uk-margin-remove font-size-11">Nº Pedido</h6>
+                                </div>
+                                <div class="uk-text-center">
+                                    <h6 class="uk-margin-remove font-size-12 font-weight-500">2020-06-26</h6>
+                                    <h6 class="uk-margin-remove cursor-pointer color-blue font-size-11 font-weight-500">Recibido</h6>
+                                </div>
+                                <div>
+                                    <h6 class="font-size-12 font-weight-500">10:37AM</h6>
+                                </div>
+                            </div>
                             <div>
-                                <h6 class="uk-margin-remove font-size-12 font-weight-500">PP--3</h6>
-                                <h6 class="uk-margin-remove font-size-11">Nº Pedido</h6>
+                                <div class="hr-tab"></div>
                             </div>
-                            <div class="uk-text-center">
-                                <h6 class="uk-margin-remove font-size-12 font-weight-500">2020-06-26</h6>
-                                <h6 class="uk-margin-remove cursor-pointer color-blue font-size-11 font-weight-500">Recibido</h6>
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h6 class="uk-margin-remove font-size-12 font-weight-500">Calificar</h6>
+                                <h6 class="uk-margin-remove font-size-12 font-weight-500">Repetir Pedido</h6>
                             </div>
-                            <div>
-                                <h6 class="font-size-12 font-weight-500">10:37AM</h6>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="hr-tab"></div>
-                        </div>
-                        <div class="uk-flex uk-flex-middle uk-flex-between">
-                            <h6 class="uk-margin-remove font-size-12 font-weight-500">Calificar</h6>
-                            <h6 class="uk-margin-remove font-size-12 font-weight-500">Repetir Pedido</h6>
                         </div>
                     </div>
-                </div>
-                <div class="padding-horizontal-10">
-                    <div class="card-menu-orders-customers">
-                        <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-bottom: 40px;">
-                            <div>
-                                <h6 class="uk-margin-remove font-size-12 font-weight-500">PP--3</h6>
-                                <h6 class="uk-margin-remove font-size-11">Nº Pedido</h6>
+                    <div class="padding-horizontal-10">
+                        <div class="card-menu-orders-customers">
+                            <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-bottom: 25px;">
+                                <div>
+                                    <h6 class="uk-margin-remove font-size-12 font-weight-500">PP--3</h6>
+                                    <h6 class="uk-margin-remove font-size-11">Nº Pedido</h6>
+                                </div>
+                                <div class="uk-text-center">
+                                    <h6 class="uk-margin-remove font-size-12 font-weight-500">2020-06-26</h6>
+                                    <h6 class="uk-margin-remove cursor-pointer color-blue font-size-11 font-weight-500">Recibido</h6>
+                                </div>
+                                <div>
+                                    <h6 class="font-size-12 font-weight-500">10:37AM</h6>
+                                </div>
                             </div>
-                            <div class="uk-text-center">
-                                <h6 class="uk-margin-remove font-size-12 font-weight-500">2020-06-26</h6>
-                                <h6 class="uk-margin-remove cursor-pointer color-blue font-size-11 font-weight-500">Recibido</h6>
-                            </div>
                             <div>
-                                <h6 class="font-size-12 font-weight-500">10:37AM</h6>
+                                <div class="hr-tab"></div>
+                            </div>
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h6 class="uk-margin-remove font-size-12 font-weight-500">Calificar</h6>
+                                <h6 class="uk-margin-remove font-size-12 font-weight-500">Repetir Pedido</h6>
                             </div>
                         </div>
-                        <div>
-                            <div class="hr-tab"></div>
-                        </div>
-                        <div class="uk-flex uk-flex-middle uk-flex-between">
-                            <h6 class="uk-margin-remove font-size-12 font-weight-500">Calificar</h6>
-                            <h6 class="uk-margin-remove font-size-12 font-weight-500">Repetir Pedido</h6>
+                    </div>
+                    <div class="padding-horizontal-10">
+                        <div class="card-menu-orders-customers">
+                            <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-bottom: 40px;">
+                                <div>
+                                    <h6 class="uk-margin-remove font-size-12 font-weight-500">PP--3</h6>
+                                    <h6 class="uk-margin-remove font-size-11">Nº Pedido</h6>
+                                </div>
+                                <div class="uk-text-center">
+                                    <h6 class="uk-margin-remove font-size-12 font-weight-500">2020-06-26</h6>
+                                    <h6 class="uk-margin-remove cursor-pointer color-blue font-size-11 font-weight-500">Recibido</h6>
+                                </div>
+                                <div>
+                                    <h6 class="font-size-12 font-weight-500">10:37AM</h6>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="hr-tab"></div>
+                            </div>
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h6 class="uk-margin-remove font-size-12 font-weight-500">Calificar</h6>
+                                <h6 class="uk-margin-remove font-size-12 font-weight-500">Repetir Pedido</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
