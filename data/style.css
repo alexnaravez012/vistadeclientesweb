@@ -62,23 +62,28 @@
     
     .navbar-customers {
         background-color: white;
-        height: 80px !important;
+        height: 65px !important;
         width: 100%;
         position: fixed;
         z-index: 500 !important;
-        box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.10);
     }
     
     .logo-store-customers {
         height: 70px;
         width: 140px;
-        margin-left: 20px;
+        margin-left: 15px;
     }
     
     .input-search-customers {
         border: none;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid rgba(121, 121, 121, 0.719);
         width: 250px;
+        margin-left: 5px;
+        padding-bottom: 3px;
+    }
+    
+    .input-search-customers::placeholder {
+        font-size: 12px;
     }
     
     .input-search-customers:focus {
@@ -86,8 +91,8 @@
     }
     
     .img-bag-shopping-customers {
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 43px;
         margin-left: 10px;
     }
     
@@ -125,15 +130,15 @@
     .menu-vertical-customers {
         top: 73px;
         padding-top: 10px;
-        width: 100px !important;
+        width: 130px !important;
         height: calc(100% - 140px) !important;
         position: fixed;
         z-index: 30 !important;
         overflow-y: scroll;
         -ms-overflow-style: none;
         scrollbar-width: none;
-        box-shadow: 6px 0px 5px 0px rgba(0, 0, 0, 0.20);
         background-color: white;
+        padding-left: 45px;
     }
     
     .menu-vertical-customers::-webkit-scrollbar {
@@ -161,15 +166,19 @@
     .button-items-menu-customers {
         background-color: white;
         border: none;
-        height: 90px;
+        height: 100px;
         width: 100px;
         background-repeat: no-repeat !important;
         background-size: 50%;
         background-position: 100% auto;
+        padding-bottom: 10px;
+        padding-top: 5px;
     }
     
     .button-items-menu-customers:hover {
-        background-color: #F4FFAF;
+        /* background-color: #F4FFAF; */
+        border: 2px solid rgba(128, 128, 128, 0.459);
+        border-radius: 8px;
     }
     
     .button-items-menu-customers:focus {
@@ -224,8 +233,8 @@
     }
     
     .main-container-add-products-customers {
-        padding-left: 220px;
-        padding-top: 90px;
+        padding-left: 245px;
+        padding-top: 78px;
         padding-bottom: 140px;
         padding-right: 180px;
         overflow: auto;
@@ -236,23 +245,23 @@
     .card-add-product-customers {
         width: 230px !important;
         min-width: 230px !important;
-        height: 130px !important;
-        border: 1px rgba(0, 0, 255, 0.37) solid;
+        height: 150px !important;
+        border: 1px rgba(134, 134, 134, 0.5) solid;
         border-radius: 10px;
         padding-left: 20px !important;
         padding-right: 15px !important;
         padding-top: 10px !important;
         padding-bottom: 5px !important;
-        margin-right: 70px !important;
+        margin-right: 60px !important;
         margin-bottom: 10px !important;
         position: relative;
     }
     
     .img-card-add-products-customers-70 {
-        min-width: 70px;
-        max-width: 70px;
-        width: 70px;
-        height: 70px;
+        min-width: 80px;
+        max-width: 80px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         background-position: 50%;
         background-size: 100% auto;
@@ -260,16 +269,14 @@
     }
     
     .button-discount-customers {
-        border-radius: 10px;
-        background-color: #F4FFAF;
-        color: black;
+        border-radius: 8px;
+        background-color: #000000;
+        color: rgb(255, 255, 255);
         width: 50px !important;
         height: 20px;
-        text-align: center;
-        bottom: 100px;
+        bottom: 119px;
         right: 200px;
-        padding: 5px;
-        font-size: 12px;
+        font-size: 10px;
     }
     
     .button-card-add-customers {
@@ -278,32 +285,34 @@
         background-color: rgb(226, 226, 226);
         width: 60px;
         height: 20px;
-        font-size: 10px;
+        font-size: 9px;
+        font-weight: 600;
     }
     
     .heart-card-customers {
         height: 40px;
         width: 40px;
         left: 210px;
-        top: 110px;
+        top: 120px;
         cursor: pointer;
     }
     
     .info-float-customers {
-        background-color: #F4FFAF;
+        background-color: #FFF099;
         border-radius: 10px;
         padding: 10px;
         top: calc(100% - 150px) !important;
         position: fixed !important;
-        width: 150px !important;
-        left: calc(50% - 75px) !important;
+        width: 180px !important;
+        left: calc(50% - 100px) !important;
         z-index: 400;
+        height: 45px;
     }
     
     .menu-right-vertical-customers {
         top: 100px;
         padding-top: 20px;
-        left: calc(100% - 220px);
+        left: calc(100% - 210px);
         width: 200px !important;
         height: calc(100% - 150px) !important;
         position: fixed;
@@ -318,10 +327,10 @@
     }
     
     .img-menu-right-vertical-customers {
-        min-width: 75px;
-        max-width: 75px;
-        width: 75px;
-        height: 75px;
+        min-width: 85px;
+        max-width: 85px;
+        width: 85px;
+        height: 85px;
         border-radius: 50%;
         background-position: 50%;
         background-size: 100% auto;
@@ -343,7 +352,7 @@
     
     .font-footer-customers {
         color: black;
-        line-height: 9px;
+        line-height: 10px;
     }
     
     .background-black-customers {
@@ -458,8 +467,8 @@
     }
     
     .filter-customers {
-        height: 45px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
         cursor: pointer;
     }
     
@@ -748,7 +757,7 @@
         position: fixed !important;
         z-index: 300 !important;
         width: 155px;
-        height: 30px;
+        height: 20px;
         cursor: pointer;
     }
     
@@ -759,7 +768,7 @@
     }
     
     .hr-vertical {
-        border-left: 1px solid black;
+        border-left: 1px solid rgba(134, 134, 134, 0.801);
         height: 35px;
     }
     
