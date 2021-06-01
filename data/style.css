@@ -37,7 +37,7 @@
     }
     
     .hr-tab {
-        border-bottom: 1px solid rgb(54, 54, 54);
+        border-bottom: 1px solid rgba(146, 146, 146, 0.74);
     }
     
     .font-size-9 {
@@ -119,6 +119,7 @@
         height: 40px;
         width: 40px;
         margin-right: 10px;
+        cursor: pointer;
     }
     
     .drop-data-user-customers {
@@ -368,7 +369,7 @@
         height: 370px !important;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
-        width: 220px !important;
+        width: 260px !important;
         padding-right: 40px;
         padding-left: 20px;
         padding-top: 20px;
@@ -449,7 +450,7 @@
         border: none;
         background-color: white;
         padding-bottom: 10px;
-        font-size: 14px;
+        font-size: 12px;
         width: 90px;
         cursor: pointer;
     }
@@ -460,10 +461,11 @@
     }
     
     .card-menu-orders-customers {
-        border: 1px solid black;
+        border: 1px solid rgba(148, 148, 148, 0.678);
         border-radius: 20px;
         padding: 10px;
         margin-top: 15px;
+        height: 95px;
     }
     
     .filter-customers {
@@ -507,7 +509,7 @@
         width: 200px;
         height: 30px;
         border-radius: 5px;
-        border: 1px solid black;
+        border: 1px solid rgba(163, 163, 163, 0.712);
         margin-top: 5px !important;
         margin-bottom: 5px !important;
     }
@@ -525,7 +527,7 @@
         width: 200px;
         height: 30px;
         border-radius: 5px;
-        border: 1px solid black;
+        border: 1px solid rgba(160, 160, 160, 0.658);
         background-color: white;
     }
     
@@ -540,7 +542,7 @@
         background-color: #2E67B0;
         border: none;
         color: white;
-        font-weight: 800;
+        font-weight: 500;
         margin-bottom: 5px;
         margin-top: 10px;
         cursor: pointer;
@@ -1454,4 +1456,49 @@
     
     .font-size-17 {
         font-size: 17px;
+    }
+    
+    .modal-login-user {
+        width: 130px !important;
+        height: 180px !important;
+        margin-right: 10px !important;
+        padding: 0px !important;
+        border: 1px solid rgb(172, 172, 172);
+    }
+    
+    #user-login {
+        background-color: rgba(0, 0, 0, 0.219) !important;
+    }
+    
+    .modal-start-sesion {
+        width: 280px !important;
+        height: 140px !important;
+        margin-right: 10px !important;
+        padding: 0px !important;
+        border: 1px solid rgb(172, 172, 172);
+        padding-bottom: 25px !important;
+    }
+    
+    #start-user {
+        background-color: rgba(0, 0, 0, 0.219) !important;
+    }
+    
+    .modal-my-orders {
+        width: 280px !important;
+        height: 555px !important;
+        margin-right: 10px !important;
+        padding: 0px !important;
+        border: 1px solid rgb(172, 172, 172);
+        padding-bottom: 25px !important;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    #my-orders {
+        background-color: rgba(0, 0, 0, 0.219) !important;
+    }
+    
+    .modal-my-orders::-webkit-scrollbar {
+        display: none;
     }
