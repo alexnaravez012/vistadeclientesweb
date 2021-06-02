@@ -655,7 +655,7 @@
     }
     
     .box-add-product-gallery-customers {
-        background-color: #EFE280;
+        background-color: #F0E380;
         height: 50px;
         width: 155px;
         border-radius: 5px;
@@ -680,7 +680,7 @@
         direction: rtl;
         overflow: scroll;
         overflow-x: hidden!important;
-        margin-right: 20px;
+        margin-right: 40px;
     }
     
     .mini-menu-vertical-gallery-customers::-webkit-scrollbar {
@@ -776,7 +776,7 @@
     
     .modal-add-products-order-customers {
         border-radius: 30px;
-        width: 1100px !important;
+        width: 1180px !important;
         padding: 0px !important;
     }
     
@@ -892,10 +892,10 @@
     .card-products-checkout-customers {
         border: 2px solid #80808050;
         width: 450px;
-        border-radius: 10px;
-        padding: 20px;
+        margin-top: 10px;
+        padding-left: 18px;
         padding-bottom: 30px;
-        margin-top: 20px;
+        padding-top: 10px;
     }
     
     .card-product-like-dislike-checkout-customers {
@@ -927,7 +927,7 @@
     
     .button-change-payment-method-customers {
         height: 35px;
-        border: 2px solid rgba(0, 0, 0, 0.377);
+        border: 2px solid rgba(138, 138, 138, 0.377);
         border-radius: 10px;
         width: 80px;
         margin-left: 20px;
@@ -937,7 +937,7 @@
     .input-how-much-cash-customers {
         border: none;
         border-bottom: 1px solid black;
-        width: 100px;
+        width: 60px;
         margin-left: 20px;
     }
     
@@ -951,18 +951,17 @@
     }
     
     .box-schedule-order-checkout-customers {
-        border: 1.5px solid rgba(0, 0, 0, 0.459);
+        border: 1.5px solid rgba(145, 145, 145, 0.548);
         border-radius: 10px;
-        width: 220px;
-        height: 70px;
+        width: 80px;
+        height: 140px;
         padding: 10px;
         margin-top: 10px;
     }
     
     .button-day-schedule-order-checkout-customers {
-        border: 1px solid rgba(0, 0, 0, 0.383);
+        border: 1px solid rgba(145, 145, 145, 0.548);
         border-radius: 5px;
-        width: 80px;
         height: 25px;
         margin-top: 10px;
         cursor: pointer;
@@ -971,8 +970,8 @@
     .day-trip-checkout-checkbox-customers {
         border: 1px solid;
         border-radius: 50px !important;
-        width: 15px;
-        height: 15px;
+        width: 11px;
+        height: 13px;
         cursor: pointer;
         background-color: white;
         margin-left: 5px;
@@ -1501,4 +1500,72 @@
     
     .modal-my-orders::-webkit-scrollbar {
         display: none;
+    }
+    
+    .scroll-gallery {
+        height: 300px;
+        width: 480px;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        background-color: white;
+        overflow: scroll;
+        overflow-x: hidden!important;
+    }
+    
+    .scroll-gallery::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+    
+    .scroll-gallery::-webkit-scrollbar-button {
+        width: 0px;
+        height: 0px;
+    }
+    
+    .scroll-gallery::-webkit-scrollbar-thumb {
+        background: #b4b4b4;
+        border: 0px none #ffffff;
+        border-radius: 50px;
+        margin-left: 30px;
+    }
+    
+    .scroll-gallery::-webkit-scrollbar-thumb:hover {
+        background: #8f8f8f;
+    }
+    
+    .scroll-gallery::-webkit-scrollbar-thumb:active {
+        background: #6e6e6e;
+    }
+    
+    .scroll-gallery::-webkit-scrollbar-track {
+        background: #ffffff;
+        border: 0px none #ffffff;
+        border-radius: 50px;
+    }
+    
+    .scroll-gallery::-webkit-scrollbar-track:hover {
+        background: #ffffff;
+    }
+    
+    .scroll-gallery::-webkit-scrollbar-track:active {
+        background: #ffffff;
+    }
+    
+    .scroll-gallery::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+    
+    .info-float-gallery-customers {
+        background-color: #FFF099;
+        border-radius: 10px;
+        padding: 10px;
+        top: calc(100% - 135px) !important;
+        position: fixed !important;
+        width: 180px !important;
+        left: calc(50% - -50px) !important;
+        z-index: 400;
+        height: 45px;
+        padding-top: 15px;
+        padding-bottom: 5px;
     }
