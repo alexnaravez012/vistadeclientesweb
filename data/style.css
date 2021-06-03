@@ -865,6 +865,7 @@
     
     .main-container-checkout-customers {
         padding-top: 100px;
+        margin-left: 10px;
     }
     
     .img-checkout-customers {
@@ -890,7 +891,7 @@
     }
     
     .card-products-checkout-customers {
-        border: 2px solid #80808050;
+        border: 1px solid #99999988;
         width: 450px;
         margin-top: 10px;
         padding-left: 18px;
@@ -899,7 +900,7 @@
     }
     
     .card-product-like-dislike-checkout-customers {
-        border: 2px solid #80808050;
+        border: 1px solid #99999988;
         border-radius: 10px;
         padding: 10px;
         width: 200px;
@@ -926,7 +927,7 @@
     }
     
     .button-change-payment-method-customers {
-        height: 35px;
+        height: 32px;
         border: 2px solid rgba(138, 138, 138, 0.377);
         border-radius: 10px;
         width: 80px;
@@ -983,19 +984,19 @@
     }
     
     .input-deliver-in-checkout-customers {
-        width: 250px;
-        height: 30PX;
+        width: 330px;
+        height: 32PX;
         border-radius: 5PX;
-        border: 1PX solid rgba(0, 0, 0, 0.459);
+        border: 1PX solid rgba(141, 141, 141, 0.61);
     }
     
     .button-deliver-in-checkout-direction-customers {
-        height: 30px;
+        height: 32px;
         border-radius: 5PX;
         width: 90px;
-        border: 1PX solid rgba(0, 0, 0, 0.459);
+        border: 1PX solid rgba(148, 148, 148, 0.589);
         cursor: pointer;
-        margin-right: 20px;
+        margin-right: 45px;
     }
     
     .padding-horizontal-7 {
@@ -1004,11 +1005,10 @@
     }
     
     .box-order-summary-checkout-customers {
-        border: 1px solid rgba(0, 0, 0, 0.459);
-        border-radius: 10px;
-        width: 320px;
-        height: 240px;
-        padding: 20px;
+        border: 1px solid rgba(124, 124, 124, 0.459);
+        border-radius: 5px;
+        width: 280px;
+        height: 370px;
         margin-top: 10px;
     }
     
@@ -1020,13 +1020,12 @@
         background-color: #ADE1FF;
         border: none;
         border-radius: 5px;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 600;
         width: 100%;
-        height: 25px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        height: 35px;
         cursor: pointer;
+        margin-top: 5px;
     }
     
     .button-add-coupon-checkout-customers:focus {
@@ -1035,15 +1034,16 @@
     
     .button-summary-extended-checkout-customers {
         background-color: #ffffff;
-        border: 1px solid rgb(73, 73, 226);
+        border: none;
         border-radius: 5px;
-        font-size: 13px;
-        font-weight: 600;
+        font-size: 11px;
+        font-weight: 500;
         width: 100%;
         height: 25px;
-        margin-top: 15px;
         margin-bottom: 15px;
         cursor: pointer;
+        color: #376CAB;
+        margin-top: 30px;
     }
     
     .button-summary-extended-checkout-customers:focus {
@@ -1055,9 +1055,9 @@
         border: none;
         border-radius: 5px;
         font-weight: 800;
-        font-size: 17px;
+        font-size: 15px;
         width: 230px;
-        height: 50px;
+        height: 40px;
         margin-top: 15px;
         cursor: pointer;
     }
@@ -1081,6 +1081,11 @@
     
     .box-shadow-bottom-items-change-payment-customers {
         box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.10);
+        height: 70px;
+    }
+    
+    .hr-tab-bottom-items-change-payment-customers {
+        border-bottom: 1px solid rgba(150, 150, 150, 0.74);
         height: 70px;
     }
     

@@ -18,7 +18,7 @@
 
 <body id="body-height-customers">
     <!-- Vista de selección de productos base -->
-    <div style="display: none;">
+    <div style="display: inline;">
         <!--Navbar-->
         <div class="uk-flex uk-flex-middle uk-flex-between navbar-customers">
             <div class="uk-flex uk-flex-middle">
@@ -2574,7 +2574,7 @@
         </div>
     </div>
     <!-- Checkout -->
-    <div style="display: inline;">
+    <div style="display: none;">
         <!-- navbar checkout -->
         <div class="uk-flex uk-flex-middle uk-flex-between navbar-checkout-customers">
             <div style="margin-left: 30px;">
@@ -2596,7 +2596,7 @@
         <!-- Contendio Checkout -->
         <div class="main-container-checkout-customers uk-flex">
             <div>
-                <div class="uk-flex" style="margin-left: 80px;">
+                <div class="uk-flex" style="margin-left: 90px;">
                     <div>
                         <h4 class="uk-margin-remove uk-text-bold uk-text-center font-size-14" style="padding-top: 15px;">Productos</h4>
                         <div class="card-products-checkout-customers">
@@ -2646,7 +2646,7 @@
                             </div>
                         </div>
                     </div>
-                    <div style=" margin-left: 30px;">
+                    <div style=" margin-left: 53px;">
                         <div class="uk-flex uk-flex-center">
                             <div>
                                 <h5 class="uk-margin-remove uk-text-bold font-size-14" style="padding-top: 15px;">Programa tu pedido</h5>
@@ -2687,23 +2687,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-flex">
+                <div class="uk-flex" style="margin-left: 90px;">
                     <div>
                         <h5 class="uk-margin-remove uk-text-bold font-size-12" style="padding-top: 20px;">Metodo de pago:</h5>
                         <div class="uk-flex uk-flex-middle padding-vertical-10">
                             <div class="uk-flex uk-flex-middle uk-flex-around">
-                                <h6 class="uk-margin-remove uk-text-bold" style="padding-right: 10px;">Efectivo</h6>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-13" style="padding-right: 10px;">Efectivo</h6>
                                 <img class="image-money-checkout-customers" src="./data/dinero-recurso.png" alt="">
                             </div>
                             <div class="button-change-payment-method-customers uk-flex uk-flex-center uk-flex-middle" uk-toggle="target: #change-payment-method">
-                                <h6 class="uk-margin-remove uk-text-bold" style="color: #3DAD5A;">Cambiar</h6>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-13" style="color: #3DAD5A;">Cambiar</h6>
                             </div>
                             <!-- Sub menú de métodos de pago -->
                             <div id="change-payment-method" uk-modal>
                                 <div class="uk-modal-dialog modal-change-payment-method-checkout-customers">
                                     <button class="uk-modal-close-default" type="button" uk-close></button>
                                     <h4 class="uk-margin-remove uk-text-bold color-green" style="padding-left: 40px; padding-bottom: 20px;">Cambiar método de pago</h4>
-                                    <div class="uk-flex uk-flex-middle box-shadow-bottom-items-change-payment-customers" style="padding-left: 35px; height: 70px;">
+                                    <div class="uk-flex uk-flex-middle hr-tab-bottom-items-change-payment-customers" style="padding-left: 35px; height: 70px;">
                                         <h5 class="uk-margin-remove uk-text-bold width-100">Efectivo</h5>
                                         <img class="image-money-change-payment-customers" src="./data/dinero-recurso.png" alt="">
                                         <div style="margin-left: 50px;">
@@ -2713,7 +2713,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="box-shadow-bottom-items-change-payment-customers uk-flex uk-flex-middle">
+                                    <div class="hr-tab-bottom-items-change-payment-customers uk-flex uk-flex-middle">
                                         <div class="uk-flex uk-flex-middle" style="padding-left: 35px;">
                                             <h5 class="uk-margin-remove uk-text-bold width-100">PSE</h5>
                                             <img class="image-money-change-payment-customers" src="./data/PSE.png" alt="" style="height: 55px !important;">
@@ -2903,56 +2903,55 @@
                             <input type="text " placeholder="0$ " class="uk-text-center input-how-much-cash-customers ">
                         </div>
                     </div>
-                    <div style="margin-top: 30px; ">
-                        <h5 class="uk-margin-remove uk-text-bold ">Entregarlo en:</h5>
+                    <div style="margin-left: 65px;">
+                        <h5 class="uk-margin-remove uk-text-bold font-size-12" style="padding-top: 20px;">Entregarlo en:</h5>
                         <div style="margin-top: 10px; ">
                             <div class="uk-flex uk-flex-middle ">
                                 <div class="uk-flex uk-flex-middle uk-flex-around button-deliver-in-checkout-direction-customers ">
-                                    <h6 class="uk-margin-remove uk-text-bold ">Calle</h6>
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-13">Calle</h6>
                                     <i class="fas fa-caret-down " style="font-size: 18px; "></i>
                                 </div>
-                                <input type="text " style="width: 130px !important; " class="input-deliver-in-checkout-customers ">
+                                <input type="text " style="width: 200px !important; " class="input-deliver-in-checkout-customers ">
                             </div>
                             <div class="uk-flex uk-flex-middle " style="margin-top: 10px; ">
-                                <h4 class="uk-margin-remove uk-text-bold " style="padding-right: 8px; padding-left: 5px; ">#</h4>
-                                <input type="text " style="width: 60px !important; " class="input-deliver-in-checkout-customers ">
-                                <h4 class="uk-margin-remove uk-text-bold padding-horizontal-7 ">-</h4>
-                                <input type="text " style="width: 70px !important; " class="input-deliver-in-checkout-customers ">
-                                <h6 class="uk-margin-remove uk-text-bold uk-flex uk-flex-center uk-flex-middle button-deliver-in-checkout-direction-customers " style="width: 80px; margin-left: 10px !important; ">Mapa</h6>
+                                <input type="text " style="width: 85px !important; padding-left: 10px;" class="input-deliver-in-checkout-customers " placeholder="#">
+                                <h4 class="uk-margin-remove uk-text-bold" style="padding-left: 20px; padding-right: 10px;">-</h4>
+                                <input type="text " style="width: 110px !important; " class="input-deliver-in-checkout-customers ">
+                                <h6 class="uk-margin-remove uk-text-bold uk-text-muted uk-flex uk-flex-center uk-flex-middle button-deliver-in-checkout-direction-customers " style="width: 80px; margin-left: 10px !important; ">Mapa</h6>
                             </div>
                             <div style="margin-top: 10px; ">
-                                <input type="text " style="padding-left: 10px; " class="input-deliver-in-checkout-customers font-size-11 " placeholder="Datos Adicionales Ej: Torre 2 apto 303 ">
+                                <input type="text " style="padding-left: 10px; " class="input-deliver-in-checkout-customers font-size-11 uk-text-center uk-text-muted" placeholder="Datos Adicionales Ej: Torre 2 apto 303 ">
                             </div>
                         </div>
-                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 10px; ">
+                        <div class="uk-flex uk-flex-middle" style="margin-top: 10px; ">
                             <h6 class="uk-margin-remove ">Entrega estimada</h6>
-                            <h6 class="uk-margin-remove uk-text-bold ">33 - 48 mins</h6>
+                            <h6 class="uk-margin-remove padding-horizontal-10 uk-text-bold ">33 - 48 mins</h6>
                         </div>
                     </div>
                 </div>
             </div>
-            <div style="padding: 20px; margin-left: 20px; ">
-                <h5 class="uk-margin-remove uk-text-bold ">Resumen de tu pedido</h5>
+            <div style="margin-left: 55px;">
+                <h4 class="uk-margin-remove uk-text-bold uk-text-center font-size-14" style="padding-top: 15px;">Resumen de tu pedido</h4>
                 <div class="box-order-summary-checkout-customers ">
-                    <div>
-                        <div class="uk-flex uk-flex-middle uk-flex-between ">
+                    <div style="padding: 20px;">
+                        <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-top: 15px;">
                             <div class="uk-flex uk-flex-middle ">
-                                <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
-                                <h6 class="uk-margin-remove uk-text-bold ">Numero de productos</h6>
+                                <i class="fas fa-circle font-size-7 " style="margin-right: 10px;"></i>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-12">Numero de productos</h6>
                             </div>
-                            <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; "></h6>
+                            <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">2</h6>
                         </div>
-                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 5px; ">
+                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 20px; ">
                             <div class="uk-flex uk-flex-middle ">
                                 <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
-                                <h6 class="uk-margin-remove uk-text-bold ">Sub-Total</h6>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-12">Sub-Total</h6>
                             </div>
                             <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">$230.000</h6>
                         </div>
-                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 5px; ">
+                        <div class="uk-flex uk-flex-middle uk-flex-between " style="margin-top: 20px; ">
                             <div class="uk-flex uk-flex-middle ">
                                 <i class="fas fa-circle font-size-7 " style="margin-right: 10px; "></i>
-                                <h6 class="uk-margin-remove uk-text-bold ">Domicilio</h6>
+                                <h6 class="uk-margin-remove uk-text-bold font-size-12">Domicilio</h6>
                             </div>
                             <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">$9.900</h6>
                         </div>
@@ -2996,14 +2995,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-around ">
-                        <h6 class="uk-margin-remove uk-text-bold ">Descuento</h6>
-                        <h6 class="uk-margin-remove ">$0.00</h6>
+                    <div class="uk-flex uk-flex-middle uk-flex-between" style="padding-left: 37px; padding-right: 20px; padding-top: 40px;">
+                        <h6 class="uk-margin-remove uk-text-bold font-size-12">Descuento</h6>
+                        <h6 class="uk-margin-remove font-size-11 " style="padding-right: 10px; ">$0.00</h6>
                     </div>
-                    <div class="hr-tab " style="margin-top: 15px; margin-bottom: 15px; "></div>
-                    <div class="uk-flex uk-flex-middle uk-flex-between ">
-                        <h4 class="uk-margin-remove uk-text-bold ">Total</h4>
-                        <h4 class="uk-margin-remove uk-text-bold " style="padding-right: 10px; ">$45.500</h4>
+                    <div class="hr-tab " style="margin-top: 8px; margin-bottom: 15px; "></div>
+                    <div class="uk-flex uk-flex-middle uk-flex-between" style="padding-left: 37px; padding-right: 20px;padding-top: 10px;">
+                        <h4 class="uk-margin-remove uk-text-bold font-size-18">TOTAL</h4>
+                        <h4 class="uk-margin-remove uk-text-bold font-size-18" style="padding-right: 10px; ">$45.500</h4>
                     </div>
                     <div>
                         <button class="button-summary-extended-checkout-customers" uk-toggle="target: #extended-order">Ver Resumen extendido</button>
