@@ -32,6 +32,10 @@
         cursor: pointer;
     }
     
+    .color-black {
+        color: black;
+    }
+    
     .color-blue {
         color: #3a6193;
     }
@@ -174,6 +178,8 @@
         background-position: 100% auto;
         padding-bottom: 10px;
         padding-top: 5px;
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
     }
     
     .button-items-menu-customers:hover {
@@ -328,10 +334,10 @@
     }
     
     .img-menu-right-vertical-customers {
-        min-width: 85px;
-        max-width: 85px;
-        width: 85px;
-        height: 85px;
+        min-width: 83px;
+        max-width: 83px;
+        width: 83px;
+        height: 83px;
         border-radius: 50%;
         background-position: 50%;
         background-size: 100% auto;
@@ -376,7 +382,7 @@
         margin-top: 90px !important;
         border-top: none !important;
         box-shadow: none !important;
-        box-shadow: 0px 31px 18px 16px rgba(0, 0, 0, 0.35) !important;
+        box-shadow: 0px 31px 18px 16px rgba(78, 78, 78, 0.062) !important;
     }
     
     #user-button:active+.background-black-customers {
@@ -595,7 +601,6 @@
     }
     
     .button-filter-customers:focus {
-        box-shadow: -10px 0px 10px -7px #00000080, 10px 0px 10px -7px #00000063, 5px 5px 15px 5px rgba(0, 0, 0, 0);
         outline: 0;
     }
     
@@ -776,29 +781,39 @@
     
     .modal-add-products-order-customers {
         border-radius: 30px;
-        width: 1180px !important;
+        width: 1200px !important;
         padding: 0px !important;
+        height: 500px !important;
     }
     
     .modal-order-customers {
         width: 100%;
-        max-height: 260px !important;
+        max-height: 290px !important;
         overflow: auto;
         z-index: 0;
         overflow-y: scroll;
         -ms-overflow-style: none;
         scrollbar-width: none;
+        padding-left: 45px;
         padding-bottom: 10px;
-        padding-left: 10px;
     }
     
     .modal-order-customers::-webkit-scrollbar {
         display: none;
     }
     
+    .font-size-19 {
+        font-size: 19px;
+    }
+    
+    .font-size-20 {
+        font-size: 20px;
+    }
+    
     .modal-sizes-order-customers {
         width: 330px;
-        padding-top: 30px !important;
+        padding-top: 40px !important;
+        padding-right: 55px !important;
     }
     
     .img-items-products-add-90-customers {
@@ -954,14 +969,14 @@
     .box-schedule-order-checkout-customers {
         border: 1.5px solid rgba(145, 145, 145, 0.548);
         border-radius: 10px;
-        width: 80px;
+        width: 70px;
         height: 140px;
         padding: 10px;
         margin-top: 10px;
     }
     
     .button-day-schedule-order-checkout-customers {
-        border: 1px solid rgba(145, 145, 145, 0.548);
+        border: 1px solid rgba(145, 144, 144, 0.548);
         border-radius: 5px;
         height: 25px;
         margin-top: 10px;
@@ -969,13 +984,13 @@
     }
     
     .day-trip-checkout-checkbox-customers {
-        border: 1px solid;
+        border: 1px solid rgba(138, 137, 137, 0.795);
         border-radius: 50px !important;
         width: 11px;
         height: 13px;
         cursor: pointer;
         background-color: white;
-        margin-left: 5px;
+        margin-left: 15px;
     }
     
     .day-trip-checkout-checkbox-customers:focus {
@@ -984,7 +999,7 @@
     }
     
     .input-deliver-in-checkout-customers {
-        width: 330px;
+        width: 338px;
         height: 32PX;
         border-radius: 5PX;
         border: 1PX solid rgba(141, 141, 141, 0.61);
@@ -996,7 +1011,7 @@
         width: 90px;
         border: 1PX solid rgba(148, 148, 148, 0.589);
         cursor: pointer;
-        margin-right: 45px;
+        margin-right: 37px;
     }
     
     .padding-horizontal-7 {
@@ -1008,7 +1023,7 @@
         border: 1px solid rgba(124, 124, 124, 0.459);
         border-radius: 5px;
         width: 280px;
-        height: 370px;
+        height: 368px;
         margin-top: 10px;
     }
     
@@ -1057,8 +1072,8 @@
         font-weight: 800;
         font-size: 15px;
         width: 230px;
-        height: 40px;
-        margin-top: 15px;
+        height: 35px;
+        margin-top: 8px;
         cursor: pointer;
     }
     
@@ -1129,7 +1144,7 @@
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        border: 1px solid rgb(0, 0, 0);
+        border: 1px solid rgba(109, 109, 109, 0.623);
         background-color: rgb(236, 235, 235);
         cursor: pointer;
     }
@@ -1505,60 +1520,6 @@
     
     .modal-my-orders::-webkit-scrollbar {
         display: none;
-    }
-    
-    .scroll-gallery {
-        height: 300px;
-        width: 480px;
-        overflow-y: scroll;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-        background-color: white;
-        overflow: scroll;
-        overflow-x: hidden!important;
-    }
-    
-    .scroll-gallery::-webkit-scrollbar {
-        width: 5px;
-        height: 5px;
-    }
-    
-    .scroll-gallery::-webkit-scrollbar-button {
-        width: 0px;
-        height: 0px;
-    }
-    
-    .scroll-gallery::-webkit-scrollbar-thumb {
-        background: #b4b4b4;
-        border: 0px none #ffffff;
-        border-radius: 50px;
-        margin-left: 30px;
-    }
-    
-    .scroll-gallery::-webkit-scrollbar-thumb:hover {
-        background: #8f8f8f;
-    }
-    
-    .scroll-gallery::-webkit-scrollbar-thumb:active {
-        background: #6e6e6e;
-    }
-    
-    .scroll-gallery::-webkit-scrollbar-track {
-        background: #ffffff;
-        border: 0px none #ffffff;
-        border-radius: 50px;
-    }
-    
-    .scroll-gallery::-webkit-scrollbar-track:hover {
-        background: #ffffff;
-    }
-    
-    .scroll-gallery::-webkit-scrollbar-track:active {
-        background: #ffffff;
-    }
-    
-    .scroll-gallery::-webkit-scrollbar-corner {
-        background: transparent;
     }
     
     .info-float-gallery-customers {
